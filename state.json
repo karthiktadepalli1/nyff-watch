@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 22:02:35 GMT",
+        "date": "Tue, 15 Sep 2026 22:07:55 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,15 +13,15 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T22:02:37+00:00",
-      "last_success": "2026-09-15T22:02:37+00:00"
+      "last_attempt": "2026-09-15T22:07:55+00:00",
+      "last_success": "2026-09-15T22:07:55+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 22:02:37 GMT",
+        "date": "Tue, 15 Sep 2026 22:07:55 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T22:02:37+00:00",
-      "last_success": "2026-09-15T22:02:37+00:00"
+      "last_attempt": "2026-09-15T22:07:55+00:00",
+      "last_success": "2026-09-15T22:07:55+00:00"
     }
   },
   "configuration": {
@@ -43,8 +43,8 @@
     "attempts": 3,
     "day": "2026-09-15"
   },
-  "last_automatic_poll": "2026-09-15T22:02:37+00:00",
-  "last_poll": "2026-09-15T22:02:37+00:00",
+  "last_automatic_poll": "2026-09-15T22:07:55+00:00",
+  "last_poll": "2026-09-15T22:07:55+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -98,19 +98,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-15T22:02:37+00:00",
+      "observed_at": "2026-09-15T22:07:55+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-15T22:02:37+00:00",
+      "observed_at": "2026-09-15T22:07:55+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-15T22:02:37+00:00",
+      "observed_at": "2026-09-15T22:07:55+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-15T22:02:37+00:00",
+      "observed_at": "2026-09-15T22:07:55+00:00",
       "rush": false
     }
   },
@@ -537,6 +537,13 @@
       "feed": true,
       "page": true,
       "run_id": "35028875847",
+      "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-15T22:07:55+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35029343933",
       "trigger": "automatic"
     }
   ],
@@ -1621,7 +1628,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84239": {
-      "available": true,
+      "available": false,
       "film": "A Statement",
       "id": "84239",
       "no_standby": false,
@@ -1629,7 +1636,7 @@
       "rush_text": "",
       "slug": "a-statement",
       "start": "2026-10-04T21:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84151/84239",
       "venue": "Walter Reade Theater"
     },
@@ -3246,7 +3253,7 @@
       "venue": "Alice Tully Hall"
     },
     "84408": {
-      "available": true,
+      "available": false,
       "film": "Paper Tiger",
       "id": "84408",
       "no_standby": false,
@@ -3254,7 +3261,7 @@
       "rush_text": "",
       "slug": "paper-tiger",
       "start": "2026-09-25T21:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84135/84408",
       "venue": "Alice Tully Hall"
     },
@@ -3467,7 +3474,7 @@
       "venue": "Alice Tully Hall"
     },
     "84425": {
-      "available": false,
+      "available": true,
       "film": "Making Marie Antoinette",
       "id": "84425",
       "no_standby": false,
@@ -3475,7 +3482,7 @@
       "rush_text": "",
       "slug": "making-marie-antoinette",
       "start": "2026-09-29T18:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84148/84425",
       "venue": "Alice Tully Hall"
     },
