@@ -6,7 +6,7 @@
 - **Persistence:** successive cloud runs preserved observations, generated the report, and suppressed repeated unchanged alerts.
 - **Phone and email:** the user subscribed on their phone and confirmed that both channels received the fresh test. [Delivery test](https://github.com/karthiktadepalli1/nyff-watch/actions/runs/35009231642).
 - **Independent health:** both production checks accepted cloud check-ins, each with a five-minute period and 25-minute grace. A separate test check detected two minutes of silence, recovered, accepted an explicit failure signal, recovered again, and was paused. Healthchecks reported successful email and ntfy deliveries. The shorter test threshold exercised the same missed-check mechanism while production retained its 30-minute threshold.
-- **Regression checks:** 29 tests passed locally and on GitHub, covering availability, rush sources, failures, retries, persistence, shutdown, and UTC email-allowance reset. [Tests](https://github.com/karthiktadepalli1/nyff-watch/actions/runs/35008814955).
+- **Regression checks:** 30 tests passed locally and on GitHub, covering availability for each of the four target IDs, rush sources, failures, retries, persistence, shutdown, and UTC email-allowance reset. [Tests](https://github.com/karthiktadepalli1/nyff-watch/actions/runs/35009712842).
 - **Secrets:** all six required secrets are configured in GitHub. Public data stores configuration flags and delivery receipts.
 
 ## Still to observe

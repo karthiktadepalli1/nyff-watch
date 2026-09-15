@@ -4,6 +4,8 @@ Watch for one ticket to *All of a Sudden* at NYFF64. Checks are scheduled in Git
 
 **[Monitor status and controls](https://github.com/karthiktadepalli1/nyff-watch/actions/workflows/watch.yml)** · **[Release history](https://github.com/karthiktadepalli1/nyff-watch/tree/data)** · **[Timing report](https://github.com/karthiktadepalli1/nyff-watch/blob/data/report.md)**
 
+[Quick operating guide](OPERATING.md) · [Deployment validation](VALIDATION.md)
+
 ## Screenings and purchase links
 
 All times are Eastern. Each alert is a prompt to check checkout for one remaining seat.
