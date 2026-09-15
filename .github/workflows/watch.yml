@@ -1,0 +1,61 @@
+name: NYFF ticket monitor
+
+on:
+  schedule:
+    - cron: '2-57/5 * * * *'
+    - cron: '30 16 9 10 *'
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Action
+        type: choice
+        default: poll
+        options:
+          - poll
+          - test-alert
+          - report
+          - stop
+          - probe
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: nyff-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Check out application
+        uses: actions/checkout@v4
+        with:
+          path: app
+      - name: Check out latest observations
+        uses: actions/checkout@v4
+        with:
+          ref: data
+          path: observations
+          fetch-depth: 1
+      - name: Configure observation commits
+        run: |
+          git -C observations config user.name 'github-actions[bot]'
+          git -C observations config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Check screenings and send alerts
+        env:
+          OPERATION: ${{ inputs.operation || 'poll' }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+          HC_API_KEY: ${{ secrets.HC_API_KEY }}
+          HC_FEED_URL: ${{ secrets.HC_FEED_URL }}
+          HC_PAGE_URL: ${{ secrets.HC_PAGE_URL }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 app/watch.py "$OPERATION" --data observations --git
+      - name: Add operating summary
+        if: always()
+        run: |
+          python3 app/summary.py observations >> "$GITHUB_STEP_SUMMARY"
