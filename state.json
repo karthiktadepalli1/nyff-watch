@@ -2,26 +2,10 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "108",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 21:52:12 GMT",
-        "etag": null,
-        "last-modified": null,
-        "x-vercel-cache": "HIT"
-      },
-      "error": null,
-      "failures": 0,
-      "health_signal": "up",
-      "last_attempt": "2026-09-15T21:52:13+00:00",
-      "last_success": "2026-09-15T21:52:13+00:00"
-    },
-    "page": {
-      "cache": {
-        "age": "0",
-        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 21:52:13 GMT",
+        "date": "Tue, 15 Sep 2026 21:57:22 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +13,24 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T21:52:13+00:00",
-      "last_success": "2026-09-15T21:52:13+00:00"
+      "last_attempt": "2026-09-15T21:57:24+00:00",
+      "last_success": "2026-09-15T21:57:24+00:00"
+    },
+    "page": {
+      "cache": {
+        "age": "0",
+        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "date": "Tue, 15 Sep 2026 21:57:24 GMT",
+        "etag": null,
+        "last-modified": null,
+        "x-vercel-cache": "MISS"
+      },
+      "error": null,
+      "failures": 0,
+      "health_signal": "up",
+      "last_attempt": "2026-09-15T21:57:24+00:00",
+      "last_success": "2026-09-15T21:57:24+00:00"
     }
   },
   "configuration": {
@@ -43,8 +43,8 @@
     "attempts": 3,
     "day": "2026-09-15"
   },
-  "last_automatic_poll": "2026-09-15T21:52:13+00:00",
-  "last_poll": "2026-09-15T21:52:13+00:00",
+  "last_automatic_poll": "2026-09-15T21:57:24+00:00",
+  "last_poll": "2026-09-15T21:57:24+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -98,19 +98,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-15T21:52:13+00:00",
+      "observed_at": "2026-09-15T21:57:24+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-15T21:52:13+00:00",
+      "observed_at": "2026-09-15T21:57:24+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-15T21:52:13+00:00",
+      "observed_at": "2026-09-15T21:57:24+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-15T21:52:13+00:00",
+      "observed_at": "2026-09-15T21:57:24+00:00",
       "rush": false
     }
   },
@@ -523,6 +523,13 @@
       "feed": true,
       "page": true,
       "run_id": "35027978008",
+      "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-15T21:57:24+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35028426667",
       "trigger": "automatic"
     }
   ],
@@ -1503,7 +1510,7 @@
       "venue": "Walter Reade Theater"
     },
     "84231": {
-      "available": true,
+      "available": false,
       "film": "Making Marie Antoinette",
       "id": "84231",
       "no_standby": false,
@@ -1511,7 +1518,7 @@
       "rush_text": "",
       "slug": "making-marie-antoinette",
       "start": "2026-09-30T15:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84148/84231",
       "venue": "Walter Reade Theater"
     },
@@ -1529,7 +1536,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84233": {
-      "available": true,
+      "available": false,
       "film": "Making Marie Antoinette",
       "id": "84233",
       "no_standby": false,
@@ -1537,7 +1544,7 @@
       "rush_text": "",
       "slug": "making-marie-antoinette",
       "start": "2026-10-11T21:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84148/84233",
       "venue": "Francesca Beale Theater"
     },
@@ -1607,7 +1614,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84239": {
-      "available": true,
+      "available": false,
       "film": "A Statement",
       "id": "84239",
       "no_standby": false,
@@ -1615,7 +1622,7 @@
       "rush_text": "",
       "slug": "a-statement",
       "start": "2026-10-04T21:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84151/84239",
       "venue": "Walter Reade Theater"
     },
@@ -2023,7 +2030,7 @@
       "venue": "Walter Reade Theater"
     },
     "84294": {
-      "available": true,
+      "available": false,
       "film": "Heil Jupiter!",
       "id": "84294",
       "no_standby": false,
@@ -2031,7 +2038,7 @@
       "rush_text": "",
       "slug": "heil-jupiter",
       "start": "2026-09-28T18:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84259/84294",
       "venue": "Walter Reade Theater"
     },
@@ -3193,7 +3200,7 @@
       "venue": "Alice Tully Hall"
     },
     "84405": {
-      "available": false,
+      "available": true,
       "film": "Misty Green",
       "id": "84405",
       "no_standby": false,
@@ -3201,7 +3208,7 @@
       "rush_text": "",
       "slug": "misty-green",
       "start": "2026-09-27T11:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84130/84405",
       "venue": "Alice Tully Hall"
     },
@@ -3414,7 +3421,7 @@
       "venue": "Alice Tully Hall"
     },
     "84422": {
-      "available": false,
+      "available": true,
       "film": "Godzilla Minus Zero",
       "id": "84422",
       "no_standby": false,
@@ -3422,7 +3429,7 @@
       "rush_text": "",
       "slug": "godzilla-minus-zero",
       "start": "2026-09-27T14:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84145/84422",
       "venue": "Alice Tully Hall"
     },
