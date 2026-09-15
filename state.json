@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 18:48:27 GMT",
+        "date": "Tue, 15 Sep 2026 20:12:06 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,15 +13,15 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T18:48:29+00:00",
-      "last_success": "2026-09-15T18:48:29+00:00"
+      "last_attempt": "2026-09-15T20:12:06+00:00",
+      "last_success": "2026-09-15T20:12:06+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 18:48:29 GMT",
+        "date": "Tue, 15 Sep 2026 20:12:06 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T18:48:29+00:00",
-      "last_success": "2026-09-15T18:48:29+00:00"
+      "last_attempt": "2026-09-15T20:12:06+00:00",
+      "last_success": "2026-09-15T20:12:06+00:00"
     }
   },
   "configuration": {
@@ -43,7 +43,7 @@
     "attempts": 3,
     "day": "2026-09-15"
   },
-  "last_poll": "2026-09-15T18:48:29+00:00",
+  "last_poll": "2026-09-15T20:12:06+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -97,19 +97,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-15T18:48:29+00:00",
+      "observed_at": "2026-09-15T20:12:06+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-15T18:48:29+00:00",
+      "observed_at": "2026-09-15T20:12:06+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-15T18:48:29+00:00",
+      "observed_at": "2026-09-15T20:12:06+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-15T18:48:29+00:00",
+      "observed_at": "2026-09-15T20:12:06+00:00",
       "rush": false
     }
   },
@@ -441,6 +441,11 @@
       "at": "2026-09-15T18:48:29+00:00",
       "feed": true,
       "page": true
+    },
+    {
+      "at": "2026-09-15T20:12:06+00:00",
+      "feed": true,
+      "page": true
     }
   ],
   "screenings": {
@@ -765,7 +770,7 @@
       "rush_text": "",
       "slug": "everything-else-is-noise",
       "start": "2026-10-05T13:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84120/84179",
       "venue": "Francesca Beale Theater"
     },
@@ -999,7 +1004,7 @@
       "rush_text": "",
       "slug": "a-man-of-his-time",
       "start": "2026-10-07T14:30:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84127/84197",
       "venue": "Walter Reade Theater"
     },
@@ -1077,7 +1082,7 @@
       "rush_text": "",
       "slug": "misty-green",
       "start": "2026-10-02T16:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84130/84204",
       "venue": "Walter Reade Theater"
     },
@@ -1212,7 +1217,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84215": {
-      "available": true,
+      "available": false,
       "film": "Rose",
       "id": "84215",
       "no_standby": false,
@@ -1220,7 +1225,7 @@
       "rush_text": "",
       "slug": "rose",
       "start": "2026-10-07T12:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84137/84215",
       "venue": "Walter Reade Theater"
     },
@@ -1264,7 +1269,7 @@
       "venue": "Walter Reade Theater"
     },
     "84219": {
-      "available": true,
+      "available": false,
       "film": "The Unknown",
       "id": "84219",
       "no_standby": false,
@@ -1272,7 +1277,7 @@
       "rush_text": "",
       "slug": "the-unknown",
       "start": "2026-09-29T12:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84139/84219",
       "venue": "Walter Reade Theater"
     },
@@ -1428,7 +1433,7 @@
       "rush_text": "",
       "slug": "making-marie-antoinette",
       "start": "2026-09-30T15:45:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84148/84231",
       "venue": "Walter Reade Theater"
     },
@@ -1467,7 +1472,7 @@
       "rush_text": "",
       "slug": "one-more-time",
       "start": "2026-10-04T16:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84149/84234",
       "venue": "Walter Reade Theater"
     },
@@ -1641,7 +1646,7 @@
       "venue": "Walter Reade Theater"
     },
     "84248": {
-      "available": true,
+      "available": false,
       "film": "Spotlight Shorts",
       "id": "84248",
       "no_standby": false,
@@ -1649,7 +1654,7 @@
       "rush_text": "",
       "slug": "2026-spotlight-shorts",
       "start": "2026-10-05T21:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84153/84248",
       "venue": "Francesca Beale Theater"
     },
@@ -1883,7 +1888,7 @@
       "rush_text": "",
       "slug": "foreign-travel",
       "start": "2026-09-30T21:15:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84257/84289",
       "venue": "Francesca Beale Theater"
     },
@@ -1940,7 +1945,7 @@
       "venue": "Walter Reade Theater"
     },
     "84294": {
-      "available": true,
+      "available": false,
       "film": "Heil Jupiter!",
       "id": "84294",
       "no_standby": false,
@@ -1948,7 +1953,7 @@
       "rush_text": "",
       "slug": "heil-jupiter",
       "start": "2026-09-28T18:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84259/84294",
       "venue": "Walter Reade Theater"
     },
@@ -1974,7 +1979,7 @@
       "rush_text": "",
       "slug": "heil-jupiter",
       "start": "2026-10-05T13:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84259/84296",
       "venue": "Howard Gilman Theater"
     },
@@ -2005,7 +2010,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84300": {
-      "available": true,
+      "available": false,
       "film": "London",
       "id": "84300",
       "no_standby": false,
@@ -2013,7 +2018,7 @@
       "rush_text": "",
       "slug": "london",
       "start": "2026-09-27T21:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84260/84300",
       "venue": "Howard Gilman Theater"
     },
@@ -2031,7 +2036,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84302": {
-      "available": true,
+      "available": false,
       "film": "Overt Listening",
       "id": "84302",
       "no_standby": false,
@@ -2039,12 +2044,12 @@
       "rush_text": "",
       "slug": "overt-listening",
       "start": "2026-10-03T12:00:00.000-04:00",
-      "status": "available",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84261/84302",
       "venue": "Francesca Beale Theater"
     },
     "84303": {
-      "available": true,
+      "available": false,
       "film": "Overt Listening",
       "id": "84303",
       "no_standby": false,
@@ -2052,7 +2057,7 @@
       "rush_text": "",
       "slug": "overt-listening",
       "start": "2026-10-04T14:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84261/84303",
       "venue": "Howard Gilman Theater"
     },
@@ -2122,7 +2127,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84309": {
-      "available": true,
+      "available": false,
       "film": "Suicide Note",
       "id": "84309",
       "no_standby": false,
@@ -2130,12 +2135,12 @@
       "rush_text": "",
       "slug": "suicide-note",
       "start": "2026-10-03T18:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84264/84309",
       "venue": "Francesca Beale Theater"
     },
     "84310": {
-      "available": true,
+      "available": false,
       "film": "Suicide Note",
       "id": "84310",
       "no_standby": false,
@@ -2143,7 +2148,7 @@
       "rush_text": "",
       "slug": "suicide-note",
       "start": "2026-10-04T20:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84264/84310",
       "venue": "Howard Gilman Theater"
     },
@@ -2182,7 +2187,7 @@
       "rush_text": "",
       "slug": "tomorrow-a-long-time-ago",
       "start": "2026-10-02T18:15:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84265/84313",
       "venue": "Francesca Beale Theater"
     },
@@ -2252,7 +2257,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84319": {
-      "available": true,
+      "available": false,
       "film": "Currents Program 1: The Hidden Dimension",
       "id": "84319",
       "no_standby": false,
@@ -2260,7 +2265,7 @@
       "rush_text": "",
       "slug": "program-1-the-hidden-dimension",
       "start": "2026-09-26T12:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84268/84319",
       "venue": "Howard Gilman Theater"
     },
@@ -2317,7 +2322,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84324": {
-      "available": true,
+      "available": false,
       "film": "Currents Program 3: Surface Noise",
       "id": "84324",
       "no_standby": false,
@@ -2325,7 +2330,7 @@
       "rush_text": "",
       "slug": "program-3-surface-noise",
       "start": "2026-09-28T19:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84270/84324",
       "venue": "Howard Gilman Theater"
     },
@@ -2377,12 +2382,12 @@
       "rush_text": "",
       "slug": "program-5-the-material-ghost",
       "start": "2026-09-30T16:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84272/84328",
       "venue": "Howard Gilman Theater"
     },
     "84329": {
-      "available": true,
+      "available": false,
       "film": "Currents Program 6: Out of the Present",
       "id": "84329",
       "no_standby": false,
@@ -2390,7 +2395,7 @@
       "rush_text": "",
       "slug": "program-6-out-of-the-present",
       "start": "2026-09-29T20:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84273/84329",
       "venue": "Francesca Beale Theater"
     },
@@ -2434,7 +2439,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84346": {
-      "available": true,
+      "available": false,
       "film": "The Drift",
       "id": "84346",
       "no_standby": false,
@@ -2442,12 +2447,12 @@
       "rush_text": "",
       "slug": "the-drift",
       "start": "2026-09-27T16:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84332/84346",
       "venue": "Howard Gilman Theater"
     },
     "84347": {
-      "available": true,
+      "available": false,
       "film": "The Drift",
       "id": "84347",
       "no_standby": false,
@@ -2455,7 +2460,7 @@
       "rush_text": "",
       "slug": "the-drift",
       "start": "2026-10-01T20:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84332/84347",
       "venue": "Howard Gilman Theater"
     },
@@ -2473,7 +2478,7 @@
       "venue": "Walter Reade Theater"
     },
     "84349": {
-      "available": true,
+      "available": false,
       "film": "Gone to Earth",
       "id": "84349",
       "no_standby": false,
@@ -2481,7 +2486,7 @@
       "rush_text": "",
       "slug": "gone-to-earth",
       "start": "2026-10-04T16:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84333/84349",
       "venue": "Francesca Beale Theater"
     },
@@ -2538,7 +2543,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84354": {
-      "available": true,
+      "available": false,
       "film": "In Which Annie Gives It Those Ones",
       "id": "84354",
       "no_standby": false,
@@ -2546,7 +2551,7 @@
       "rush_text": "",
       "slug": "in-which-annie-gives-it-those",
       "start": "2026-09-28T18:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84335/84354",
       "venue": "Francesca Beale Theater"
     },
@@ -2616,7 +2621,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84360": {
-      "available": true,
+      "available": false,
       "film": "Clarissa",
       "id": "84360",
       "no_standby": false,
@@ -2624,7 +2629,7 @@
       "rush_text": "",
       "slug": "clarissa",
       "start": "2026-10-05T12:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84113/84360",
       "venue": "Walter Reade Theater"
     },
@@ -2637,7 +2642,7 @@
       "rush_text": "",
       "slug": "linnocente",
       "start": "2026-10-09T18:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84336/84361",
       "venue": "Francesca Beale Theater"
     },
@@ -2663,7 +2668,7 @@
       "rush_text": "",
       "slug": "just-like-weather",
       "start": "2026-09-30T19:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84337/84363",
       "venue": "Francesca Beale Theater"
     },
@@ -2689,7 +2694,7 @@
       "rush_text": "",
       "slug": "dao",
       "start": "2026-10-05T15:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84114/84365",
       "venue": "Francesca Beale Theater"
     },
@@ -2824,7 +2829,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84377": {
-      "available": true,
+      "available": false,
       "film": "Report to Mother",
       "id": "84377",
       "no_standby": false,
@@ -2832,7 +2837,7 @@
       "rush_text": "",
       "slug": "report-to-mother",
       "start": "2026-09-26T14:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84341/84377",
       "venue": "Howard Gilman Theater"
     },
@@ -2850,7 +2855,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84379": {
-      "available": true,
+      "available": false,
       "film": "Report to Mother",
       "id": "84379",
       "no_standby": false,
@@ -2858,7 +2863,7 @@
       "rush_text": "",
       "slug": "report-to-mother",
       "start": "2026-10-06T18:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84341/84379",
       "venue": "Howard Gilman Theater"
     },
@@ -2902,7 +2907,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84383": {
-      "available": true,
+      "available": false,
       "film": "Yesterday Girl",
       "id": "84383",
       "no_standby": false,
@@ -2910,7 +2915,7 @@
       "rush_text": "",
       "slug": "yesterday-girl",
       "start": "2026-09-28T21:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84343/84383",
       "venue": "Howard Gilman Theater"
     },
@@ -2923,7 +2928,7 @@
       "rush_text": "",
       "slug": "yesterday-girl",
       "start": "2026-10-04T14:15:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84343/84384",
       "venue": "Francesca Beale Theater"
     },
@@ -2954,7 +2959,7 @@
       "venue": "Alice Tully Hall"
     },
     "84392": {
-      "available": false,
+      "available": true,
       "film": "Bitter Christmas",
       "id": "84392",
       "no_standby": false,
@@ -2962,7 +2967,7 @@
       "rush_text": "",
       "slug": "bitter-christmas",
       "start": "2026-10-07T15:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84112/84392",
       "venue": "Alice Tully Hall"
     },
@@ -2988,7 +2993,7 @@
       "rush_text": "",
       "slug": "the-dreamed-adventure",
       "start": "2026-10-05T20:15:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84119/84394",
       "venue": "Alice Tully Hall"
     },
@@ -3110,7 +3115,7 @@
       "venue": "Alice Tully Hall"
     },
     "84405": {
-      "available": true,
+      "available": false,
       "film": "Misty Green",
       "id": "84405",
       "no_standby": false,
@@ -3118,7 +3123,7 @@
       "rush_text": "",
       "slug": "misty-green",
       "start": "2026-09-27T11:30:00.000-04:00",
-      "status": "available",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84130/84405",
       "venue": "Alice Tully Hall"
     },
@@ -3240,7 +3245,7 @@
       "venue": "Alice Tully Hall"
     },
     "84415": {
-      "available": true,
+      "available": false,
       "film": "Bucking Fastard",
       "id": "84415",
       "no_standby": false,
@@ -3248,7 +3253,7 @@
       "rush_text": "",
       "slug": "bucking-fastard",
       "start": "2026-09-30T15:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84140/84415",
       "venue": "Alice Tully Hall"
     },
@@ -3370,7 +3375,7 @@
       "venue": "Alice Tully Hall"
     },
     "84425": {
-      "available": true,
+      "available": false,
       "film": "Making Marie Antoinette",
       "id": "84425",
       "no_standby": false,
@@ -3378,7 +3383,7 @@
       "rush_text": "",
       "slug": "making-marie-antoinette",
       "start": "2026-09-29T18:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84148/84425",
       "venue": "Alice Tully Hall"
     },
@@ -3422,7 +3427,7 @@
       "venue": "Alice Tully Hall"
     },
     "84457": {
-      "available": true,
+      "available": false,
       "film": "Behemoth!",
       "id": "84457",
       "no_standby": false,
@@ -3430,12 +3435,12 @@
       "rush_text": "",
       "slug": "behemoth",
       "start": "2026-10-02T21:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84111/84457",
       "venue": "Alice Tully Hall"
     },
     "84458": {
-      "available": true,
+      "available": false,
       "film": "Behemoth!",
       "id": "84458",
       "no_standby": false,
@@ -3443,7 +3448,7 @@
       "rush_text": "",
       "slug": "behemoth",
       "start": "2026-10-03T12:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84111/84458",
       "venue": "Alice Tully Hall"
     },
@@ -3534,7 +3539,7 @@
       "rush_text": "",
       "slug": "the-debut",
       "start": "2026-10-08T10:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84142/84465",
       "venue": "Alice Tully Hall"
     },
@@ -3721,7 +3726,7 @@
       "venue": "Walter Reade Theater"
     },
     "84494": {
-      "available": true,
+      "available": false,
       "film": "Paper Tiger",
       "id": "84494",
       "no_standby": false,
@@ -3729,7 +3734,7 @@
       "rush_text": "",
       "slug": "paper-tiger",
       "start": "2026-09-25T21:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84135/84494",
       "venue": "Howard Gilman Theater"
     },
@@ -4007,7 +4012,7 @@
       "venue": "Alice Tully Hall"
     },
     "84559": {
-      "available": true,
+      "available": false,
       "film": "Cameron Winter at Carnegie Hall",
       "id": "84559",
       "no_standby": false,
@@ -4015,7 +4020,7 @@
       "rush_text": "",
       "slug": "cameron-winter-at-carnegie",
       "start": "2026-10-09T16:30:00.000-04:00",
-      "status": "available",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84535/84559",
       "venue": "Walter Reade Theater"
     },
@@ -4163,7 +4168,7 @@
       "venue": "BAM"
     },
     "84661": {
-      "available": true,
+      "available": false,
       "film": "Everytime",
       "id": "84661",
       "no_standby": false,
@@ -4171,12 +4176,12 @@
       "rush_text": "",
       "slug": "everytime",
       "start": "2026-10-03T16:30:00.000-04:00",
-      "status": "available",
+      "status": "standby",
       "url": "https://www.bam.org/film/2026/nyff-everytime",
       "venue": "BAM"
     },
     "84662": {
-      "available": true,
+      "available": false,
       "film": "Fatherland",
       "id": "84662",
       "no_standby": false,
@@ -4184,7 +4189,7 @@
       "rush_text": "",
       "slug": "fatherland",
       "start": "2026-10-06T18:00:00.000-04:00",
-      "status": "available",
+      "status": "standby",
       "url": "https://www.bam.org/film/2026/nyff-fatherland",
       "venue": "BAM"
     },
@@ -4228,7 +4233,7 @@
       "venue": "MOMI"
     },
     "84666": {
-      "available": true,
+      "available": false,
       "film": "Possible Love",
       "id": "84666",
       "no_standby": false,
@@ -4236,7 +4241,7 @@
       "rush_text": "",
       "slug": "possible-love",
       "start": "2026-10-03T19:15:00.000-04:00",
-      "status": "available",
+      "status": "standby",
       "url": "https://www.bam.org/film/2026/nyff-possible-love",
       "venue": "BAM"
     },
@@ -4267,7 +4272,7 @@
       "venue": "MOMI"
     },
     "84670": {
-      "available": true,
+      "available": false,
       "film": "Club Kid",
       "id": "84670",
       "no_standby": false,
@@ -4275,7 +4280,7 @@
       "rush_text": "",
       "slug": "club-kid",
       "start": "2026-10-05T18:00:00.000-04:00",
-      "status": "available",
+      "status": "standby",
       "url": "https://www.bam.org/film/2026/nyff-club-kid",
       "venue": "BAM"
     },
@@ -4405,7 +4410,7 @@
       "rush_text": "",
       "slug": "la-gradiva",
       "start": "2026-10-09T21:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84123/84764",
       "venue": "Walter Reade Theater"
     }
