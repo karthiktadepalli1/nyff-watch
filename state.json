@@ -49,7 +49,8 @@
     {
       "click": "https://purchase.filmlinc.org/84110/84274",
       "created": "2026-09-15T18:41:07+00:00",
-      "email": "pending",
+      "email": "sent",
+      "email_sent_at": "2026-09-15T18:41:07+00:00",
       "expires": "2026-09-15T19:41:07+00:00",
       "id": "7778bfca20dfcb7c1401d2fa",
       "kind": "test",
