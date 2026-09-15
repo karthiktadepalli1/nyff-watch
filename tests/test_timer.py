@@ -57,14 +57,22 @@ class TimerTests(unittest.TestCase):
 
     def test_stopped_monitor_ends_chain(self):
         self.state["stopped"] = True
+        self.state["shutdown_complete"] = True
         self.run_tick()
         self.assertEqual(self.dispatched, [])
 
-    def test_expiry_requests_cleanup_without_successor(self):
+    def test_failed_stop_cleanup_is_retried(self):
+        self.state["stopped"] = True
+        self.run_tick()
+        self.assertEqual(len(self.dispatched), 2)
+        self.assertIn("watch.yml", self.dispatched[0][0])
+        self.assertIn("timer.yml", self.dispatched[1][0])
+
+    def test_expiry_requests_cleanup_with_retry_timer(self):
         for pid in w.TARGETS:
             self.state["screenings"][pid] = {"start": "2026-09-15T19:59:00Z"}
         self.run_tick()
-        self.assertEqual(len(self.dispatched), 1)
+        self.assertEqual(len(self.dispatched), 2)
         self.assertIn("watch.yml", self.dispatched[0][0])
 
     def test_failed_check_dispatch_still_schedules_next_attempt(self):

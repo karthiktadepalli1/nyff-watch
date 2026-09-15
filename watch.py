@@ -457,6 +457,8 @@ def stop_monitor(state, store, now, env, reason):
             request(f"https://api.github.com/repos/{REPOSITORY}/actions/workflows/{workflow}/disable",
                     method="PUT", payload=b"", timeout=8, retries=1,
                     headers={"Authorization": "Bearer " + env["GH_TOKEN"], "Accept": "application/vnd.github+json"})
+    state["shutdown_complete"] = True
+    store.save(state)
     print("Monitor stopped; configured health checks paused.")
 
 

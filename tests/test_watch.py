@@ -267,6 +267,7 @@ class HealthAndStopTests(unittest.TestCase):
             self.assertTrue(paths[2].endswith("timer.yml/disable"))
             self.assertTrue(paths[3].endswith("watch.yml/disable"))
             self.assertTrue(store.load()["stopped"])
+            self.assertTrue(store.load()["shutdown_complete"])
 
     def test_failed_pause_preserves_stop_and_workflow_for_retry(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -275,6 +276,7 @@ class HealthAndStopTests(unittest.TestCase):
                 with self.assertRaises(w.FetchError):
                     w.stop_monitor(state, store, NOW, self.env, "test")
             self.assertTrue(store.load()["stopped"])
+            self.assertFalse(store.load().get("shutdown_complete", False))
             self.assertEqual(request.call_count, 1)
 
     def test_automatic_expiry_calls_stop_at_last_showtime(self):

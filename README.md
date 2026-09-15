@@ -1,6 +1,6 @@
 # NYFF ticket monitor
 
-Watch for one ticket to *All of a Sudden* at NYFF64. Checks are scheduled in GitHub every five minutes, at minutes 2, 7, 12, and so on. Phone push, email, and independent health alerts are configured. Complete the phone subscription and delivery checks before relying on alerts.
+Watch for one ticket to any of four *All of a Sudden* screenings at NYFF64. A GitHub-hosted timer starts a check about every five minutes, plus runner startup time. Phone push, email, and independent health alerts are configured; phone and email delivery have been confirmed.
 
 **[Monitor status and controls](https://github.com/karthiktadepalli1/nyff-watch/actions/workflows/watch.yml)** · **[Release history](https://github.com/karthiktadepalli1/nyff-watch/tree/data)** · **[Timing report](https://github.com/karthiktadepalli1/nyff-watch/blob/data/report.md)**
 
@@ -22,10 +22,18 @@ All times are Eastern. Each alert is a prompt to check checkout for one remainin
 - **Tickets:** reads the official festival feed, matches the four performance IDs, and alerts on available/limited status. An initially open screening also alerts. A closure followed by reopening generates a new alert.
 - **Rush:** reads screening-specific promotion metadata and independently inspects RUSH labels on the film page. Repeated desktop/mobile controls produce one result. The current site's promotion mapping is validated; the first live rush announcement provides a further real-world check.
 - **History:** stores compact changes across all festival screenings on the `data` branch, including observation times, cache headers, availability, rush status, and screening details. A report is generated daily and on demand, with a saved `first24hours.md` report once the first full day has elapsed. New shows enter the dataset; alerts target the four screenings above.
-- **Health:** one combined **NYFF monitor** check alerts after 30 minutes without a successful scheduled check-in, or three consecutive failures of the feed, film page, or delivery. The separate page check is a silent dashboard diagnostic. Both sources must recover before the combined check recovers. Manual polls do not clear a scheduler outage. Ongoing reminders and periodic email reports are off.
-- **Completion:** `stop` records that a ticket was secured, pauses the configured health checks, and disables this workflow. Automatic expiry uses the last target's start time; the October 9 start also has a dedicated schedule entry. GitHub can delay scheduled runs.
+- **Health:** one combined **NYFF monitor** check alerts after 30 minutes without a successful automatic check-in, or three consecutive failures of the feed, film page, or delivery. The separate page check is a silent dashboard diagnostic. Both sources must recover before the combined check recovers. Manual polls do not clear a scheduler outage. Ongoing reminders and periodic email reports are off.
+- **Completion:** `stop` records that a ticket was secured, pauses the configured health checks, and disables both monitor and timer workflows. Automatic expiry uses the last target's start time; the next automatic check performs shutdown. The October 9 start also has a dedicated backup schedule entry.
 
-Standard GitHub runners in this public repository, ntfy's free service, and Healthchecks.io's free plan are the intended $0 setup. GitHub scheduling and source caches can delay detection beyond five minutes. The run summary shows access failures and setup status explicitly.
+Standard GitHub runners in this public repository, ntfy's free service, and Healthchecks.io's free plan are the intended $0 setup. GitHub queueing and source caches can delay detection beyond five minutes. The run summary shows the last automatic check, access failures, and setup status explicitly.
+
+## Automatic timer
+
+The [timer workflow](https://github.com/karthiktadepalli1/nyff-watch/actions/workflows/timer.yml) uses the `nyff-five-minute-timer` environment, configured with a **five-minute wait timer and no required reviewers**. After the delay, a short job dispatches a ticket check and its next timer run. Waiting happens in GitHub before allocating a runner. GitHub permits its built-in token to trigger `workflow_dispatch` events, so this needs no personal token or external scheduler. [Wait timers](https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments) · [Workflow triggering](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow)
+
+The original minute-2,7,12,… schedule remains as a backup. If it resumes, it can restore an interrupted timer. Automatic triggers less than four minutes apart are deduplicated. Each actual check reads the entire festival feed and checks all four target screenings.
+
+To start or restore the timer, open the timer workflow and choose **Run workflow** once. Its **Waiting** status is normal. The timer verifies that five minutes elapsed before dispatching; bypassing or removing the environment wait halts the chain. It also halts if the repository becomes private. After purchasing, use the monitor's **stop** control rather than canceling a waiting job.
 
 ## Account setup
 
@@ -45,7 +53,7 @@ The monitor budgets at most five email attempts per UTC calendar day, matching n
 2. Add a verified email integration named **NYFF email**. Enable failure and recovery messages.
 3. Add an **ntfy** integration named **NYFF phone**, using the generated topic, server `https://ntfy.sh`, and the monitor's ntfy access token. Enable both down and up notifications. This sends health alerts independently of GitHub. Keep the topic and token inside Healthchecks settings.
 4. Create a read-write API key in the NYFF project's settings. Run `python3 configure.py health` and enter it at the hidden prompt. This configures the combined monitor check with both integrations and a silent page diagnostic, and saves the required secrets. In Account Settings → Email Reports, select **Off** and **Do not remind me**.
-5. Confirm an automatic **schedule** run completes and both checks become healthy. A manual **poll** checks tickets but deliberately does not clear an automatic-scheduling outage. Use a silent isolated check for further failure tests; user-facing delivery was validated during setup.
+5. Confirm successive timer-triggered **auto** runs complete and both checks become healthy. A manual **poll** checks tickets but deliberately does not clear an automatic-scheduling outage. Use a silent isolated check for further failure tests; user-facing delivery was validated during setup.
 
 Secrets used: `NTFY_TOPIC`, `NTFY_TOKEN`, `ALERT_EMAIL`, `HC_API_KEY`, `HC_FEED_URL`, `HC_PAGE_URL`. The dedicated Healthchecks project's API key permits automatic pause at completion.
 
@@ -60,8 +68,9 @@ Open **[Run workflow](https://github.com/karthiktadepalli1/nyff-watch/actions/wo
 | `report` | Refresh the release timing report |
 | `probe` | Test live feed/page access without updating observations or sending alerts |
 | `stop` | Record success, pause health checks, and stop scheduling |
+| `auto` | Internal operation dispatched by the automatic timer |
 
-After purchasing one ticket, use **stop**. If pausing a health check fails, the stopped state is retained and subsequent runs retry cleanup before disabling the workflow.
+After purchasing one ticket, use **stop**. If pausing a health check fails, the stopped state is retained and subsequent runs retry cleanup before disabling both workflows.
 
 ## Rush and in-person action
 
@@ -73,6 +82,6 @@ Rush alerts indicate **in-person** admission at the venue, currently $15, subjec
 
 `python3 -m unittest discover -s tests -v` runs offline tests for opening/reopening, rush parsing and deduplication, generic-text false positives, source failures, expiry, history batches, independent notification retries, email budgeting, secret exclusion, health recovery, and shutdown order. `python3 watch.py probe --data /tmp/nyff-probe` checks real access.
 
-Runtime: Python 3.11+, standard library. Workflow-level concurrency serializes all controls. The data branch is checked out after the execution slot is acquired. Observations and pending alerts are committed before notification delivery; receipts are committed after delivery. GitHub's built-in token writes observations and disables the workflow at completion.
+Runtime: Python 3.11+, standard library. Workflow-level concurrency serializes all controls. The data branch is checked out after the execution slot is acquired. Observations and pending alerts are committed before notification delivery; receipts are committed after delivery. GitHub's built-in token writes observations and disables both workflows at completion.
 
-Before declaring full operation, check several scheduled runs, confirm phone/email delivery with the Mac asleep, verify independent missed-check and recovery notifications, and review the first 24 hours in the timing report. The first genuine rush label still needs validation when NYFF publishes it.
+Before declaring full operation, check successive automatic runs, confirm phone/email delivery with the Mac asleep, verify independent missed-check and recovery notifications, and review the first 24 hours in the timing report. The first genuine rush label still needs validation when NYFF publishes it.

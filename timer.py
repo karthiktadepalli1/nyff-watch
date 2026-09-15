@@ -30,16 +30,11 @@ def run_timer(env, ensure=False):
     state = json.loads(base64.b64decode(content["content"]))
     if state.get("version") != 1:
         raise ValueError("Invalid observation state")
-    if state.get("stopped"):
+    if state.get("stopped") and state.get("shutdown_complete"):
         print("Ticket monitoring is complete; timer chain ended.")
         return
     expiry = max(date(state["screenings"].get(pid, {}).get("start", start))
                  for pid, (start, _) in TARGETS.items())
-    if now >= expiry:
-        # 'auto' uses the normal expiry path and records the correct stop reason.
-        api("actions/workflows/watch.yml/dispatches", {"ref": "main", "inputs": {"operation": "auto"}})
-        print("Final screening started; requested shutdown and ended timer chain.")
-        return
     if ensure:
         runs = api("actions/workflows/timer.yml/runs?per_page=10")["workflow_runs"]
         if any(run["status"] != "completed" for run in runs):
@@ -50,7 +45,10 @@ def run_timer(env, ensure=False):
         return
     try:
         api("actions/workflows/watch.yml/dispatches", {"ref": "main", "inputs": {"operation": "auto"}})
-        print("Queued an automatic check of all four screenings.")
+        if state.get("stopped") or now >= expiry:
+            print("Queued shutdown cleanup; retries continue until cleanup succeeds.")
+        else:
+            print("Queued an automatic check of all four screenings.")
     finally:
         # A failed ticket-check dispatch must not permanently break the clock.
         api("actions/workflows/timer.yml/dispatches", {"ref": "main"})
