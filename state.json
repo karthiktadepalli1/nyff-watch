@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 21:41:44 GMT",
+        "date": "Tue, 15 Sep 2026 21:46:56 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,15 +13,15 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T21:41:45+00:00",
-      "last_success": "2026-09-15T21:41:45+00:00"
+      "last_attempt": "2026-09-15T21:46:56+00:00",
+      "last_success": "2026-09-15T21:46:56+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 21:41:45 GMT",
+        "date": "Tue, 15 Sep 2026 21:46:56 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T21:41:45+00:00",
-      "last_success": "2026-09-15T21:41:45+00:00"
+      "last_attempt": "2026-09-15T21:46:56+00:00",
+      "last_success": "2026-09-15T21:46:56+00:00"
     }
   },
   "configuration": {
@@ -43,8 +43,8 @@
     "attempts": 3,
     "day": "2026-09-15"
   },
-  "last_automatic_poll": "2026-09-15T21:41:45+00:00",
-  "last_poll": "2026-09-15T21:41:45+00:00",
+  "last_automatic_poll": "2026-09-15T21:46:56+00:00",
+  "last_poll": "2026-09-15T21:46:56+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -98,19 +98,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-15T21:41:45+00:00",
+      "observed_at": "2026-09-15T21:46:56+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-15T21:41:45+00:00",
+      "observed_at": "2026-09-15T21:46:56+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-15T21:41:45+00:00",
+      "observed_at": "2026-09-15T21:46:56+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-15T21:41:45+00:00",
+      "observed_at": "2026-09-15T21:46:56+00:00",
       "rush": false
     }
   },
@@ -509,6 +509,13 @@
       "feed": true,
       "page": true,
       "run_id": "35027041621",
+      "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-15T21:46:56+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35027511391",
       "trigger": "automatic"
     }
   ],
@@ -1593,7 +1600,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84239": {
-      "available": true,
+      "available": false,
       "film": "A Statement",
       "id": "84239",
       "no_standby": false,
@@ -1601,7 +1608,7 @@
       "rush_text": "",
       "slug": "a-statement",
       "start": "2026-10-04T21:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84151/84239",
       "venue": "Walter Reade Theater"
     },
@@ -4466,7 +4473,7 @@
       "venue": "AMC Bay Plaza Cinema"
     },
     "84764": {
-      "available": true,
+      "available": false,
       "film": "La Gradiva",
       "id": "84764",
       "no_standby": false,
@@ -4474,7 +4481,7 @@
       "rush_text": "",
       "slug": "la-gradiva",
       "start": "2026-10-09T21:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84123/84764",
       "venue": "Walter Reade Theater"
     }
