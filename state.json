@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 22:54:35 GMT",
+        "date": "Tue, 15 Sep 2026 23:00:19 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,15 +13,15 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T22:54:36+00:00",
-      "last_success": "2026-09-15T22:54:36+00:00"
+      "last_attempt": "2026-09-15T23:00:19+00:00",
+      "last_success": "2026-09-15T23:00:19+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 22:54:36 GMT",
+        "date": "Tue, 15 Sep 2026 23:00:19 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T22:54:36+00:00",
-      "last_success": "2026-09-15T22:54:36+00:00"
+      "last_attempt": "2026-09-15T23:00:19+00:00",
+      "last_success": "2026-09-15T23:00:19+00:00"
     }
   },
   "configuration": {
@@ -43,8 +43,8 @@
     "attempts": 3,
     "day": "2026-09-15"
   },
-  "last_automatic_poll": "2026-09-15T22:54:36+00:00",
-  "last_poll": "2026-09-15T22:54:36+00:00",
+  "last_automatic_poll": "2026-09-15T23:00:19+00:00",
+  "last_poll": "2026-09-15T23:00:19+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -98,19 +98,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-15T22:54:36+00:00",
+      "observed_at": "2026-09-15T23:00:19+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-15T22:54:36+00:00",
+      "observed_at": "2026-09-15T23:00:19+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-15T22:54:36+00:00",
+      "observed_at": "2026-09-15T23:00:19+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-15T22:54:36+00:00",
+      "observed_at": "2026-09-15T23:00:19+00:00",
       "rush": false
     }
   },
@@ -608,6 +608,13 @@
       "page": true,
       "run_id": "35033218912",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-15T23:00:19+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35033653987",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -1002,7 +1009,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84185": {
-      "available": true,
+      "available": false,
       "film": "La Gradiva",
       "id": "84185",
       "no_standby": false,
@@ -1010,7 +1017,7 @@
       "rush_text": "",
       "slug": "la-gradiva",
       "start": "2026-09-27T17:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84123/84185",
       "venue": "Walter Reade Theater"
     },
@@ -1587,7 +1594,7 @@
       "venue": "Walter Reade Theater"
     },
     "84231": {
-      "available": true,
+      "available": false,
       "film": "Making Marie Antoinette",
       "id": "84231",
       "no_standby": false,
@@ -1595,7 +1602,7 @@
       "rush_text": "",
       "slug": "making-marie-antoinette",
       "start": "2026-09-30T15:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84148/84231",
       "venue": "Walter Reade Theater"
     },
@@ -3147,7 +3154,7 @@
       "venue": "Alice Tully Hall"
     },
     "84394": {
-      "available": true,
+      "available": false,
       "film": "The Dreamed Adventure",
       "id": "84394",
       "no_standby": false,
@@ -3155,7 +3162,7 @@
       "rush_text": "",
       "slug": "the-dreamed-adventure",
       "start": "2026-10-05T20:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84119/84394",
       "venue": "Alice Tully Hall"
     },
@@ -3316,7 +3323,7 @@
       "venue": "Alice Tully Hall"
     },
     "84408": {
-      "available": true,
+      "available": false,
       "film": "Paper Tiger",
       "id": "84408",
       "no_standby": false,
@@ -3324,7 +3331,7 @@
       "rush_text": "",
       "slug": "paper-tiger",
       "start": "2026-09-25T21:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84135/84408",
       "venue": "Alice Tully Hall"
     },
