@@ -20,7 +20,9 @@ class TimerTests(unittest.TestCase):
         self.env = {"GH_TOKEN": "unit-test-token", "GITHUB_RUN_ID": "123"}
 
     def request(self, url, *, payload=None, **kwargs):
-        path = url.split(w.REPOSITORY + "/", 1)[1]
+        suffix = url.split(w.REPOSITORY, 1)[1]
+        self.assertNotEqual(suffix, "/", "GitHub repository endpoint must not have a trailing slash")
+        path = suffix.removeprefix("/")
         if path.endswith("/dispatches"):
             self.dispatched.append((path, payload))
             if self.fail_check and "watch.yml" in path:

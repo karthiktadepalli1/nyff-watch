@@ -13,8 +13,12 @@ def run_timer(env, ensure=False):
                "Accept": "application/vnd.github+json", "Cache-Control": "no-cache"}
 
     def api(path, payload=None):
-        body, _ = request(f"https://api.github.com/repos/{REPOSITORY}/" + path,
-                          headers=headers, payload=payload, timeout=10, retries=2)
+        url = f"https://api.github.com/repos/{REPOSITORY}" + ("/" + path if path else "")
+        try:
+            body, _ = request(url, headers=headers, payload=payload, timeout=10, retries=2)
+        except FetchError as exc:
+            # request() deliberately excludes credentials and response bodies.
+            raise FetchError(f"{path or 'repository'}: {exc}") from None
         return json.loads(body) if body else None
 
     now = utcnow()
@@ -58,6 +62,9 @@ def run_timer(env, ensure=False):
 if __name__ == "__main__":
     try:
         run_timer(os.environ, ensure="--ensure" in sys.argv[1:])
-    except (FetchError, ValueError, KeyError) as exc:
+    except FetchError as exc:
+        print(f"::error::Timer API request failed: {exc}")
+        sys.exit(1)
+    except (ValueError, KeyError) as exc:
         print(f"::error::Timer failed ({type(exc).__name__}); check the wait environment and workflow permissions.")
         sys.exit(1)
