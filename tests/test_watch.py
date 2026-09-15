@@ -85,6 +85,17 @@ class ParsingTests(unittest.TestCase):
 
 
 class ObservationTests(unittest.TestCase):
+    def test_any_of_the_four_screenings_can_trigger_a_ticket_alert(self):
+        for pid in w.TARGETS:
+            with self.subTest(performance_id=pid):
+                state, data = w.initial_state(), records()
+                observe(state, data)
+                data[pid]["status"] = "available"
+                observe(state, data, now=NOW + timedelta(minutes=5))
+                alerts = [a for a in state["outbox"] if a["kind"] == "ticket"]
+                self.assertEqual([a["performance_id"] for a in alerts], [pid])
+                self.assertEqual(alerts[0]["click"], data[pid]["url"])
+
     def test_first_opening_repeat_and_reopening(self):
         state, data = w.initial_state(), records()
         data["84274"]["status"] = "limited"

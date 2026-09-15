@@ -204,7 +204,7 @@ def parse_page(body, expected):
 def add_alert(state, kind, record, now, message=None, sources=None):
     pid = record["id"]
     title = {"ticket": "Possible ticket release—check now", "rush": "NYFF rush tickets announced",
-             "update": "NYFF screening update", "test": "TEST — NYFF ticket monitor"}[kind]
+             "update": "NYFF screening update", "test": "TEST — NYFF monitor: all four screenings"}[kind]
     common = f"{record['film']}\n{readable(record['start'])} · {record['venue']}\nObserved {readable(stamp(now))}."
     if kind == "rush":
         start = date(record["start"])
@@ -215,11 +215,14 @@ def add_alert(state, kind, record, now, message=None, sources=None):
     elif kind == "ticket":
         message = "The official feed shows tickets available or limited. Open the purchase link to check for one seat."
     elif kind == "test":
-        message = "Delivery test only. This message does not indicate an actual ticket opening."
+        common = "All of a Sudden — monitoring all four screenings:\n" + "\n".join(
+            f"{readable(state['screenings'].get(target, fallback_record(target))['start'])} · "
+            f"{state['screenings'].get(target, fallback_record(target))['venue']}" for target in TARGETS)
+        message = "Delivery test. You will be alerted if any of these screenings opens or announces rush tickets."
     event_id = hashlib.sha256(f"{kind}:{pid}:{stamp(now)}:{len(state['outbox'])}".encode()).hexdigest()[:24]
-    state["outbox"].append({"id": event_id, "kind": kind, "performance_id": pid,
+    state["outbox"].append({"id": event_id, "kind": kind, "performance_id": None if kind == "test" else pid,
                             "title": title, "message": common + "\n" + (message or ""),
-                            "click": record["url"], "created": stamp(now),
+                            "click": PAGE_URL if kind == "test" else record["url"], "created": stamp(now),
                             "expires": stamp(min(date(record["start"]), now + timedelta(hours=6))) if kind != "test" else stamp(now + timedelta(hours=1)),
                             "sources": sources or [], "push": "pending", "email": "pending",
                             "priority": 5 if kind in {"ticket", "rush"} else 3})
