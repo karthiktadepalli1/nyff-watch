@@ -2,26 +2,10 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "17",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 23:10:41 GMT",
-        "etag": null,
-        "last-modified": null,
-        "x-vercel-cache": "HIT"
-      },
-      "error": null,
-      "failures": 0,
-      "health_signal": "up",
-      "last_attempt": "2026-09-15T23:10:44+00:00",
-      "last_success": "2026-09-15T23:10:44+00:00"
-    },
-    "page": {
-      "cache": {
-        "age": "0",
-        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 23:10:44 GMT",
+        "date": "Tue, 15 Sep 2026 23:15:54 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +13,24 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T23:10:44+00:00",
-      "last_success": "2026-09-15T23:10:44+00:00"
+      "last_attempt": "2026-09-15T23:15:54+00:00",
+      "last_success": "2026-09-15T23:15:54+00:00"
+    },
+    "page": {
+      "cache": {
+        "age": "0",
+        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "date": "Tue, 15 Sep 2026 23:15:53 GMT",
+        "etag": null,
+        "last-modified": null,
+        "x-vercel-cache": "MISS"
+      },
+      "error": null,
+      "failures": 0,
+      "health_signal": "up",
+      "last_attempt": "2026-09-15T23:15:54+00:00",
+      "last_success": "2026-09-15T23:15:54+00:00"
     }
   },
   "configuration": {
@@ -43,8 +43,8 @@
     "attempts": 3,
     "day": "2026-09-15"
   },
-  "last_automatic_poll": "2026-09-15T23:10:44+00:00",
-  "last_poll": "2026-09-15T23:10:44+00:00",
+  "last_automatic_poll": "2026-09-15T23:15:54+00:00",
+  "last_poll": "2026-09-15T23:15:54+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -98,19 +98,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-15T23:10:44+00:00",
+      "observed_at": "2026-09-15T23:15:54+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-15T23:10:44+00:00",
+      "observed_at": "2026-09-15T23:15:54+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-15T23:10:44+00:00",
+      "observed_at": "2026-09-15T23:15:54+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-15T23:10:44+00:00",
+      "observed_at": "2026-09-15T23:15:54+00:00",
       "rush": false
     }
   },
@@ -628,6 +628,13 @@
       "feed": true,
       "page": true,
       "run_id": "35034461470",
+      "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-15T23:15:54+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35034861139",
       "trigger": "automatic"
     }
   ],
@@ -3168,7 +3175,7 @@
       "venue": "Alice Tully Hall"
     },
     "84394": {
-      "available": false,
+      "available": true,
       "film": "The Dreamed Adventure",
       "id": "84394",
       "no_standby": false,
@@ -3176,7 +3183,7 @@
       "rush_text": "",
       "slug": "the-dreamed-adventure",
       "start": "2026-10-05T20:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84119/84394",
       "venue": "Alice Tully Hall"
     },
@@ -3415,7 +3422,7 @@
       "venue": "Alice Tully Hall"
     },
     "84414": {
-      "available": false,
+      "available": true,
       "film": "The Unknown",
       "id": "84414",
       "no_standby": false,
@@ -3423,7 +3430,7 @@
       "rush_text": "",
       "slug": "the-unknown",
       "start": "2026-09-28T20:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84139/84414",
       "venue": "Alice Tully Hall"
     },
@@ -3519,7 +3526,7 @@
       "venue": "Alice Tully Hall"
     },
     "84422": {
-      "available": false,
+      "available": true,
       "film": "Godzilla Minus Zero",
       "id": "84422",
       "no_standby": false,
@@ -3527,7 +3534,7 @@
       "rush_text": "",
       "slug": "godzilla-minus-zero",
       "start": "2026-09-27T14:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84145/84422",
       "venue": "Alice Tully Hall"
     },
