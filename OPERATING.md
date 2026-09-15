@@ -6,7 +6,7 @@
 
 - **Possible ticket release:** open its purchase link promptly and look for one seat. The festival's availability indicator can lag checkout.
 - **RUSH:** follow the published in-person sales window. Current guidance: $15, sales one hour before showtime; aim to arrive 90 minutes before.
-- **Health alert:** open [monitor status](https://github.com/karthiktadepalli1/nyff-watch/actions/workflows/watch.yml). A source may be inaccessible, or scheduled checks may have stopped. Healthchecks sends a recovery message when checking resumes.
+- **Health alert:** open [monitor status](https://github.com/karthiktadepalli1/nyff-watch/actions/workflows/watch.yml). One combined alert covers source failures and stopped scheduling. Healthchecks sends one recovery when successful scheduled checking resumes. Manual checks do not announce scheduler recovery.
 
 | Screening (Eastern) | Venue | Buy one ticket |
 |---|---|---|

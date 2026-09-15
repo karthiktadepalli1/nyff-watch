@@ -44,9 +44,10 @@ def configure_health():
         found = [check for check in existing if check.get("slug") == slug]
         if len(found) > 1:
             raise ValueError("Duplicate NYFF health-check slugs; resolve in Healthchecks before continuing")
-        body = {"name": "NYFF " + component, "slug": slug, "tags": "nyff2026",
+        body = {"name": "NYFF monitor" if component == "feed" else "NYFF page (diagnostic)", "slug": slug, "tags": "nyff2026",
                 "desc": "Five-minute NYFF monitor. Explicit failure after three failed polls; silence alert after 30 minutes.",
-                "timeout": 300, "grace": 1500, "channels": email[0]["id"] + "," + phone[0]["id"],
+                "timeout": 300, "grace": 1500,
+                "channels": email[0]["id"] + "," + phone[0]["id"] if component == "feed" else "",
                 "manual_resume": False}
         url = "https://healthchecks.io/api/v3/checks/" + (found[0]["uuid"] if found else "")
         created = json.loads(request(url, payload=body, headers=headers)[0])

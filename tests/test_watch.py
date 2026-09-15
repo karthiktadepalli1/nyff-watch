@@ -293,6 +293,35 @@ class HealthAndStopTests(unittest.TestCase):
             w.send_health(state, self.env)
         self.assertTrue(request.call_args_list[0].args[0].endswith('/fail'))
 
+    def test_page_failure_triggers_aggregate_health_and_recovery_waits_for_both(self):
+        state = w.initial_state()
+        observe(state)
+        state['components']['page']['failures'] = 3
+        with patch.object(w, 'request', return_value=('', {})) as request:
+            w.send_health(state, self.env)
+            self.assertEqual(request.call_args_list[0].args[0], self.env['HC_FEED_URL'] + '/fail')
+            request.reset_mock()
+            # A changing source of failure must not generate a false recovery.
+            state['components']['page']['failures'] = 0
+            state['components']['feed']['failures'] = 3
+            w.send_health(state, self.env)
+            self.assertNotIn(self.env['HC_FEED_URL'], [c.args[0] for c in request.call_args_list])
+            request.reset_mock()
+            state['components']['feed']['failures'] = 0
+            w.send_health(state, self.env)
+            self.assertEqual(request.call_args_list[0].args[0], self.env['HC_FEED_URL'])
+
+    def test_manual_cloud_poll_does_not_signal_scheduler_recovery(self):
+        with tempfile.TemporaryDirectory() as folder:
+            def fetch(url, **kwargs):
+                return (json.dumps(feed()) if url == w.FEED_URL else page(), {})
+            with patch('sys.argv', ['watch.py', 'poll', '--data', folder]), \
+                 patch.dict(os.environ, {'GITHUB_ACTIONS': 'true', 'GITHUB_EVENT_NAME': 'workflow_dispatch'}, clear=True), \
+                 patch.object(w, 'utcnow', return_value=NOW), patch.object(w, 'request', side_effect=fetch), \
+                 patch.object(w, 'send_health') as health, patch('builtins.print'):
+                self.assertEqual(w.main(), 0)
+                health.assert_not_called()
+
     def test_network_errors_retry_twice_and_redact_secret_path(self):
         secret_url = 'https://hc-ping.com/private-path'
         error = urllib.error.HTTPError(secret_url, 503, 'busy', {}, None)

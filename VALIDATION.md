@@ -1,5 +1,11 @@
 # Deployment checks — September 15, 2026
 
+## Health-email investigation
+
+At 4:05 p.m. Eastern, GitHub still had no scheduled runs. The last successful manual poll was at 2:48 p.m. Both original health checks therefore alerted for the same scheduler outage after 30 minutes. Setup had also generated failure/recovery messages from an isolated test check, which is paused. Ongoing reminders were already off.
+
+Health notification routing now uses one combined monitor check. The page check remains a silent diagnostic. Periodic account reports are off, and manual cloud checks no longer send scheduler-recovery check-ins. A real scheduled run is still required to validate automatic operation.
+
 ## Verified
 
 - **Cloud access:** GitHub successfully parsed 305 festival screenings and all four target screening controls. All four targets were standby, with no observed RUSH designation. [Configured cloud check](https://github.com/karthiktadepalli1/nyff-watch/actions/runs/35008600552).

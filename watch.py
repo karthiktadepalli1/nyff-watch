@@ -417,7 +417,10 @@ def send_health(state, env):
         component = state["components"].get(name, {})
         failures = component.get("failures", 0)
         if name == "feed":
-            failures = max(failures, state.get("notification_failures", 0))
+            # This check is the single user-facing health alert. The page check
+            # remains a silent diagnostic, avoiding two emails for one outage.
+            failures = max(failures, state["components"].get("page", {}).get("failures", 0),
+                           state.get("notification_failures", 0))
         if failures >= 3:
             if component.get("health_signal") == "down":
                 continue
@@ -427,7 +430,12 @@ def send_health(state, env):
         else:
             suffix, signal = "", "up"
         try:
-            request(url + suffix, payload=f"NYFF {name} processing: {signal}".encode(), timeout=8, retries=0)
+            label = "monitor" if name == "feed" else "page diagnostic"
+            detail = (f"NYFF {label}: {signal}. "
+                      f"Feed failures: {state['components'].get('feed', {}).get('failures', 0)}; "
+                      f"page failures: {state['components'].get('page', {}).get('failures', 0)}; "
+                      f"delivery failures: {state.get('notification_failures', 0)}.")
+            request(url + suffix, payload=detail.encode(), timeout=8, retries=0)
             component["health_signal"] = signal
         except FetchError:
             print(f"::warning::Healthchecks {name} check-in failed")
@@ -554,7 +562,10 @@ def main():
     events = observe(state, feed, page, errors, metadata, now)
     store.save(state, events)  # Durable outbox before any notification side effect.
     deliver(state, store, now, env)
-    send_health(state, env)
+    # A manual check proves source access, not recovery of the automatic timer.
+    # Only scheduled cloud runs may clear a scheduler outage.
+    if env.get("GITHUB_ACTIONS") != "true" or env.get("GITHUB_EVENT_NAME") == "schedule":
+        send_health(state, env)
     store.save(state)
     for key, value in state["configuration"].items():
         if not value:
