@@ -1,0 +1,12 @@
+{
+  "components": {},
+  "configuration": {},
+  "email_budget": {},
+  "notification_failures": 0,
+  "outbox": [],
+  "page_rush": {},
+  "runs": [],
+  "screenings": {},
+  "stopped": false,
+  "version": 1
+}
