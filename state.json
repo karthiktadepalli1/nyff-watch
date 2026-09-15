@@ -2,26 +2,10 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "48",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 23:21:09 GMT",
-        "etag": null,
-        "last-modified": null,
-        "x-vercel-cache": "HIT"
-      },
-      "error": null,
-      "failures": 0,
-      "health_signal": "up",
-      "last_attempt": "2026-09-15T23:21:10+00:00",
-      "last_success": "2026-09-15T23:21:10+00:00"
-    },
-    "page": {
-      "cache": {
-        "age": "0",
-        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 23:21:10 GMT",
+        "date": "Tue, 15 Sep 2026 23:26:25 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +13,24 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-15T23:21:10+00:00",
-      "last_success": "2026-09-15T23:21:10+00:00"
+      "last_attempt": "2026-09-15T23:26:25+00:00",
+      "last_success": "2026-09-15T23:26:25+00:00"
+    },
+    "page": {
+      "cache": {
+        "age": "0",
+        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "date": "Tue, 15 Sep 2026 23:26:23 GMT",
+        "etag": null,
+        "last-modified": null,
+        "x-vercel-cache": "MISS"
+      },
+      "error": null,
+      "failures": 0,
+      "health_signal": "up",
+      "last_attempt": "2026-09-15T23:26:25+00:00",
+      "last_success": "2026-09-15T23:26:25+00:00"
     }
   },
   "configuration": {
@@ -43,8 +43,8 @@
     "attempts": 3,
     "day": "2026-09-15"
   },
-  "last_automatic_poll": "2026-09-15T23:21:10+00:00",
-  "last_poll": "2026-09-15T23:21:10+00:00",
+  "last_automatic_poll": "2026-09-15T23:26:25+00:00",
+  "last_poll": "2026-09-15T23:26:25+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -98,19 +98,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-15T23:21:10+00:00",
+      "observed_at": "2026-09-15T23:26:25+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-15T23:21:10+00:00",
+      "observed_at": "2026-09-15T23:26:25+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-15T23:21:10+00:00",
+      "observed_at": "2026-09-15T23:26:25+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-15T23:21:10+00:00",
+      "observed_at": "2026-09-15T23:26:25+00:00",
       "rush": false
     }
   },
@@ -642,6 +642,13 @@
       "feed": true,
       "page": true,
       "run_id": "35035253037",
+      "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-15T23:26:25+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35035649233",
       "trigger": "automatic"
     }
   ],
@@ -3533,7 +3540,7 @@
       "venue": "Alice Tully Hall"
     },
     "84422": {
-      "available": true,
+      "available": false,
       "film": "Godzilla Minus Zero",
       "id": "84422",
       "no_standby": false,
@@ -3541,7 +3548,7 @@
       "rush_text": "",
       "slug": "godzilla-minus-zero",
       "start": "2026-09-27T14:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84145/84422",
       "venue": "Alice Tully Hall"
     },
@@ -3637,7 +3644,7 @@
       "venue": "Alice Tully Hall"
     },
     "84458": {
-      "available": true,
+      "available": false,
       "film": "Behemoth!",
       "id": "84458",
       "no_standby": false,
@@ -3645,7 +3652,7 @@
       "rush_text": "",
       "slug": "behemoth",
       "start": "2026-10-03T12:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84111/84458",
       "venue": "Alice Tully Hall"
     },
