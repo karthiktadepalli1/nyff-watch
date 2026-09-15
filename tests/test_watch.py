@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 import tempfile
 import unittest
+import urllib.error
 from datetime import timedelta
 from unittest.mock import patch
 
@@ -250,6 +251,40 @@ class HealthAndStopTests(unittest.TestCase):
                     w.stop_monitor(state, store, NOW, self.env, "test")
             self.assertTrue(store.load()["stopped"])
             self.assertEqual(request.call_count, 1)
+
+    def test_automatic_expiry_calls_stop_at_last_showtime(self):
+        with tempfile.TemporaryDirectory() as folder:
+            with patch('sys.argv', ['watch.py', 'poll', '--data', folder]), \
+                 patch.object(w, 'utcnow', return_value=w.date('2026-10-09T16:30:00Z')), \
+                 patch.object(w, 'stop_monitor') as stop, patch.object(w, 'request') as request:
+                self.assertEqual(w.main(), 0)
+                self.assertEqual(stop.call_args.args[-1], 'final screening started')
+                request.assert_not_called()
+
+    def test_notification_failure_sends_independent_health_failure(self):
+        state = w.initial_state()
+        observe(state)
+        state['notification_failures'] = 3
+        with patch.object(w, 'request', return_value=('', {})) as request:
+            w.send_health(state, self.env)
+        self.assertTrue(request.call_args_list[0].args[0].endswith('/fail'))
+
+    def test_network_errors_retry_twice_and_redact_secret_path(self):
+        secret_url = 'https://hc-ping.com/private-path'
+        error = urllib.error.HTTPError(secret_url, 503, 'busy', {}, None)
+        with patch.object(w.urllib.request, 'urlopen', side_effect=error) as fetch, \
+             patch.object(w.time, 'sleep'):
+            with self.assertRaises(w.FetchError) as raised:
+                w.request(secret_url)
+        self.assertEqual(fetch.call_count, 3)
+        self.assertNotIn('private-path', str(raised.exception))
+
+    def test_cloud_access_denial_is_not_retried_as_transient(self):
+        error = urllib.error.HTTPError(w.PAGE_URL, 403, 'blocked', {}, None)
+        with patch.object(w.urllib.request, 'urlopen', side_effect=error) as fetch:
+            with self.assertRaises(w.FetchError):
+                w.request(w.PAGE_URL)
+        self.assertEqual(fetch.call_count, 1)
 
 
 if __name__ == "__main__":

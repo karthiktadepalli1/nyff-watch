@@ -95,6 +95,7 @@ def request(url, *, payload=None, headers=None, method=None, timeout=15, retries
         except urllib.error.HTTPError as exc:
             transient = exc.code in {408, 429} or exc.code >= 500
             error = f"HTTP {exc.code} from {host}"
+            exc.close()
         except (urllib.error.URLError, TimeoutError, OSError):
             transient, error = True, f"Network error contacting {host}"
         if not transient or attempt == retries:
@@ -332,7 +333,7 @@ class Store:
             def git(*args):
                 return subprocess.run(["git", "-C", str(self.folder), *args], check=True, capture_output=True, text=True)
             git("add", "state.json")
-            for filename in ("changes.jsonl", "report.md"):
+            for filename in ("changes.jsonl", "report.md", "first24hours.md"):
                 if (self.folder / filename).exists():
                     git("add", filename)
             if git("diff", "--cached", "--name-only").stdout:
@@ -536,6 +537,7 @@ def main():
             except (FetchError, ValueError, TypeError, KeyError, AttributeError) as exc:
                 errors[name] = str(exc) if isinstance(exc, FetchError) else f"Invalid {name} content ({type(exc).__name__})"
                 print(f"::warning::{name}: {errors[name]}")
+    now = utcnow()
     if args.command == "probe":
         print(json.dumps({"feed_ok": feed is not None, "page_ok": page is not None,
                           "screenings": len(feed or {}), "targets": {pid: (feed or {}).get(pid) for pid in TARGETS},
@@ -561,6 +563,12 @@ def main():
         all_events = [json.loads(line) for line in history.read_text().splitlines()] if history.exists() else []
         (store.folder / "report.md").write_text(report(state, all_events))
         state["report_day"] = report_day
+        store.save(state)
+    if not state.get("first_day_review_at") and now >= date(state["started_at"]) + timedelta(hours=24):
+        history = store.folder / "changes.jsonl"
+        all_events = [json.loads(line) for line in history.read_text().splitlines()] if history.exists() else []
+        (store.folder / "first24hours.md").write_text(report(state, all_events))
+        state["first_day_review_at"] = stamp(now)
         store.save(state)
     return 0 if feed is not None and page is not None and not state["notification_failures"] else 1
 
