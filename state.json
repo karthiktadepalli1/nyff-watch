@@ -12,6 +12,7 @@
       },
       "error": null,
       "failures": 0,
+      "health_signal": "up",
       "last_attempt": "2026-09-15T18:37:24+00:00",
       "last_success": "2026-09-15T18:37:24+00:00"
     },
@@ -27,6 +28,7 @@
       },
       "error": null,
       "failures": 0,
+      "health_signal": "up",
       "last_attempt": "2026-09-15T18:37:24+00:00",
       "last_success": "2026-09-15T18:37:24+00:00"
     }
