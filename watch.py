@@ -358,7 +358,8 @@ def notify(alert, channel, env):
 
 def deliver(state, store, now, env, sender=notify):
     failed = False
-    day = now.astimezone(ET).date().isoformat()
+    # ntfy resets its free email allowance at midnight UTC.
+    day = now.astimezone(timezone.utc).date().isoformat()
     if state["email_budget"].get("day") != day:
         state["email_budget"] = {"day": day, "attempts": 0}
     for alert in state["outbox"]:

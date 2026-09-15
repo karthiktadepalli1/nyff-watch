@@ -1,6 +1,6 @@
 # NYFF ticket monitor
 
-Watch for one ticket to *All of a Sudden* at NYFF64. Checks run in GitHub every five minutes, at minutes 2, 7, 12, and so on. Phone pushes and email copies require the account setup below.
+Watch for one ticket to *All of a Sudden* at NYFF64. Checks are scheduled in GitHub every five minutes, at minutes 2, 7, 12, and so on. Phone push, email, and independent health alerts are configured. Complete the phone subscription and delivery checks before relying on alerts.
 
 **[Monitor status and controls](https://github.com/karthiktadepalli1/nyff-watch/actions/workflows/watch.yml)** · **[Release history](https://github.com/karthiktadepalli1/nyff-watch/tree/data)** · **[Timing report](https://github.com/karthiktadepalli1/nyff-watch/blob/data/report.md)**
 
@@ -35,13 +35,13 @@ Standard GitHub runners in this public repository, ntfy's free service, and Heal
 4. Subscribe only to the displayed topic. Email copies use a separate topic to prevent email retries creating duplicate phone pushes.
 5. In **Monitor status and controls → Run workflow**, choose **test-alert**. Confirm both the phone push and email arrive, then test with the Mac asleep. The test is clearly labeled.
 
-The monitor budgets at most five email attempts per Eastern calendar day. ntfy's own limits remain authoritative. Email failures are retried separately from successful pushes, while the opportunity remains relevant. Pending opportunities expire when they close, pass showtime, or become six hours old. A crash immediately after external delivery and before the success receipt is saved can produce a duplicate; completed deliveries are otherwise deduplicated.
+The monitor budgets at most five email attempts per UTC calendar day, matching ntfy's reset time. ntfy's own limits remain authoritative. Email failures are retried separately from successful pushes, while the opportunity remains relevant. Pending opportunities expire when they close, pass showtime, or become six hours old. A crash immediately after external delivery and before the success receipt is saved can produce a duplicate; completed deliveries are otherwise deduplicated.
 
 ### 2. Independent failure alerts
 
 1. Create a free [Healthchecks.io](https://healthchecks.io/) account and a dedicated project named **NYFF**.
 2. Add a verified email integration named **NYFF email**. Enable failure and recovery messages.
-3. Add a webhook integration named **NYFF phone**. For down notifications use URL `https://ntfy.sh/YOUR_TOPIC`, HTTP POST, body `NYFF monitor needs attention. Open the GitHub run page.` For recovery use the same URL, POST, and body `NYFF monitor has recovered.` Set `Title: NYFF monitor health` and `Priority: high` for failures; use normal priority for recovery. The random topic permits webhook publishing; keep it inside Healthchecks settings. Test this integration from Healthchecks.
+3. Add an **ntfy** integration named **NYFF phone**, using the generated topic, server `https://ntfy.sh`, and the monitor's ntfy access token. Enable both down and up notifications. This sends health alerts independently of GitHub. Keep the topic and token inside Healthchecks settings.
 4. Create a read-write API key in the NYFF project's settings. Run `python3 configure.py health` and enter it at the hidden prompt. This creates/configures the feed and page checks, attaches both integrations, and saves the required secrets.
 5. Run **poll** from GitHub and confirm both checks become healthy. For a missed-check test, temporarily disable the workflow, confirm Healthchecks alerts after 30 minutes, re-enable it, run **poll**, and confirm recovery. This test should be performed before relying on live alerts.
 

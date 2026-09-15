@@ -182,7 +182,7 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(calls, ["push", "email"])
 
     def test_email_budget_leaves_push_working(self):
-        self.state["email_budget"] = {"day": NOW.astimezone(w.ET).date().isoformat(), "attempts": 5}
+        self.state["email_budget"] = {"day": NOW.date().isoformat(), "attempts": 5}
         calls = []
         w.deliver(self.state, self.store, NOW, self.env, lambda a, c, e: calls.append(c))
         self.assertEqual(calls, ["push"])
@@ -194,6 +194,19 @@ class DeliveryTests(unittest.TestCase):
         w.deliver(self.state, self.store, NOW, self.env, lambda a, c, e: calls.append(c))
         self.assertEqual(calls, [])
         self.assertEqual(self.state["outbox"][0]["push"], "expired")
+
+    def test_email_allowance_resets_at_utc_midnight(self):
+        before = w.date("2026-09-15T23:59:00Z")
+        self.state["outbox"] = []
+        w.add_alert(self.state, "test", self.state["screenings"]["84274"], before)
+        self.state["email_budget"] = {"day": "2026-09-15", "attempts": 5}
+        calls = []
+        w.deliver(self.state, self.store, before, self.env, lambda a, c, e: calls.append(c))
+        self.assertEqual(calls, ["push"])
+        w.deliver(self.state, self.store, before + timedelta(minutes=2), self.env,
+                  lambda a, c, e: calls.append(c))
+        self.assertEqual(calls, ["push", "email"])
+        self.assertEqual(self.state["email_budget"]["attempts"], 1)
 
     def test_email_secondary_topic_avoids_duplicate_phone_push(self):
         with patch.object(w, "request") as request:
