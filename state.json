@@ -2,33 +2,33 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "268",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 18:14:51 GMT",
-        "etag": null,
-        "last-modified": null,
-        "x-vercel-cache": "HIT"
-      },
-      "error": null,
-      "failures": 0,
-      "last_attempt": "2026-09-15T18:14:51+00:00",
-      "last_success": "2026-09-15T18:14:51+00:00"
-    },
-    "page": {
-      "cache": {
-        "age": "0",
-        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 15 Sep 2026 18:14:52 GMT",
+        "date": "Tue, 15 Sep 2026 18:21:11 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
       },
       "error": null,
       "failures": 0,
-      "last_attempt": "2026-09-15T18:14:51+00:00",
-      "last_success": "2026-09-15T18:14:51+00:00"
+      "last_attempt": "2026-09-15T18:21:12+00:00",
+      "last_success": "2026-09-15T18:21:12+00:00"
+    },
+    "page": {
+      "cache": {
+        "age": "0",
+        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "date": "Tue, 15 Sep 2026 18:21:12 GMT",
+        "etag": null,
+        "last-modified": null,
+        "x-vercel-cache": "MISS"
+      },
+      "error": null,
+      "failures": 0,
+      "last_attempt": "2026-09-15T18:21:12+00:00",
+      "last_success": "2026-09-15T18:21:12+00:00"
     }
   },
   "configuration": {
@@ -41,24 +41,24 @@
     "attempts": 0,
     "day": "2026-09-15"
   },
-  "last_poll": "2026-09-15T18:14:51+00:00",
+  "last_poll": "2026-09-15T18:21:12+00:00",
   "notification_failures": 0,
   "outbox": [],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-15T18:14:51+00:00",
+      "observed_at": "2026-09-15T18:21:12+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-15T18:14:51+00:00",
+      "observed_at": "2026-09-15T18:21:12+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-15T18:14:51+00:00",
+      "observed_at": "2026-09-15T18:21:12+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-15T18:14:51+00:00",
+      "observed_at": "2026-09-15T18:21:12+00:00",
       "rush": false
     }
   },
@@ -375,6 +375,11 @@
       "at": "2026-09-15T18:14:51+00:00",
       "feed": true,
       "page": true
+    },
+    {
+      "at": "2026-09-15T18:21:12+00:00",
+      "feed": true,
+      "page": true
     }
   ],
   "screenings": {
@@ -392,7 +397,7 @@
       "venue": "Walter Reade Theater"
     },
     "84156": {
-      "available": true,
+      "available": false,
       "film": "9 Temples to Heaven",
       "id": "84156",
       "no_standby": false,
@@ -400,7 +405,7 @@
       "rush_text": "",
       "slug": "9-temples-to-heaven",
       "start": "2026-10-08T15:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84108/84156",
       "venue": "Francesca Beale Theater"
     },
@@ -678,7 +683,7 @@
       "venue": "Walter Reade Theater"
     },
     "84178": {
-      "available": true,
+      "available": false,
       "film": "Everything Else Is Noise",
       "id": "84178",
       "no_standby": false,
@@ -686,7 +691,7 @@
       "rush_text": "",
       "slug": "everything-else-is-noise",
       "start": "2026-09-27T21:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84120/84178",
       "venue": "Francesca Beale Theater"
     },
@@ -1627,7 +1632,7 @@
       "venue": "Alice Tully Hall"
     },
     "84275": {
-      "available": true,
+      "available": false,
       "film": "At Night",
       "id": "84275",
       "no_standby": false,
@@ -1635,7 +1640,7 @@
       "rush_text": "",
       "slug": "at-night",
       "start": "2026-10-03T21:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84251/84275",
       "venue": "Francesca Beale Theater"
     },
@@ -1731,7 +1736,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84283": {
-      "available": true,
+      "available": false,
       "film": "A Day in the Life of Jo: Chapter Phaedra",
       "id": "84283",
       "no_standby": false,
@@ -1739,7 +1744,7 @@
       "rush_text": "",
       "slug": "a-day-in-the-life-of-jo",
       "start": "2026-09-26T15:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84255/84283",
       "venue": "Francesca Beale Theater"
     },
@@ -2506,7 +2511,7 @@
       "rush_text": "",
       "slug": "in-which-annie-gives-it-those",
       "start": "2026-10-02T16:15:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84335/84356",
       "venue": "Howard Gilman Theater"
     },
@@ -2888,7 +2893,7 @@
       "venue": "Alice Tully Hall"
     },
     "84392": {
-      "available": true,
+      "available": false,
       "film": "Bitter Christmas",
       "id": "84392",
       "no_standby": false,
@@ -2896,7 +2901,7 @@
       "rush_text": "",
       "slug": "bitter-christmas",
       "start": "2026-10-07T15:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84112/84392",
       "venue": "Alice Tully Hall"
     },
@@ -3161,7 +3166,7 @@
       "venue": "Alice Tully Hall"
     },
     "84414": {
-      "available": true,
+      "available": false,
       "film": "The Unknown",
       "id": "84414",
       "no_standby": false,
@@ -3169,12 +3174,12 @@
       "rush_text": "",
       "slug": "the-unknown",
       "start": "2026-09-28T20:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84139/84414",
       "venue": "Alice Tully Hall"
     },
     "84415": {
-      "available": true,
+      "available": false,
       "film": "Bucking Fastard",
       "id": "84415",
       "no_standby": false,
@@ -3182,7 +3187,7 @@
       "rush_text": "",
       "slug": "bucking-fastard",
       "start": "2026-09-30T15:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84140/84415",
       "venue": "Alice Tully Hall"
     },
@@ -3655,7 +3660,7 @@
       "venue": "Walter Reade Theater"
     },
     "84494": {
-      "available": true,
+      "available": false,
       "film": "Paper Tiger",
       "id": "84494",
       "no_standby": false,
@@ -3663,7 +3668,7 @@
       "rush_text": "",
       "slug": "paper-tiger",
       "start": "2026-09-25T21:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84135/84494",
       "venue": "Howard Gilman Theater"
     },
@@ -3902,7 +3907,7 @@
       "venue": "Walter Reade Theater"
     },
     "84534": {
-      "available": true,
+      "available": false,
       "film": "Talk: Kleber Mendonça Filho on South of Tehran",
       "id": "84534",
       "no_standby": false,
@@ -3910,7 +3915,7 @@
       "rush_text": "",
       "slug": "kleber-on-south-of-tehran",
       "start": "2026-10-02T19:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84533/84534",
       "venue": "Howard Gilman Theater"
     },
@@ -4106,7 +4111,7 @@
       "slug": "everytime",
       "start": "2026-10-03T16:30:00.000-04:00",
       "status": "available",
-      "url": "https://www.filmlinc.org/nyff2026/daily/announcing-nyff64-screenings-at-bam-momi-alamo-drafthouse-staten-island-and-bronxs-amc-bay-plaza/",
+      "url": "https://www.bam.org/film/2026/nyff-everytime",
       "venue": "BAM"
     },
     "84662": {
@@ -4132,7 +4137,7 @@
       "slug": "misty-green",
       "start": "2026-10-04T17:00:00.000-04:00",
       "status": "available",
-      "url": "https://www.filmlinc.org/nyff2026/daily/announcing-nyff64-screenings-at-bam-momi-alamo-drafthouse-staten-island-and-bronxs-amc-bay-plaza/",
+      "url": "https://www.bam.org/film/2026/nyff-misty-green",
       "venue": "BAM"
     },
     "84664": {
@@ -4171,7 +4176,7 @@
       "slug": "possible-love",
       "start": "2026-10-03T19:15:00.000-04:00",
       "status": "available",
-      "url": "https://www.filmlinc.org/nyff2026/daily/announcing-nyff64-screenings-at-bam-momi-alamo-drafthouse-staten-island-and-bronxs-amc-bay-plaza/",
+      "url": "https://www.bam.org/film/2026/nyff-possible-love",
       "venue": "BAM"
     },
     "84667": {
@@ -4262,7 +4267,7 @@
       "slug": "bardi",
       "start": "2026-10-04T14:00:00.000-04:00",
       "status": "available",
-      "url": "https://www.filmlinc.org/nyff2026/daily/announcing-nyff64-screenings-at-bam-momi-alamo-drafthouse-staten-island-and-bronxs-amc-bay-plaza/",
+      "url": "https://www.bam.org/film/2026/nyff-bardi",
       "venue": "BAM"
     },
     "84675": {
@@ -4301,7 +4306,7 @@
       "slug": "in-which-annie-gives-it-those",
       "start": "2026-10-03T14:00:00.000-04:00",
       "status": "available",
-      "url": "https://www.filmlinc.org/nyff2026/daily/announcing-nyff64-screenings-at-bam-momi-alamo-drafthouse-staten-island-and-bronxs-amc-bay-plaza/",
+      "url": "https://www.bam.org/film/2026/nyff-in-which-annie",
       "venue": "BAM"
     },
     "84678": {
