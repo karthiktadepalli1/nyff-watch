@@ -81,7 +81,8 @@
     {
       "click": "https://www.filmlinc.org/nyff2026/films/all-of-a-sudden/",
       "created": "2026-09-15T18:48:55+00:00",
-      "email": "pending",
+      "email": "sent",
+      "email_sent_at": "2026-09-15T18:48:55+00:00",
       "expires": "2026-09-15T19:48:55+00:00",
       "id": "dffe1c988af677008023605e",
       "kind": "test",
