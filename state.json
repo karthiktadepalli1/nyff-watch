@@ -88,7 +88,8 @@
       "message": "All of a Sudden — monitoring all four screenings:\nThu Oct 01, 5:00 PM ET · Alice Tully Hall\nFri Oct 02, 2:00 PM ET · Alice Tully Hall\nSun Oct 04, 7:30 PM ET · Francesca Beale Theater\nFri Oct 09, 12:30 PM ET · Walter Reade Theater\nDelivery test. You will be alerted if any of these screenings opens or announces rush tickets.",
       "performance_id": null,
       "priority": 3,
-      "push": "pending",
+      "push": "sent",
+      "push_sent_at": "2026-09-15T18:48:55+00:00",
       "sources": [],
       "title": "TEST — NYFF monitor: all four screenings"
     }
