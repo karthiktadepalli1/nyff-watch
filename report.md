@@ -21,7 +21,7 @@ Complete observed opening/closure pairs: 0.
 
 ## Recent operation
 
-Retained checks: 1. Longest observed gap: 0.0 minutes.
+Retained checks: 3. Longest observed gap: 16.2 minutes.
 Feed failures: 0; page failures: 0.
 
 ## Target screenings
@@ -35,7 +35,7 @@ Feed failures: 0; page failures: 0.
 
 ## Configuration
 
-- phone_push: setup required
-- email: setup required
-- feed_health: setup required
-- page_health: setup required
+- phone_push: configured
+- email: configured
+- feed_health: configured
+- page_health: configured
