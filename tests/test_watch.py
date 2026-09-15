@@ -261,10 +261,11 @@ class HealthAndStopTests(unittest.TestCase):
             with patch.object(w, "request", return_value=("", {})) as request:
                 w.stop_monitor(state, store, NOW, env, "test")
             paths = [c.args[0] for c in request.call_args_list]
-            self.assertEqual(len(paths), 3)
+            self.assertEqual(len(paths), 4)
             self.assertTrue(paths[0].endswith("/pause"))
             self.assertTrue(paths[1].endswith("/pause"))
-            self.assertTrue(paths[2].endswith("/disable"))
+            self.assertTrue(paths[2].endswith("timer.yml/disable"))
+            self.assertTrue(paths[3].endswith("watch.yml/disable"))
             self.assertTrue(store.load()["stopped"])
 
     def test_failed_pause_preserves_stop_and_workflow_for_retry(self):
@@ -320,6 +321,24 @@ class HealthAndStopTests(unittest.TestCase):
                  patch.object(w, 'utcnow', return_value=NOW), patch.object(w, 'request', side_effect=fetch), \
                  patch.object(w, 'send_health') as health, patch('builtins.print'):
                 self.assertEqual(w.main(), 0)
+                health.assert_not_called()
+
+    def test_timer_check_updates_health_and_deduplicates_automatic_triggers(self):
+        with tempfile.TemporaryDirectory() as folder:
+            def fetch(url, **kwargs):
+                return (json.dumps(feed()) if url == w.FEED_URL else page(), {})
+            with patch('sys.argv', ['watch.py', 'auto', '--data', folder]), \
+                 patch.dict(os.environ, {'GITHUB_ACTIONS': 'true', 'GITHUB_EVENT_NAME': 'workflow_dispatch'}, clear=True), \
+                 patch.object(w, 'utcnow', return_value=NOW), patch.object(w, 'request', side_effect=fetch) as network, \
+                 patch.object(w, 'send_health') as health, patch('builtins.print'):
+                self.assertEqual(w.main(), 0)
+                health.assert_called_once()
+                self.assertEqual(w.Store(folder).load()['last_automatic_poll'], w.stamp(NOW))
+                self.assertEqual(w.Store(folder).load()['runs'][-1]['trigger'], 'automatic')
+                network.reset_mock()
+                health.reset_mock()
+                self.assertEqual(w.main(), 0)
+                network.assert_not_called()
                 health.assert_not_called()
 
     def test_network_errors_retry_twice_and_redact_secret_path(self):

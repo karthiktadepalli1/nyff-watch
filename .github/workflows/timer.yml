@@ -1,0 +1,27 @@
+name: NYFF automatic timer
+run-name: NYFF five-minute timer
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: nyff-timer
+  cancel-in-progress: false
+
+jobs:
+  queue:
+    environment: nyff-five-minute-timer
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Queue ticket check and next timer
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 timer.py

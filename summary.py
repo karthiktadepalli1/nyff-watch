@@ -11,6 +11,7 @@ else:
     state = json.loads(path.read_text())
     print("# NYFF ticket monitor\n")
     print("Status: **" + ("Stopped" if state.get("stopped") else "Collecting observations") + "**\n")
+    print("Last automatic check: **" + state.get("last_automatic_poll", "Awaiting first automatic check") + "**\n")
     print("| Screening | Status | Rush |\n|---|---|---|")
     for pid in TARGETS:
         item = state["screenings"].get(pid, fallback_record(pid))

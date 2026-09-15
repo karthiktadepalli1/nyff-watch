@@ -16,6 +16,7 @@ on:
           - report
           - stop
           - probe
+          - auto
 
 permissions:
   contents: write
@@ -59,3 +60,8 @@ jobs:
         if: always()
         run: |
           python3 app/summary.py observations >> "$GITHUB_STEP_SUMMARY"
+      - name: Restore timer if the backup schedule resumes
+        if: always() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 app/timer.py --ensure

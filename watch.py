@@ -453,9 +453,10 @@ def stop_monitor(state, store, now, env, reason):
             request(f"https://healthchecks.io/api/v3/checks/{check_id}/pause", payload={},
                     headers={"X-Api-Key": env["HC_API_KEY"]}, timeout=8, retries=1)
     if env.get("GITHUB_ACTIONS") == "true":
-        request(f"https://api.github.com/repos/{REPOSITORY}/actions/workflows/watch.yml/disable",
-                method="PUT", payload=b"", timeout=8, retries=1,
-                headers={"Authorization": "Bearer " + env["GH_TOKEN"], "Accept": "application/vnd.github+json"})
+        for workflow in ("timer.yml", "watch.yml"):
+            request(f"https://api.github.com/repos/{REPOSITORY}/actions/workflows/{workflow}/disable",
+                    method="PUT", payload=b"", timeout=8, retries=1,
+                    headers={"Authorization": "Bearer " + env["GH_TOKEN"], "Accept": "application/vnd.github+json"})
     print("Monitor stopped; configured health checks paused.")
 
 
@@ -499,11 +500,12 @@ def report(state, events):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["poll", "test-alert", "report", "stop", "probe"])
+    parser.add_argument("command", choices=["poll", "auto", "test-alert", "report", "stop", "probe"])
     parser.add_argument("--data", default="data")
     parser.add_argument("--git", action="store_true", help="Commit and push state to the data branch")
     args = parser.parse_args()
     now, env = utcnow(), os.environ
+    automatic = args.command == "auto" or env.get("GITHUB_EVENT_NAME") == "schedule"
     store = Store(args.data, args.git)
     state = store.load()
     state["configuration"] = {
@@ -513,8 +515,11 @@ def main():
         "page_health": bool(env.get("HC_PAGE_URL") and env.get("HC_API_KEY")),
     }
     expiry = max(date(state["screenings"].get(pid, {}).get("start", start)) for pid, (start, _) in TARGETS.items())
-    if args.command == "stop" or state.get("stopped") or (now >= expiry and args.command == "poll"):
+    if args.command == "stop" or state.get("stopped") or (now >= expiry and args.command in {"poll", "auto"}):
         stop_monitor(state, store, now, env, "ticket secured" if args.command == "stop" else state.get("stop_reason", "final screening started"))
+        return 0
+    if automatic and state.get("last_automatic_poll") and now - date(state["last_automatic_poll"]) < timedelta(minutes=4):
+        print("A recent automatic check already completed; duplicate trigger skipped.")
         return 0
     if args.command == "report":
         path = store.folder / "changes.jsonl"
@@ -560,11 +565,15 @@ def main():
         for pid in TARGETS:
             state["screenings"].setdefault(pid, fallback_record(pid))
     events = observe(state, feed, page, errors, metadata, now)
+    trigger = "automatic" if automatic else "manual"
+    state["runs"][-1].update(trigger=trigger, run_id=env.get("GITHUB_RUN_ID"))
+    if automatic:
+        state["last_automatic_poll"] = stamp(now)
     store.save(state, events)  # Durable outbox before any notification side effect.
     deliver(state, store, now, env)
     # A manual check proves source access, not recovery of the automatic timer.
-    # Only scheduled cloud runs may clear a scheduler outage.
-    if env.get("GITHUB_ACTIONS") != "true" or env.get("GITHUB_EVENT_NAME") == "schedule":
+    # Only automatic cloud runs may clear a scheduler outage.
+    if env.get("GITHUB_ACTIONS") != "true" or automatic:
         send_health(state, env)
     store.save(state)
     for key, value in state["configuration"].items():
