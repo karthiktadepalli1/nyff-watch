@@ -2,26 +2,26 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "0",
+        "age": "113",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 21:17:03 GMT",
+        "date": "Wed, 16 Sep 2026 21:22:16 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "MISS"
+        "x-vercel-cache": "HIT"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T21:17:03+00:00",
-      "last_success": "2026-09-16T21:17:03+00:00"
+      "last_attempt": "2026-09-16T21:22:17+00:00",
+      "last_success": "2026-09-16T21:22:17+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 21:17:03 GMT",
+        "date": "Wed, 16 Sep 2026 21:22:17 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T21:17:03+00:00",
-      "last_success": "2026-09-16T21:17:03+00:00"
+      "last_attempt": "2026-09-16T21:22:17+00:00",
+      "last_success": "2026-09-16T21:22:17+00:00"
     }
   },
   "configuration": {
@@ -44,8 +44,8 @@
     "day": "2026-09-16"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-16T21:17:03+00:00",
-  "last_poll": "2026-09-16T21:17:03+00:00",
+  "last_automatic_poll": "2026-09-16T21:22:17+00:00",
+  "last_poll": "2026-09-16T21:22:17+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -99,19 +99,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-16T21:17:03+00:00",
+      "observed_at": "2026-09-16T21:22:17+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-16T21:17:03+00:00",
+      "observed_at": "2026-09-16T21:22:17+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-16T21:17:03+00:00",
+      "observed_at": "2026-09-16T21:22:17+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-16T21:17:03+00:00",
+      "observed_at": "2026-09-16T21:22:17+00:00",
       "rush": false
     }
   },
@@ -2488,6 +2488,13 @@
       "page": true,
       "run_id": "35151489757",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-16T21:22:17+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35151985207",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -3922,7 +3929,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84289": {
-      "available": true,
+      "available": false,
       "film": "Foreign Travel",
       "id": "84289",
       "no_standby": false,
@@ -3930,7 +3937,7 @@
       "rush_text": "",
       "slug": "foreign-travel",
       "start": "2026-09-30T21:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84257/84289",
       "venue": "Francesca Beale Theater"
     },
@@ -3987,7 +3994,7 @@
       "venue": "Walter Reade Theater"
     },
     "84294": {
-      "available": false,
+      "available": true,
       "film": "Heil Jupiter!",
       "id": "84294",
       "no_standby": false,
@@ -3995,7 +4002,7 @@
       "rush_text": "",
       "slug": "heil-jupiter",
       "start": "2026-09-28T18:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84259/84294",
       "venue": "Walter Reade Theater"
     },
