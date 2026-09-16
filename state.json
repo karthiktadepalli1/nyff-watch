@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 20:14:22 GMT",
+        "date": "Wed, 16 Sep 2026 20:19:50 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,15 +13,15 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T20:14:23+00:00",
-      "last_success": "2026-09-16T20:14:23+00:00"
+      "last_attempt": "2026-09-16T20:19:50+00:00",
+      "last_success": "2026-09-16T20:19:50+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 20:14:22 GMT",
+        "date": "Wed, 16 Sep 2026 20:19:49 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T20:14:23+00:00",
-      "last_success": "2026-09-16T20:14:23+00:00"
+      "last_attempt": "2026-09-16T20:19:50+00:00",
+      "last_success": "2026-09-16T20:19:50+00:00"
     }
   },
   "configuration": {
@@ -44,8 +44,8 @@
     "day": "2026-09-16"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-16T20:14:23+00:00",
-  "last_poll": "2026-09-16T20:14:23+00:00",
+  "last_automatic_poll": "2026-09-16T20:19:50+00:00",
+  "last_poll": "2026-09-16T20:19:50+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -99,19 +99,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-16T20:14:23+00:00",
+      "observed_at": "2026-09-16T20:19:50+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-16T20:14:23+00:00",
+      "observed_at": "2026-09-16T20:19:50+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-16T20:14:23+00:00",
+      "observed_at": "2026-09-16T20:19:50+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-16T20:14:23+00:00",
+      "observed_at": "2026-09-16T20:19:50+00:00",
       "rush": false
     }
   },
@@ -2404,6 +2404,13 @@
       "page": true,
       "run_id": "35145332581",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-16T20:19:50+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35145880189",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -3656,7 +3663,7 @@
       "venue": "Alice Tully Hall"
     },
     "84275": {
-      "available": true,
+      "available": false,
       "film": "At Night",
       "id": "84275",
       "no_standby": false,
@@ -3664,7 +3671,7 @@
       "rush_text": "",
       "slug": "at-night",
       "start": "2026-10-03T21:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84251/84275",
       "venue": "Francesca Beale Theater"
     },
@@ -4579,7 +4586,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84360": {
-      "available": false,
+      "available": true,
       "film": "Clarissa",
       "id": "84360",
       "no_standby": false,
@@ -4587,7 +4594,7 @@
       "rush_text": "",
       "slug": "clarissa",
       "start": "2026-10-05T12:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84113/84360",
       "venue": "Walter Reade Theater"
     },
@@ -5294,7 +5301,7 @@
       "venue": "Alice Tully Hall"
     },
     "84422": {
-      "available": true,
+      "available": false,
       "film": "Godzilla Minus Zero",
       "id": "84422",
       "no_standby": false,
@@ -5302,7 +5309,7 @@
       "rush_text": "",
       "slug": "godzilla-minus-zero",
       "start": "2026-09-27T14:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84145/84422",
       "venue": "Alice Tully Hall"
     },
