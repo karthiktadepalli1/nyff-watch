@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 16:45:56 GMT",
+        "date": "Wed, 16 Sep 2026 16:51:08 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,15 +13,15 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T16:45:56+00:00",
-      "last_success": "2026-09-16T16:45:56+00:00"
+      "last_attempt": "2026-09-16T16:51:08+00:00",
+      "last_success": "2026-09-16T16:51:08+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 16:45:56 GMT",
+        "date": "Wed, 16 Sep 2026 16:51:08 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T16:45:56+00:00",
-      "last_success": "2026-09-16T16:45:56+00:00"
+      "last_attempt": "2026-09-16T16:51:08+00:00",
+      "last_success": "2026-09-16T16:51:08+00:00"
     }
   },
   "configuration": {
@@ -43,8 +43,8 @@
     "attempts": 0,
     "day": "2026-09-16"
   },
-  "last_automatic_poll": "2026-09-16T16:45:56+00:00",
-  "last_poll": "2026-09-16T16:45:56+00:00",
+  "last_automatic_poll": "2026-09-16T16:51:08+00:00",
+  "last_poll": "2026-09-16T16:51:08+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -98,19 +98,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-16T16:45:56+00:00",
+      "observed_at": "2026-09-16T16:51:08+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-16T16:45:56+00:00",
+      "observed_at": "2026-09-16T16:51:08+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-16T16:45:56+00:00",
+      "observed_at": "2026-09-16T16:51:08+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-16T16:45:56+00:00",
+      "observed_at": "2026-09-16T16:51:08+00:00",
       "rush": false
     }
   },
@@ -2123,6 +2123,13 @@
       "page": true,
       "run_id": "35123949554",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-16T16:51:08+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35124495813",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -4012,7 +4019,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84325": {
-      "available": false,
+      "available": true,
       "film": "Currents Program 4: The Real World",
       "id": "84325",
       "no_standby": false,
@@ -4020,12 +4027,12 @@
       "rush_text": "",
       "slug": "program-4-the-real-world",
       "start": "2026-09-27T19:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84271/84325",
       "venue": "Francesca Beale Theater"
     },
     "84326": {
-      "available": false,
+      "available": true,
       "film": "Currents Program 4: The Real World",
       "id": "84326",
       "no_standby": false,
@@ -4033,7 +4040,7 @@
       "rush_text": "",
       "slug": "program-4-the-real-world",
       "start": "2026-09-29T18:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84271/84326",
       "venue": "Howard Gilman Theater"
     },
@@ -4046,7 +4053,7 @@
       "rush_text": "",
       "slug": "program-5-the-material-ghost",
       "start": "2026-09-28T21:30:00.000-04:00",
-      "status": "limited",
+      "status": "available",
       "url": "https://purchase.filmlinc.org/84272/84327",
       "venue": "Francesca Beale Theater"
     },
@@ -4064,7 +4071,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84329": {
-      "available": false,
+      "available": true,
       "film": "Currents Program 6: Out of the Present",
       "id": "84329",
       "no_standby": false,
@@ -4072,12 +4079,12 @@
       "rush_text": "",
       "slug": "program-6-out-of-the-present",
       "start": "2026-09-29T20:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84273/84329",
       "venue": "Francesca Beale Theater"
     },
     "84330": {
-      "available": false,
+      "available": true,
       "film": "Currents Program 6: Out of the Present",
       "id": "84330",
       "no_standby": false,
@@ -4085,7 +4092,7 @@
       "rush_text": "",
       "slug": "program-6-out-of-the-present",
       "start": "2026-09-30T21:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84273/84330",
       "venue": "Howard Gilman Theater"
     },
@@ -4376,7 +4383,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84366": {
-      "available": false,
+      "available": true,
       "film": "Nitrate Kisses",
       "id": "84366",
       "no_standby": false,
@@ -4384,7 +4391,7 @@
       "rush_text": "",
       "slug": "nitrate-kisses",
       "start": "2026-10-03T14:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84338/84366",
       "venue": "Francesca Beale Theater"
     },
