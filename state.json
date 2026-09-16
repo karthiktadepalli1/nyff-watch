@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 15:59:05 GMT",
+        "date": "Wed, 16 Sep 2026 16:04:17 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,15 +13,15 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T15:59:05+00:00",
-      "last_success": "2026-09-16T15:59:05+00:00"
+      "last_attempt": "2026-09-16T16:04:18+00:00",
+      "last_success": "2026-09-16T16:04:18+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 15:59:05 GMT",
+        "date": "Wed, 16 Sep 2026 16:04:18 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T15:59:05+00:00",
-      "last_success": "2026-09-16T15:59:05+00:00"
+      "last_attempt": "2026-09-16T16:04:18+00:00",
+      "last_success": "2026-09-16T16:04:18+00:00"
     }
   },
   "configuration": {
@@ -43,8 +43,8 @@
     "attempts": 0,
     "day": "2026-09-16"
   },
-  "last_automatic_poll": "2026-09-16T15:59:05+00:00",
-  "last_poll": "2026-09-16T15:59:05+00:00",
+  "last_automatic_poll": "2026-09-16T16:04:18+00:00",
+  "last_poll": "2026-09-16T16:04:18+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -98,19 +98,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-16T15:59:05+00:00",
+      "observed_at": "2026-09-16T16:04:18+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-16T15:59:05+00:00",
+      "observed_at": "2026-09-16T16:04:18+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-16T15:59:05+00:00",
+      "observed_at": "2026-09-16T16:04:18+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-16T15:59:05+00:00",
+      "observed_at": "2026-09-16T16:04:18+00:00",
       "rush": false
     }
   },
@@ -418,6 +418,30 @@
     "84676",
     "84677",
     "84678",
+    "84679",
+    "84680",
+    "84681",
+    "84682",
+    "84683",
+    "84684",
+    "84685",
+    "84686",
+    "84687",
+    "84688",
+    "84689",
+    "84690",
+    "84691",
+    "84692",
+    "84693",
+    "84694",
+    "84695",
+    "84696",
+    "84697",
+    "84698",
+    "84699",
+    "84700",
+    "84701",
+    "84702",
     "84762",
     "84764"
   ],
@@ -1979,6 +2003,13 @@
       "feed": true,
       "page": true,
       "run_id": "35118927365",
+      "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-16T16:04:18+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35119499461",
       "trigger": "automatic"
     }
   ],
@@ -3557,7 +3588,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84301": {
-      "available": true,
+      "available": false,
       "film": "London",
       "id": "84301",
       "no_standby": false,
@@ -3565,7 +3596,7 @@
       "rush_text": "",
       "slug": "london",
       "start": "2026-09-29T15:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84260/84301",
       "venue": "Howard Gilman Theater"
     },
@@ -5921,6 +5952,318 @@
       "status": "available",
       "url": "https://www.bam.org/film/2026/nyff-nitrate-kisses",
       "venue": "BAM"
+    },
+    "84679": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84679",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-16T13:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84679",
+      "venue": "Walter Reade Theater"
+    },
+    "84680": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84680",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-16T15:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84680",
+      "venue": "Walter Reade Theater"
+    },
+    "84681": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84681",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-16T18:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84681",
+      "venue": "Walter Reade Theater"
+    },
+    "84682": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84682",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-16T20:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84682",
+      "venue": "Walter Reade Theater"
+    },
+    "84683": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84683",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-17T13:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84683",
+      "venue": "Walter Reade Theater"
+    },
+    "84684": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84684",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-17T15:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84684",
+      "venue": "Walter Reade Theater"
+    },
+    "84685": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84685",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-17T18:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84685",
+      "venue": "Walter Reade Theater"
+    },
+    "84686": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84686",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-17T20:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84686",
+      "venue": "Walter Reade Theater"
+    },
+    "84687": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84687",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-18T13:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84687",
+      "venue": "Walter Reade Theater"
+    },
+    "84688": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84688",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-18T15:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84688",
+      "venue": "Walter Reade Theater"
+    },
+    "84689": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84689",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-18T18:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84689",
+      "venue": "Walter Reade Theater"
+    },
+    "84690": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84690",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-18T20:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84690",
+      "venue": "Walter Reade Theater"
+    },
+    "84691": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84691",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-19T18:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84691",
+      "venue": "Walter Reade Theater"
+    },
+    "84692": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84692",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-19T20:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84692",
+      "venue": "Walter Reade Theater"
+    },
+    "84693": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84693",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-20T18:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84693",
+      "venue": "Walter Reade Theater"
+    },
+    "84694": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84694",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-20T20:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84694",
+      "venue": "Walter Reade Theater"
+    },
+    "84695": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84695",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-21T13:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84695",
+      "venue": "Walter Reade Theater"
+    },
+    "84696": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84696",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-21T15:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84696",
+      "venue": "Walter Reade Theater"
+    },
+    "84697": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84697",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-21T18:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84697",
+      "venue": "Walter Reade Theater"
+    },
+    "84698": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84698",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-21T20:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84698",
+      "venue": "Walter Reade Theater"
+    },
+    "84699": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84699",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-22T13:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84699",
+      "venue": "Walter Reade Theater"
+    },
+    "84700": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84700",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-22T15:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84700",
+      "venue": "Walter Reade Theater"
+    },
+    "84701": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84701",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-22T18:00:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84701",
+      "venue": "Walter Reade Theater"
+    },
+    "84702": {
+      "available": true,
+      "film": "The Devils",
+      "id": "84702",
+      "no_standby": true,
+      "rush": false,
+      "rush_text": "",
+      "slug": "the-devils",
+      "start": "2026-10-22T20:30:00.000-04:00",
+      "status": "available",
+      "url": "https://purchase.filmlinc.org/84474/84702",
+      "venue": "Walter Reade Theater"
     },
     "84762": {
       "available": true,
