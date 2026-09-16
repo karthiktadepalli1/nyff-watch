@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 20:35:26 GMT",
+        "date": "Wed, 16 Sep 2026 20:40:37 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,15 +13,15 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T20:35:27+00:00",
-      "last_success": "2026-09-16T20:35:27+00:00"
+      "last_attempt": "2026-09-16T20:40:37+00:00",
+      "last_success": "2026-09-16T20:40:37+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 20:35:27 GMT",
+        "date": "Wed, 16 Sep 2026 20:40:37 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T20:35:27+00:00",
-      "last_success": "2026-09-16T20:35:27+00:00"
+      "last_attempt": "2026-09-16T20:40:37+00:00",
+      "last_success": "2026-09-16T20:40:37+00:00"
     }
   },
   "configuration": {
@@ -44,8 +44,8 @@
     "day": "2026-09-16"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-16T20:35:27+00:00",
-  "last_poll": "2026-09-16T20:35:27+00:00",
+  "last_automatic_poll": "2026-09-16T20:40:37+00:00",
+  "last_poll": "2026-09-16T20:40:37+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -99,19 +99,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-16T20:35:27+00:00",
+      "observed_at": "2026-09-16T20:40:37+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-16T20:35:27+00:00",
+      "observed_at": "2026-09-16T20:40:37+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-16T20:35:27+00:00",
+      "observed_at": "2026-09-16T20:40:37+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-16T20:35:27+00:00",
+      "observed_at": "2026-09-16T20:40:37+00:00",
       "rush": false
     }
   },
@@ -2432,6 +2432,13 @@
       "page": true,
       "run_id": "35147441214",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-16T20:40:37+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35147961315",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -3957,7 +3964,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84296": {
-      "available": true,
+      "available": false,
       "film": "Heil Jupiter!",
       "id": "84296",
       "no_standby": false,
@@ -3965,7 +3972,7 @@
       "rush_text": "",
       "slug": "heil-jupiter",
       "start": "2026-10-05T13:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84259/84296",
       "venue": "Howard Gilman Theater"
     },
@@ -5322,7 +5329,7 @@
       "venue": "Alice Tully Hall"
     },
     "84422": {
-      "available": false,
+      "available": true,
       "film": "Godzilla Minus Zero",
       "id": "84422",
       "no_standby": false,
@@ -5330,7 +5337,7 @@
       "rush_text": "",
       "slug": "godzilla-minus-zero",
       "start": "2026-09-27T14:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84145/84422",
       "venue": "Alice Tully Hall"
     },
