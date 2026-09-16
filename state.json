@@ -40,8 +40,8 @@
     "phone_push": true
   },
   "email_budget": {
-    "attempts": 3,
-    "day": "2026-09-15"
+    "attempts": 0,
+    "day": "2026-09-16"
   },
   "last_automatic_poll": "2026-09-16T00:02:51+00:00",
   "last_poll": "2026-09-16T00:02:51+00:00",
