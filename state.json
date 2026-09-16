@@ -2,26 +2,10 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "237",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 20:50:59 GMT",
-        "etag": null,
-        "last-modified": null,
-        "x-vercel-cache": "HIT"
-      },
-      "error": null,
-      "failures": 0,
-      "health_signal": "up",
-      "last_attempt": "2026-09-16T20:51:00+00:00",
-      "last_success": "2026-09-16T20:51:00+00:00"
-    },
-    "page": {
-      "cache": {
-        "age": "0",
-        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 16 Sep 2026 20:51:00 GMT",
+        "date": "Wed, 16 Sep 2026 20:56:12 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +13,24 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-16T20:51:00+00:00",
-      "last_success": "2026-09-16T20:51:00+00:00"
+      "last_attempt": "2026-09-16T20:56:13+00:00",
+      "last_success": "2026-09-16T20:56:13+00:00"
+    },
+    "page": {
+      "cache": {
+        "age": "0",
+        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "date": "Wed, 16 Sep 2026 20:56:12 GMT",
+        "etag": null,
+        "last-modified": null,
+        "x-vercel-cache": "MISS"
+      },
+      "error": null,
+      "failures": 0,
+      "health_signal": "up",
+      "last_attempt": "2026-09-16T20:56:13+00:00",
+      "last_success": "2026-09-16T20:56:13+00:00"
     }
   },
   "configuration": {
@@ -44,8 +44,8 @@
     "day": "2026-09-16"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-16T20:51:00+00:00",
-  "last_poll": "2026-09-16T20:51:00+00:00",
+  "last_automatic_poll": "2026-09-16T20:56:13+00:00",
+  "last_poll": "2026-09-16T20:56:13+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -99,19 +99,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-16T20:51:00+00:00",
+      "observed_at": "2026-09-16T20:56:13+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-16T20:51:00+00:00",
+      "observed_at": "2026-09-16T20:56:13+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-16T20:51:00+00:00",
+      "observed_at": "2026-09-16T20:56:13+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-16T20:51:00+00:00",
+      "observed_at": "2026-09-16T20:56:13+00:00",
       "rush": false
     }
   },
@@ -2453,6 +2453,13 @@
       "page": true,
       "run_id": "35148975743",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-16T20:56:13+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35149475825",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -3406,7 +3413,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84229": {
-      "available": false,
+      "available": true,
       "film": "Fjord",
       "id": "84229",
       "no_standby": false,
@@ -3414,7 +3421,7 @@
       "rush_text": "",
       "slug": "fjord",
       "start": "2026-10-05T17:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84144/84229",
       "venue": "Walter Reade Theater"
     },
