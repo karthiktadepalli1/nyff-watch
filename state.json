@@ -2,10 +2,10 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "171",
+        "age": "79",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Thu, 17 Sep 2026 15:43:14 GMT",
+        "date": "Thu, 17 Sep 2026 15:48:30 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "HIT"
@@ -13,15 +13,15 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-17T15:43:15+00:00",
-      "last_success": "2026-09-17T15:43:15+00:00"
+      "last_attempt": "2026-09-17T15:48:30+00:00",
+      "last_success": "2026-09-17T15:48:30+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Thu, 17 Sep 2026 15:43:15 GMT",
+        "date": "Thu, 17 Sep 2026 15:48:30 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-17T15:43:15+00:00",
-      "last_success": "2026-09-17T15:43:15+00:00"
+      "last_attempt": "2026-09-17T15:48:30+00:00",
+      "last_success": "2026-09-17T15:48:30+00:00"
     }
   },
   "configuration": {
@@ -44,8 +44,8 @@
     "day": "2026-09-17"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-17T15:43:15+00:00",
-  "last_poll": "2026-09-17T15:43:15+00:00",
+  "last_automatic_poll": "2026-09-17T15:48:30+00:00",
+  "last_poll": "2026-09-17T15:48:30+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -117,19 +117,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-17T15:43:15+00:00",
+      "observed_at": "2026-09-17T15:48:30+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-17T15:43:15+00:00",
+      "observed_at": "2026-09-17T15:48:30+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-17T15:43:15+00:00",
+      "observed_at": "2026-09-17T15:48:30+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-17T15:43:15+00:00",
+      "observed_at": "2026-09-17T15:48:30+00:00",
       "rush": false
     }
   },
@@ -3864,6 +3864,13 @@
       "page": true,
       "run_id": "35242043589",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-17T15:48:30+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35242605587",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -6650,7 +6657,7 @@
       "venue": "Alice Tully Hall"
     },
     "84414": {
-      "available": true,
+      "available": false,
       "film": "The Unknown",
       "id": "84414",
       "no_standby": false,
@@ -6658,7 +6665,7 @@
       "rush_text": "",
       "slug": "the-unknown",
       "start": "2026-09-28T20:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84139/84414",
       "venue": "Alice Tully Hall"
     },
