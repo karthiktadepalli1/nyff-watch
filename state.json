@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Thu, 17 Sep 2026 18:35:05 GMT",
+        "date": "Thu, 17 Sep 2026 18:40:18 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-17T18:35:06+00:00",
-      "last_success": "2026-09-17T18:35:06+00:00"
+      "last_attempt": "2026-09-17T18:40:20+00:00",
+      "last_success": "2026-09-17T18:40:20+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Thu, 17 Sep 2026 18:35:05 GMT",
+          "date": "Thu, 17 Sep 2026 18:40:19 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Thu, 17 Sep 2026 18:35:05 GMT",
+          "date": "Thu, 17 Sep 2026 18:40:20 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Thu, 17 Sep 2026 18:35:05 GMT",
+          "date": "Thu, 17 Sep 2026 18:40:19 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Thu, 17 Sep 2026 18:35:05 GMT",
+          "date": "Thu, 17 Sep 2026 18:40:19 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-17T18:35:06+00:00",
-      "last_success": "2026-09-17T18:35:06+00:00"
+      "last_attempt": "2026-09-17T18:40:20+00:00",
+      "last_success": "2026-09-17T18:40:20+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-17"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-17T18:35:06+00:00",
-  "last_poll": "2026-09-17T18:35:06+00:00",
+  "last_automatic_poll": "2026-09-17T18:40:20+00:00",
+  "last_poll": "2026-09-17T18:40:20+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -146,35 +146,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-17T18:35:06+00:00",
+      "observed_at": "2026-09-17T18:40:20+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-17T18:35:06+00:00",
+      "observed_at": "2026-09-17T18:40:20+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-17T18:35:06+00:00",
+      "observed_at": "2026-09-17T18:40:20+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-17T18:35:06+00:00",
+      "observed_at": "2026-09-17T18:40:20+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-17T18:35:06+00:00",
+      "observed_at": "2026-09-17T18:40:20+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-17T18:35:06+00:00",
+      "observed_at": "2026-09-17T18:40:20+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-17T18:35:06+00:00",
+      "observed_at": "2026-09-17T18:40:20+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-17T18:35:06+00:00",
+      "observed_at": "2026-09-17T18:40:20+00:00",
       "rush": false
     }
   },
@@ -4147,6 +4147,13 @@
       "page": true,
       "run_id": "35259696327",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-17T18:40:20+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35260222425",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -6361,7 +6368,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84363": {
-      "available": true,
+      "available": false,
       "film": "Just Like Weather",
       "id": "84363",
       "no_standby": false,
@@ -6369,7 +6376,7 @@
       "rush_text": "",
       "slug": "just-like-weather",
       "start": "2026-09-30T19:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84337/84363",
       "venue": "Francesca Beale Theater"
     },
