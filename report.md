@@ -3,20 +3,20 @@
 Times are America/New_York. These are observed changes, not exact release times.
 Polling gaps and source caches can hide brief openings. Simultaneous changes may be a single batch.
 
-Observed reopenings: **138** across **80 batches**.
+Observed reopenings: **144** across **86 batches**.
 
 ## Openings by Eastern-time hour
 
 | Hour | Openings |
 |---|---:|
 | 00:00–00:59 | 2 |
-| 01:00–01:59 | 1 |
+| 01:00–01:59 | 2 |
 | 03:00–03:59 | 1 |
-| 07:00–07:59 | 1 |
+| 07:00–07:59 | 2 |
 | 08:00–08:59 | 2 |
 | 09:00–09:59 | 1 |
 | 10:00–10:59 | 3 |
-| 11:00–11:59 | 6 |
+| 11:00–11:59 | 10 |
 | 12:00–12:59 | 9 |
 | 13:00–13:59 | 3 |
 | 14:00–14:59 | 5 |
@@ -35,18 +35,18 @@ Observed reopenings: **138** across **80 batches**.
 | Days | Openings |
 |---|---:|
 | 9 | 1 |
-| 10 | 12 |
-| 11 | 15 |
+| 10 | 13 |
+| 11 | 16 |
 | 12 | 20 |
 | 13 | 14 |
 | 14 | 10 |
 | 15 | 6 |
-| 17 | 10 |
+| 17 | 11 |
 | 18 | 13 |
 | 19 | 6 |
 | 20 | 4 |
 | 21 | 5 |
-| 22 | 4 |
+| 22 | 7 |
 | 24 | 7 |
 | 26 | 8 |
 | 27 | 2 |
@@ -54,22 +54,26 @@ Observed reopenings: **138** across **80 batches**.
 
 ## Observed open durations
 
-Complete observed opening/closure pairs: 130.
-Minimum / median / maximum: 4.8 / 15.7 / 574.4 minutes.
+Complete observed opening/closure pairs: 137.
+Minimum / median / maximum: 4.8 / 15.7 / 699.4 minutes.
 
 ## Recent operation
 
-Retained checks: 345. Longest observed gap: 93.8 minutes.
+Retained checks: 481. Longest observed gap: 93.8 minutes.
 Feed failures: 0; page failures: 0.
 
 ## Target screenings
 
 | Screening | Status | Rush |
 |---|---|---|
-| Thu Oct 01, 5:00 PM ET · Alice Tully Hall | standby | No observed designation |
-| Fri Oct 02, 2:00 PM ET · Alice Tully Hall | standby | No observed designation |
-| Sun Oct 04, 7:30 PM ET · Francesca Beale Theater | standby | No observed designation |
-| Fri Oct 09, 12:30 PM ET · Walter Reade Theater | standby | No observed designation |
+| All of a Sudden · Thu Oct 01, 5:00 PM ET · Alice Tully Hall | standby | No observed designation |
+| All of a Sudden · Fri Oct 02, 2:00 PM ET · Alice Tully Hall | standby | No observed designation |
+| All of a Sudden · Sun Oct 04, 7:30 PM ET · Francesca Beale Theater | standby | No observed designation |
+| All of a Sudden · Fri Oct 09, 12:30 PM ET · Walter Reade Theater | standby | No observed designation |
+| Amos Vogel Lecture: Ryûsuke Hamaguchi · Sat Oct 03, 1:30 PM ET · Walter Reade Theater | standby | No observed designation |
+| Talk: Lee Chang-dong · Mon Sep 28, 4:45 PM ET · Francesca Beale Theater | standby | No observed designation |
+| Possible Love · Sun Sep 27, 5:30 PM ET · Alice Tully Hall | standby | No observed designation |
+| Possible Love · Mon Sep 28, 11:30 AM ET · Alice Tully Hall | standby | No observed designation |
 
 ## Configuration
 
