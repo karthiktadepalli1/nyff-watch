@@ -52,7 +52,7 @@ def run_timer(env, ensure=False):
         if state.get("stopped") or now >= expiry:
             print("Queued shutdown cleanup; retries continue until cleanup succeeds.")
         else:
-            print("Queued an automatic check of all four screenings.")
+            print(f"Queued an automatic check of all {len(TARGETS)} target events.")
     finally:
         # A failed ticket-check dispatch must not permanently break the clock.
         api("actions/workflows/timer.yml/dispatches", {"ref": "main"})

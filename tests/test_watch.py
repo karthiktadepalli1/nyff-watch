@@ -11,25 +11,43 @@ from unittest.mock import patch
 import watch as w
 
 NOW = w.date("2026-09-15T17:00:00+00:00")
+FILM_IDS = w.PROGRAMS["all-of-a-sudden"]["ids"]
+LECTURE = "amos-vogel-lecture-hamaguchi"
 
 
 def feed():
-    shows = []
-    for pid, (start, venue) in w.TARGETS.items():
-        shows.append({"id": pid, "dateTimeET": start, "venue": venue, "status": "standby",
-                      "available": False, "noStandby": False, "ticketsUrl": f"https://purchase.filmlinc.org/84110/{pid}"})
-    return {"slug": "nyff2026", "filmsWithShowtimes": [{"title": "All of a Sudden", "slug": "all-of-a-sudden",
-             "filmDetails": {"specialEvents": []}, "showtimes": shows}]}
+    programs = []
+    for slug, program in w.PROGRAMS.items():
+        shows = []
+        for pid in w.TARGETS:
+            if pid not in program["ids"]:
+                continue
+            start, venue = w.TARGETS[pid]
+            shows.append({"id": pid, "dateTimeET": start, "venue": venue, "status": "standby",
+                          "available": False, "noStandby": False,
+                          "ticketsUrl": w.fallback_record(pid)["url"]})
+        programs.append({"title": program["title"], "slug": slug,
+                         "eventDetails" if '/events/' in program['page'] else "filmDetails": {"specialEvents": []},
+                         "showtimes": shows})
+    return {"slug": "nyff2026", "filmsWithShowtimes": programs}
 
 
 def records():
     return w.parse_feed(feed(), set(w.TARGETS))
 
 
-def page(rush=None):
-    return "<html><body><h1>All of a Sudden</h1><nav>Rush tickets</nav>" + "".join(
+def page(rush=None, slug="all-of-a-sudden"):
+    program = w.PROGRAMS[slug]
+    return f"<html><body><h1>{program['title']}</h1><nav>Rush tickets</nav>" + "".join(
         f'<button data-performance-id="{pid}"><div><span>5:00 PM</span><span>{"RUSH" if pid == rush else "Q&A"}</span></div></button>'
-        for pid in w.TARGETS) + "</body></html>"
+        for pid in w.TARGETS if pid in program["ids"]) + "</body></html>"
+
+
+def fetch_fixture(url, **kwargs):
+    if url == w.FEED_URL:
+        return json.dumps(feed()), {}
+    slug = next(slug for slug, program in w.PROGRAMS.items() if program["page"] == url)
+    return page(slug=slug), {}
 
 
 def observe(state, data=None, html_rush=None, now=NOW):
@@ -57,16 +75,16 @@ class ParsingTests(unittest.TestCase):
 
     def test_page_ignores_generic_navigation_and_script_text(self):
         body = page() + '<script>"rush"; "data-performance-id=84274"</script>'
-        self.assertFalse(any(w.parse_page(body, set(w.TARGETS)).values()))
+        self.assertFalse(any(w.parse_page(body, FILM_IDS).values()))
 
     def test_page_deduplicates_mobile_desktop(self):
         body = page("84274") + '<button data-performance-id="84274"><span>RUSH</span></button>'
-        self.assertEqual(sum(w.parse_page(body, set(w.TARGETS)).values()), 1)
+        self.assertEqual(sum(w.parse_page(body, FILM_IDS).values()), 1)
 
     def test_incomplete_page_and_challenge_fail(self):
         for body in ("<html>Just a moment</html>", "<h1>All of a Sudden</h1>"):
             with self.assertRaises(ValueError):
-                w.parse_page(body, set(w.TARGETS))
+                w.parse_page(body, FILM_IDS)
 
     def test_missing_target_and_wrong_film_fail(self):
         payload = feed()
@@ -80,12 +98,64 @@ class ParsingTests(unittest.TestCase):
 
     def test_expired_targets_may_disappear(self):
         payload = feed()
-        payload["filmsWithShowtimes"][0]["showtimes"] = []
+        for program in payload["filmsWithShowtimes"]:
+            program["showtimes"] = []
         self.assertEqual(w.parse_feed(payload, set()), {})
+
+    def test_lecture_identity_link_and_event_rush_promotion(self):
+        payload = feed()
+        lecture = payload['filmsWithShowtimes'][1]
+        lecture['eventDetails']['specialEvents'] = [
+            {'tessituraId': ['84484'], 'promoShort': ['rush'], 'promoTooltip': 'Lecture rush'}]
+        result = w.parse_feed(payload, set(w.TARGETS))['84484']
+        self.assertTrue(result['rush'])
+        self.assertEqual(result['rush_text'], 'Lecture rush')
+        self.assertEqual(result['url'], 'https://purchase.filmlinc.org/84483/84484')
+        self.assertIn('Vogel', result['film'])
+        lecture['slug'] = 'another-lecture'
+        with self.assertRaises(ValueError):
+            w.parse_feed(payload, set(w.TARGETS))
+
+    def test_lecture_page_requires_its_own_title_and_screening(self):
+        title = w.PROGRAMS[LECTURE]['title']
+        self.assertEqual(w.parse_page(page(slug=LECTURE), {'84484'}, title), {'84484': False})
+        self.assertEqual(w.parse_page(page('84484', LECTURE), {'84484'}, title), {'84484': True})
+        for body in (page(), '<h1>' + title + '</h1>'):
+            with self.assertRaises(ValueError):
+                w.parse_page(body, {'84484'}, title)
+
+    def test_lecture_page_is_retired_after_its_start(self):
+        expected = w.expected_ids(w.initial_state(), w.date('2026-10-03T18:00:00Z'))
+        with patch.object(w, 'request', side_effect=fetch_fixture) as request:
+            _, pages, errors, _ = w.fetch_sources(expected)
+        self.assertNotIn(w.PROGRAMS[LECTURE]['page'], [call.args[0] for call in request.call_args_list])
+        self.assertNotIn('84484', pages)
+        self.assertFalse(errors)
+
+    def test_possible_love_targets_only_the_two_director_qa_screenings(self):
+        self.assertEqual(w.PROGRAMS['possible-love']['ids'], {'84409', '84410'})
+        payload = feed()
+        film = next(p for p in payload['filmsWithShowtimes'] if p['slug'] == 'possible-love')
+        film['showtimes'].append(dict(film['showtimes'][0], id='84411', status='available',
+                                     ticketsUrl='https://purchase.filmlinc.org/84136/84411'))
+        data = w.parse_feed(payload, set(w.TARGETS))
+        state = w.initial_state()
+        w.observe(state, data, {}, {}, {}, NOW)
+        self.assertIn('84411', state['screenings'])
+        self.assertFalse(state['outbox'])
+        html = page(slug='possible-love') + '<button data-performance-id="84411">RUSH</button>'
+        self.assertEqual(w.parse_page(html, {'84409', '84410'}, 'Possible Love'),
+                         {'84409': False, '84410': False})
+
+    def test_lee_talk_uses_its_own_page_and_purchase_link(self):
+        program = w.PROGRAMS['talk-lee-chang-dong']
+        self.assertEqual(w.fallback_record('84480')['url'], 'https://purchase.filmlinc.org/84479/84480')
+        self.assertEqual(w.parse_page(page(slug='talk-lee-chang-dong'), {'84480'}, program['title']),
+                         {'84480': False})
 
 
 class ObservationTests(unittest.TestCase):
-    def test_any_of_the_four_screenings_can_trigger_a_ticket_alert(self):
+    def test_any_target_can_trigger_a_ticket_alert(self):
         for pid in w.TARGETS:
             with self.subTest(performance_id=pid):
                 state, data = w.initial_state(), records()
@@ -95,6 +165,52 @@ class ObservationTests(unittest.TestCase):
                 alerts = [a for a in state["outbox"] if a["kind"] == "ticket"]
                 self.assertEqual([a["performance_id"] for a in alerts], [pid])
                 self.assertEqual(alerts[0]["click"], data[pid]["url"])
+
+    def test_newly_watched_lecture_alerts_if_already_open_in_catalogue(self):
+        state, data = w.initial_state(), records()
+        observe(state, data)
+        state.pop('watched_ids')  # State from the four-screening deployment.
+        state['screenings']['84484'].update(status='available', rush=True)
+        data['84484'].update(status='available', rush=True)
+        observe(state, data, now=NOW + timedelta(minutes=5))
+        self.assertEqual([(a['kind'], a['performance_id']) for a in state['outbox']],
+                         [('ticket', '84484'), ('rush', '84484')])
+        self.assertTrue(all('Vogel' in a['message'] for a in state['outbox']))
+        observe(state, data, now=NOW + timedelta(minutes=10))
+        self.assertEqual(len(state['outbox']), 2)
+
+    def test_failed_lecture_page_keeps_film_rush_detection_and_records_failure(self):
+        def fetch(url, **kwargs):
+            if url == w.PROGRAMS[LECTURE]['page']:
+                raise w.FetchError('HTTP 503 from www.filmlinc.org')
+            if url == w.PAGE_URL:
+                return page('84274'), {}
+            return fetch_fixture(url)
+        with patch.object(w, 'request', side_effect=fetch), patch('builtins.print'):
+            data, pages, errors, metadata = w.fetch_sources(set(w.TARGETS))
+        state = w.initial_state()
+        state['page_rush']['84484'] = {'rush': False, 'observed_at': w.stamp(NOW)}
+        w.observe(state, data, pages, errors, metadata, NOW)
+        self.assertEqual(state['components']['page']['failures'], 1)
+        self.assertIn(LECTURE, state['components']['page']['error'])
+        self.assertFalse(state['runs'][-1]['page'])
+        self.assertEqual([a['performance_id'] for a in state['outbox']], ['84274'])
+        self.assertEqual(state['page_rush']['84484']['observed_at'], w.stamp(NOW))
+
+    def test_lecture_page_rush_survives_feed_and_film_page_failures(self):
+        def fetch(url, **kwargs):
+            if url == w.PROGRAMS[LECTURE]['page']:
+                return page('84484', LECTURE), {}
+            raise w.FetchError('HTTP 503')
+        with patch.object(w, 'request', side_effect=fetch), patch('builtins.print'):
+            data, pages, errors, metadata = w.fetch_sources(set(w.TARGETS))
+        state = w.initial_state()
+        state['screenings'] = {pid: w.fallback_record(pid) for pid in w.TARGETS}
+        w.observe(state, data, pages, errors, metadata, NOW)
+        alert = state['outbox'][0]
+        self.assertEqual(alert['performance_id'], '84484')
+        self.assertEqual(alert['click'], 'https://purchase.filmlinc.org/84483/84484')
+        self.assertIn('Vogel', alert['message'])
 
     def test_first_opening_repeat_and_reopening(self):
         state, data = w.initial_state(), records()
@@ -316,22 +432,18 @@ class HealthAndStopTests(unittest.TestCase):
 
     def test_manual_cloud_poll_does_not_signal_scheduler_recovery(self):
         with tempfile.TemporaryDirectory() as folder:
-            def fetch(url, **kwargs):
-                return (json.dumps(feed()) if url == w.FEED_URL else page(), {})
             with patch('sys.argv', ['watch.py', 'poll', '--data', folder]), \
                  patch.dict(os.environ, {'GITHUB_ACTIONS': 'true', 'GITHUB_EVENT_NAME': 'workflow_dispatch'}, clear=True), \
-                 patch.object(w, 'utcnow', return_value=NOW), patch.object(w, 'request', side_effect=fetch), \
+                 patch.object(w, 'utcnow', return_value=NOW), patch.object(w, 'request', side_effect=fetch_fixture), \
                  patch.object(w, 'send_health') as health, patch('builtins.print'):
                 self.assertEqual(w.main(), 0)
                 health.assert_not_called()
 
     def test_timer_check_updates_health_and_deduplicates_automatic_triggers(self):
         with tempfile.TemporaryDirectory() as folder:
-            def fetch(url, **kwargs):
-                return (json.dumps(feed()) if url == w.FEED_URL else page(), {})
             with patch('sys.argv', ['watch.py', 'auto', '--data', folder]), \
                  patch.dict(os.environ, {'GITHUB_ACTIONS': 'true', 'GITHUB_EVENT_NAME': 'workflow_dispatch'}, clear=True), \
-                 patch.object(w, 'utcnow', return_value=NOW), patch.object(w, 'request', side_effect=fetch) as network, \
+                 patch.object(w, 'utcnow', return_value=NOW), patch.object(w, 'request', side_effect=fetch_fixture) as network, \
                  patch.object(w, 'send_health') as health, patch('builtins.print'):
                 self.assertEqual(w.main(), 0)
                 health.assert_called_once()

@@ -1,6 +1,6 @@
 # NYFF ticket monitor
 
-Watch for one ticket to any of four *All of a Sudden* screenings at NYFF64. A GitHub-hosted timer starts a check about every five minutes, plus runner startup time. Phone push, email, and independent health alerts are configured; phone and email delivery have been confirmed.
+Watch for one-ticket openings at eight NYFF64 events: four *All of a Sudden* screenings, Hamaguchi's Amos Vogel Lecture, Lee Chang-dong's talk, and the two *Possible Love* screenings with director Q&As. A GitHub-hosted timer starts a check about every five minutes, plus runner startup time. Phone push, email, and independent health alerts are configured; phone and email delivery have been confirmed.
 
 **[Monitor status and controls](https://github.com/karthiktadepalli1/nyff-watch/actions/workflows/watch.yml)** · **[Release history](https://github.com/karthiktadepalli1/nyff-watch/tree/data)** · **[Timing report](https://github.com/karthiktadepalli1/nyff-watch/blob/data/report.md)**
 
@@ -10,19 +10,25 @@ Watch for one ticket to any of four *All of a Sudden* screenings at NYFF64. A Gi
 
 All times are Eastern. Each alert is a prompt to check checkout for one remaining seat.
 
-| Screening | Venue | Purchase |
-|---|---|---|
-| Thursday, October 1, 5 p.m. | Alice Tully Hall | [Open checkout](https://purchase.filmlinc.org/84110/84274) |
-| Friday, October 2, 2 p.m. | Alice Tully Hall | [Open checkout](https://purchase.filmlinc.org/84110/84281) |
-| Sunday, October 4, 7:30 p.m. | Francesca Beale Theater | [Open checkout](https://purchase.filmlinc.org/84110/84158) |
-| Friday, October 9, 12:30 p.m. | Walter Reade Theater | [Open checkout](https://purchase.filmlinc.org/84110/84159) |
+| Event | Date and time | Venue | Purchase |
+|---|---|---|---|
+| Possible Love + Q&A with Lee Chang-dong and cast | September 27, 5:30 p.m. | Alice Tully Hall | [Open checkout](https://purchase.filmlinc.org/84136/84409) |
+| Possible Love + Q&A with Lee Chang-dong | September 28, 11:30 a.m. | Alice Tully Hall | [Open checkout](https://purchase.filmlinc.org/84136/84410) |
+| Talk: Lee Chang-dong | September 28, 4:45 p.m. | Francesca Beale Theater | [Open checkout](https://purchase.filmlinc.org/84479/84480) |
+| All of a Sudden | October 1, 5 p.m. | Alice Tully Hall | [Open checkout](https://purchase.filmlinc.org/84110/84274) |
+| All of a Sudden | October 2, 2 p.m. | Alice Tully Hall | [Open checkout](https://purchase.filmlinc.org/84110/84281) |
+| Amos Vogel Lecture: Ryûsuke Hamaguchi | October 3, 1:30 p.m. | Walter Reade Theater | [Open checkout](https://purchase.filmlinc.org/84483/84484) |
+| All of a Sudden | October 4, 7:30 p.m. | Francesca Beale Theater | [Open checkout](https://purchase.filmlinc.org/84110/84158) |
+| All of a Sudden | October 9, 12:30 p.m. | Walter Reade Theater | [Open checkout](https://purchase.filmlinc.org/84110/84159) |
+
+The two *Possible Love* performance IDs were matched to the official director Q&A promotion records on September 17. [Possible Love](https://www.filmlinc.org/nyff2026/films/possible-love/) · [Lee Chang-dong talk](https://www.filmlinc.org/nyff2026/events/talk-lee-chang-dong/) · [Hamaguchi lecture](https://www.filmlinc.org/nyff2026/events/amos-vogel-lecture-hamaguchi/)
 
 ## What runs
 
-- **Tickets:** reads the official festival feed, matches the four performance IDs, and alerts on available/limited status. An initially open screening also alerts. A closure followed by reopening generates a new alert.
-- **Rush:** reads screening-specific promotion metadata and independently inspects RUSH labels on the film page. Repeated desktop/mobile controls produce one result. The current site's promotion mapping is validated; the first live rush announcement provides a further real-world check.
-- **History:** stores compact changes across all festival screenings on the `data` branch, including observation times, cache headers, availability, rush status, and screening details. A report is generated daily and on demand, with a saved `first24hours.md` report once the first full day has elapsed. New shows enter the dataset; alerts target the four screenings above.
-- **Health:** one combined **NYFF monitor** check alerts after 30 minutes without a successful automatic check-in, or three consecutive failures of the feed, film page, or delivery. The separate page check is a silent dashboard diagnostic. Both sources must recover before the combined check recovers. Manual polls do not clear a scheduler outage. Ongoing reminders and periodic email reports are off.
+- **Tickets:** reads the official festival feed, matches the eight performance IDs, and alerts on available/limited status. An initially open event also alerts, including when newly added to the watch list after appearing in the festival history. A closure followed by reopening generates a new alert.
+- **Rush:** reads screening-specific promotion metadata and independently inspects RUSH labels on each of the four program pages. Repeated desktop/mobile controls produce one result. The current site's promotion mapping is validated; the first live rush announcement provides a further real-world check.
+- **History:** stores compact changes across all festival screenings on the `data` branch, including observation times, cache headers, availability, rush status, and screening details. A report is generated daily and on demand, with a saved `first24hours.md` report once the first full day has elapsed. New shows enter the dataset; alerts target the eight events above.
+- **Health:** one combined **NYFF monitor** check alerts after 30 minutes without a successful automatic check-in, or three consecutive failures of the feed, program pages, or delivery. The separate page check is a silent dashboard diagnostic. Successful pages keep contributing rush signals when another page fails; all active pages must recover before the combined check recovers. Manual polls do not clear a scheduler outage. Ongoing reminders and periodic email reports are off.
 - **Completion:** `stop` records that a ticket was secured, pauses the configured health checks, and disables both monitor and timer workflows. Automatic expiry uses the last target's start time; the next automatic check performs shutdown. The October 9 start also has a dedicated backup schedule entry.
 
 Standard GitHub runners in this public repository, ntfy's free service, and Healthchecks.io's free plan are the intended $0 setup. GitHub queueing and source caches can delay detection beyond five minutes. The run summary shows the last automatic check, access failures, and setup status explicitly.
@@ -31,7 +37,7 @@ Standard GitHub runners in this public repository, ntfy's free service, and Heal
 
 The [timer workflow](https://github.com/karthiktadepalli1/nyff-watch/actions/workflows/timer.yml) uses the `nyff-five-minute-timer` environment, configured with a **five-minute wait timer and no required reviewers**. After the delay, a short job dispatches a ticket check and its next timer run. Waiting happens in GitHub before allocating a runner. GitHub permits its built-in token to trigger `workflow_dispatch` events, so this needs no personal token or external scheduler. [Wait timers](https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments) · [Workflow triggering](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow)
 
-The original minute-2,7,12,… schedule remains as a backup. If it resumes, it can restore an interrupted timer. Automatic triggers less than four minutes apart are deduplicated. Each actual check reads the entire festival feed and checks all four target screenings.
+The original minute-2,7,12,… schedule remains as a backup. If it resumes, it can restore an interrupted timer. Automatic triggers less than four minutes apart are deduplicated. Each actual check reads the entire festival feed once and checks all eight target events, plus their four program pages. Each program page retires after its final watched event begins.
 
 To start or restore the timer, open the timer workflow and choose **Run workflow** once. Its **Waiting** status is normal. The timer verifies that five minutes elapsed before dispatching; bypassing or removing the environment wait halts the chain. It also halts if the repository becomes private. After purchasing, use the monitor's **stop** control rather than canceling a waiting job.
 
@@ -70,7 +76,7 @@ Open **[Run workflow](https://github.com/karthiktadepalli1/nyff-watch/actions/wo
 | `stop` | Record success, pause health checks, and stop scheduling |
 | `auto` | Internal operation dispatched by the automatic timer |
 
-After purchasing one ticket, use **stop**. If pausing a health check fails, the stopped state is retained and subsequent runs retry cleanup before disabling both workflows.
+When finished seeking tickets, use **stop** to end monitoring for all eight events. If pausing a health check fails, the stopped state is retained and subsequent runs retry cleanup before disabling both workflows.
 
 ## Rush and in-person action
 

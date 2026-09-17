@@ -37,7 +37,28 @@ TARGETS = {
     "84281": ("2026-10-02T14:00:00-04:00", "Alice Tully Hall"),
     "84158": ("2026-10-04T19:30:00-04:00", "Francesca Beale Theater"),
     "84159": ("2026-10-09T12:30:00-04:00", "Walter Reade Theater"),
+    "84484": ("2026-10-03T13:30:00-04:00", "Walter Reade Theater"),
+    "84480": ("2026-09-28T16:45:00-04:00", "Francesca Beale Theater"),
+    "84409": ("2026-09-27T17:30:00-04:00", "Alice Tully Hall"),
+    "84410": ("2026-09-28T11:30:00-04:00", "Alice Tully Hall"),
 }
+PROGRAMS = {
+    "all-of-a-sudden": {"title": "All of a Sudden", "page": PAGE_URL,
+                        "production": "84110", "ids": {"84274", "84281", "84158", "84159"}},
+    "amos-vogel-lecture-hamaguchi": {
+        "title": "Amos Vogel Lecture: Ryûsuke Hamaguchi",
+        "page": "https://www.filmlinc.org/nyff2026/events/amos-vogel-lecture-hamaguchi/",
+        "production": "84483", "ids": {"84484"}},
+    "talk-lee-chang-dong": {
+        "title": "Talk: Lee Chang-dong",
+        "page": "https://www.filmlinc.org/nyff2026/events/talk-lee-chang-dong/",
+        "production": "84479", "ids": {"84480"}},
+    "possible-love": {
+        "title": "Possible Love",
+        "page": "https://www.filmlinc.org/nyff2026/films/possible-love/",
+        "production": "84136", "ids": {"84409", "84410"}},
+}
+TARGET_SLUGS = {pid: slug for slug, program in PROGRAMS.items() for pid in program["ids"]}
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
 
@@ -117,10 +138,8 @@ def parse_feed(payload, expected):
     films = payload.get("filmsWithShowtimes")
     if payload.get("slug") != "nyff2026" or not isinstance(films, list) or not films:
         raise ValueError("Unexpected festival feed")
-    result, target_found = {}, False
+    result = {}
     for film in films:
-        if film.get("slug") == "all-of-a-sudden":
-            target_found = True
         promotions = {}
         details = film.get("filmDetails") or film.get("eventDetails") or {}
         for event in details.get("specialEvents") or []:
@@ -137,8 +156,8 @@ def parse_feed(payload, expected):
                 raise ValueError("Screening has no ID or status")
             start = show.get("dateTimeET")
             date(start)  # Reject a partial response before overwriting valid state.
-            if pid in TARGETS and film.get("slug") != "all-of-a-sudden":
-                raise ValueError("Target screening belongs to an unexpected film")
+            if pid in TARGETS and film.get("slug") != TARGET_SLUGS[pid]:
+                raise ValueError("Target screening belongs to an unexpected program")
             promo, explanation = promotions.get(pid, (show.get("promoShort") or "", clean(show.get("promoTooltip"))))
             record = {"id": pid, "film": clean(film.get("title")), "slug": film.get("slug"),
                       "start": start, "venue": clean(show.get("venue")),
@@ -149,8 +168,8 @@ def parse_feed(payload, expected):
             if pid in result and result[pid] != record:
                 raise ValueError("Conflicting duplicate screening records")
             result[pid] = record
-    if not target_found or not expected.issubset(result):
-        raise ValueError("Target film or upcoming screening missing from feed")
+    if not expected.issubset(result):
+        raise ValueError("Upcoming target screening missing from feed")
     return result
 
 
@@ -191,20 +210,52 @@ class RushPageParser(HTMLParser):
                 self.records[pid][-1] += " " + text
 
 
-def parse_page(body, expected):
+def parse_page(body, expected, title="All of a Sudden"):
     parser = RushPageParser()
     parser.feed(body)
     visible = clean(" ".join(parser.visible))
-    if "All of a Sudden" not in visible or not expected.issubset(parser.records):
-        raise ValueError("Film page blocked, incomplete, or screening controls missing")
+    if title not in visible or not expected.issubset(parser.records):
+        raise ValueError("Program page blocked, incomplete, or screening controls missing")
     return {pid: any(re.search(r"\brush\b", text, re.I) for text in texts)
-            for pid, texts in parser.records.items() if pid in TARGETS}
+            for pid, texts in parser.records.items() if pid in expected}
+
+
+def fetch_sources(expected):
+    """Fetch the feed and each active program page; retain partial page results."""
+    sources = {"feed": FEED_URL}
+    sources.update({slug: program["page"] for slug, program in PROGRAMS.items()
+                    if expected & program["ids"]})
+    feed, page = None, {}
+    errors, metadata, page_errors = {}, {"page": {}}, []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(sources)) as pool:
+        pending = {name: pool.submit(request, url, headers={"Cache-Control": "no-cache"})
+                   for name, url in sources.items()}
+        for name, future in pending.items():
+            try:
+                body, headers = future.result()
+                if name == "feed":
+                    metadata[name] = cache_metadata(headers)
+                    feed = parse_feed(json.loads(body), expected)
+                else:
+                    program = PROGRAMS[name]
+                    metadata["page"][name] = cache_metadata(headers)
+                    page.update(parse_page(body, expected & program["ids"], program["title"]))
+            except (FetchError, ValueError, TypeError, KeyError, AttributeError) as exc:
+                error = str(exc) if isinstance(exc, FetchError) else f"Invalid content ({type(exc).__name__})"
+                if name == "feed":
+                    errors[name] = error
+                else:
+                    page_errors.append(f"{name}: {error}")
+                print(f"::warning::{name}: {error}")
+    if page_errors:
+        errors["page"] = "; ".join(page_errors)
+    return feed, page if page or not page_errors else None, errors, metadata
 
 
 def add_alert(state, kind, record, now, message=None, sources=None):
     pid = record["id"]
     title = {"ticket": "Possible ticket release—check now", "rush": "NYFF rush tickets announced",
-             "update": "NYFF screening update", "test": "TEST — NYFF monitor: all four screenings"}[kind]
+             "update": "NYFF screening update", "test": f"TEST — NYFF monitor: {len(TARGETS)} events"}[kind]
     common = f"{record['film']}\n{readable(record['start'])} · {record['venue']}\nObserved {readable(stamp(now))}."
     if kind == "rush":
         start = date(record["start"])
@@ -215,7 +266,8 @@ def add_alert(state, kind, record, now, message=None, sources=None):
     elif kind == "ticket":
         message = "The official feed shows tickets available or limited. Open the purchase link to check for one seat."
     elif kind == "test":
-        common = "All of a Sudden — monitoring all four screenings:\n" + "\n".join(
+        common = "NYFF — monitoring these events:\n" + "\n".join(
+            f"{state['screenings'].get(target, fallback_record(target))['film']} · "
             f"{readable(state['screenings'].get(target, fallback_record(target))['start'])} · "
             f"{state['screenings'].get(target, fallback_record(target))['venue']}" for target in TARGETS)
         message = "Delivery test. You will be alerted if any of these screenings opens or announces rush tickets."
@@ -245,9 +297,15 @@ def observe(state, feed, page, errors, metadata, now):
     old = copy.deepcopy(state["screenings"])
     events = []
     previous = state["components"].get("feed", {}).get("last_success")
+    # Existing deployments tracked these four films while retaining the full
+    # catalogue. A newly watched event must alert even if already open there.
+    watched = set(state.get("watched_ids", PROGRAMS["all-of-a-sudden"]["ids"] if previous else []))
     old_effective = {pid: (old.get(pid, {}).get("rush", False) or state["page_rush"].get(pid, {}).get("rush", False)) for pid in TARGETS}
+    if feed is not None:
+        for pid in set(TARGETS) - watched:
+            old_effective[pid] = state["page_rush"].get(pid, {}).get("rush", False)
     for name, value in (("feed", feed), ("page", page)):
-        component_result(state, name, now, errors.get(name) if value is None else None, metadata.get(name))
+        component_result(state, name, now, errors.get(name), metadata.get(name))
     if feed is not None:
         for pid, item in feed.items():
             before = old.get(pid)
@@ -258,7 +316,7 @@ def observe(state, feed, page, errors, metadata, now):
                                "start": item["start"], "venue": item["venue"], "before": before,
                                "after": item, "cache": metadata.get("feed", {})})
             if pid in TARGETS and date(item["start"]) > now:
-                if item["status"] in OPEN and (before is None or before["status"] not in OPEN):
+                if item["status"] in OPEN and (pid not in watched or before is None or before["status"] not in OPEN):
                     add_alert(state, "ticket", item, now, sources=["feed"])
                 if before:
                     changes = [f"{key.replace('_', ' ')}: {before.get(key)} → {item.get(key)}"
@@ -268,6 +326,7 @@ def observe(state, feed, page, errors, metadata, now):
         # Keep records that vanish, but distinguish absence from an observed closure.
         state["screenings"].update(feed)
         state["present_ids"] = sorted(feed)
+        state["watched_ids"] = sorted(watched | (set(feed) & set(TARGETS)))
     if page is not None:
         for pid, rush in page.items():
             state["page_rush"][pid] = {"rush": rush, "observed_at": stamp(now)}
@@ -278,19 +337,20 @@ def observe(state, feed, page, errors, metadata, now):
         # Page-only detection can work even before the first successful feed.
         current = item.get("rush", False) or state["page_rush"].get(pid, {}).get("rush", False)
         if current and not old_effective[pid]:
-            sources = (["feed"] if item.get("rush") else []) + (["film page"] if state["page_rush"].get(pid, {}).get("rush") else [])
+            sources = (["feed"] if item.get("rush") else []) + (["program page"] if state["page_rush"].get(pid, {}).get("rush") else [])
             add_alert(state, "rush", item, now, sources=sources)
     state.setdefault("started_at", stamp(now))
     state["last_poll"] = stamp(now)
-    state["runs"].append({"at": stamp(now), "feed": feed is not None, "page": page is not None})
+    state["runs"].append({"at": stamp(now), "feed": feed is not None, "page": page is not None and not errors.get("page")})
     state["runs"] = state["runs"][-600:]
     return events
 
 
 def fallback_record(pid):
     start, venue = TARGETS[pid]
-    return {"id": pid, "film": "All of a Sudden", "start": start, "venue": venue,
-            "url": f"https://purchase.filmlinc.org/84110/{pid}", "status": "unknown", "rush": False}
+    program = PROGRAMS[TARGET_SLUGS[pid]]
+    return {"id": pid, "film": program["title"], "start": start, "venue": venue,
+            "url": f"https://purchase.filmlinc.org/{program['production']}/{pid}", "status": "unknown", "rush": False}
 
 
 def still_actionable(alert, state, now):
@@ -494,7 +554,7 @@ def report(state, events):
     for pid in TARGETS:
         item = state["screenings"].get(pid, fallback_record(pid))
         rush = item.get("rush") or state["page_rush"].get(pid, {}).get("rush", False)
-        lines.append(f"| {readable(item['start'])} · {item['venue']} | {item['status']} | {'Yes' if rush else 'No observed designation'} |")
+        lines.append(f"| {item['film']} · {readable(item['start'])} · {item['venue']} | {item['status']} | {'Yes' if rush else 'No observed designation'} |")
     lines += ["", "## Configuration", ""]
     lines += [f"- {key}: {'configured' if value else 'setup required'}" for key, value in state.get("configuration", {}).items()]
     return "\n".join(lines) + "\n"
@@ -540,28 +600,13 @@ def main():
         print(f"Test delivery: phone={last['push']}, email={last['email']}")
         return 0 if last["push"] == last["email"] == "sent" else 1
     expected = expected_ids(state, now)
-    feed = page = None
-    errors, metadata = {}, {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-        pending = {name: pool.submit(request, url, headers={"Cache-Control": "no-cache"})
-                   for name, url in (("feed", FEED_URL), ("page", PAGE_URL))}
-        for name, future in pending.items():
-            try:
-                body, headers = future.result()
-                metadata[name] = cache_metadata(headers)
-                if name == "feed":
-                    feed = parse_feed(json.loads(body), expected)
-                else:
-                    page = parse_page(body, expected)
-            except (FetchError, ValueError, TypeError, KeyError, AttributeError) as exc:
-                errors[name] = str(exc) if isinstance(exc, FetchError) else f"Invalid {name} content ({type(exc).__name__})"
-                print(f"::warning::{name}: {errors[name]}")
+    feed, page, errors, metadata = fetch_sources(expected)
     now = utcnow()
     if args.command == "probe":
-        print(json.dumps({"feed_ok": feed is not None, "page_ok": page is not None,
+        print(json.dumps({"feed_ok": feed is not None, "page_ok": page is not None and not errors.get("page"),
                           "screenings": len(feed or {}), "targets": {pid: (feed or {}).get(pid) for pid in TARGETS},
                           "page_rush": page, "cache": metadata, "errors": errors}, indent=2))
-        return 0 if feed is not None and page is not None else 1
+        return 0 if feed is not None and page is not None and not errors else 1
     # Seed only target identities so a page rush announcement works during a feed outage.
     if feed is None:
         for pid in TARGETS:
@@ -581,7 +626,7 @@ def main():
     for key, value in state["configuration"].items():
         if not value:
             print(f"::warning::{key}: setup required")
-    print(f"Observed {len(feed or {})} screenings; {len(events)} history changes. Feed={'ok' if feed is not None else 'failed'}, page={'ok' if page is not None else 'failed'}.")
+    print(f"Observed {len(feed or {})} screenings; {len(events)} history changes. Feed={'ok' if feed is not None else 'failed'}, pages={'ok' if page is not None and not errors.get('page') else 'failed'}.")
     # A daily report also makes the first 24 hours of coverage reviewable.
     report_day = now.astimezone(ET).date().isoformat()
     if state.get("report_day") != report_day:
@@ -596,7 +641,7 @@ def main():
         (store.folder / "first24hours.md").write_text(report(state, all_events))
         state["first_day_review_at"] = stamp(now)
         store.save(state)
-    return 0 if feed is not None and page is not None and not state["notification_failures"] else 1
+    return 0 if feed is not None and page is not None and not errors and not state["notification_failures"] else 1
 
 
 if __name__ == "__main__":

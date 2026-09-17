@@ -16,7 +16,7 @@ else:
     for pid in TARGETS:
         item = state["screenings"].get(pid, fallback_record(pid))
         rush = item.get("rush") or state.get("page_rush", {}).get(pid, {}).get("rush")
-        print(f"| {readable(item['start'])} · {item['venue']} | {item['status']} | {'Yes' if rush else 'No observed designation'} |")
+        print(f"| {item['film']} · {readable(item['start'])} · {item['venue']} | {item['status']} | {'Yes' if rush else 'No observed designation'} |")
     print("\n## Setup\n")
     for key, configured in state.get("configuration", {}).items():
         print(f"- {key}: {'configured' if configured else '**setup required**'}")
