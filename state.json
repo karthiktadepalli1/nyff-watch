@@ -2,26 +2,26 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "0",
+        "age": "55",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Thu, 17 Sep 2026 13:42:46 GMT",
+        "date": "Thu, 17 Sep 2026 13:47:59 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "MISS"
+        "x-vercel-cache": "HIT"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-17T13:42:46+00:00",
-      "last_success": "2026-09-17T13:42:46+00:00"
+      "last_attempt": "2026-09-17T13:48:02+00:00",
+      "last_success": "2026-09-17T13:48:02+00:00"
     },
     "page": {
       "cache": {
         "age": "0",
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "cf-cache-status": "DYNAMIC",
-        "date": "Thu, 17 Sep 2026 13:42:46 GMT",
+        "date": "Thu, 17 Sep 2026 13:48:02 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +29,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-17T13:42:46+00:00",
-      "last_success": "2026-09-17T13:42:46+00:00"
+      "last_attempt": "2026-09-17T13:48:02+00:00",
+      "last_success": "2026-09-17T13:48:02+00:00"
     }
   },
   "configuration": {
@@ -44,8 +44,8 @@
     "day": "2026-09-17"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-17T13:42:46+00:00",
-  "last_poll": "2026-09-17T13:42:46+00:00",
+  "last_automatic_poll": "2026-09-17T13:48:02+00:00",
+  "last_poll": "2026-09-17T13:48:02+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -99,19 +99,19 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-17T13:42:46+00:00",
+      "observed_at": "2026-09-17T13:48:02+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-17T13:42:46+00:00",
+      "observed_at": "2026-09-17T13:48:02+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-17T13:42:46+00:00",
+      "observed_at": "2026-09-17T13:48:02+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-17T13:42:46+00:00",
+      "observed_at": "2026-09-17T13:48:02+00:00",
       "rush": false
     }
   },
@@ -3684,6 +3684,13 @@
       "feed": true,
       "page": true,
       "run_id": "35228792189",
+      "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-17T13:48:02+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35229357611",
       "trigger": "automatic"
     }
   ],
