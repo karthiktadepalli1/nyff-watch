@@ -2,26 +2,10 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "280",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Thu, 17 Sep 2026 15:21:46 GMT",
-        "etag": null,
-        "last-modified": null,
-        "x-vercel-cache": "HIT"
-      },
-      "error": null,
-      "failures": 0,
-      "health_signal": "up",
-      "last_attempt": "2026-09-17T15:21:46+00:00",
-      "last_success": "2026-09-17T15:21:46+00:00"
-    },
-    "page": {
-      "cache": {
-        "age": "0",
-        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
-        "cf-cache-status": "DYNAMIC",
-        "date": "Thu, 17 Sep 2026 15:21:46 GMT",
+        "date": "Thu, 17 Sep 2026 15:27:39 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -29,8 +13,24 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-17T15:21:46+00:00",
-      "last_success": "2026-09-17T15:21:46+00:00"
+      "last_attempt": "2026-09-17T15:27:39+00:00",
+      "last_success": "2026-09-17T15:27:39+00:00"
+    },
+    "page": {
+      "cache": {
+        "age": "0",
+        "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "date": "Thu, 17 Sep 2026 15:27:36 GMT",
+        "etag": null,
+        "last-modified": null,
+        "x-vercel-cache": "MISS"
+      },
+      "error": null,
+      "failures": 0,
+      "health_signal": "up",
+      "last_attempt": "2026-09-17T15:27:39+00:00",
+      "last_success": "2026-09-17T15:27:39+00:00"
     }
   },
   "configuration": {
@@ -44,8 +44,8 @@
     "day": "2026-09-17"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-17T15:21:46+00:00",
-  "last_poll": "2026-09-17T15:21:46+00:00",
+  "last_automatic_poll": "2026-09-17T15:27:39+00:00",
+  "last_poll": "2026-09-17T15:27:39+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -95,23 +95,39 @@
       "push_sent_at": "2026-09-15T18:48:55+00:00",
       "sources": [],
       "title": "TEST — NYFF monitor: all four screenings"
+    },
+    {
+      "click": "https://purchase.filmlinc.org/84110/84159",
+      "created": "2026-09-17T15:27:39+00:00",
+      "email": "pending",
+      "expires": "2026-09-17T21:27:39+00:00",
+      "id": "8c7990646a02134f48777dab",
+      "kind": "ticket",
+      "message": "All of a Sudden\nFri Oct 09, 12:30 PM ET · Walter Reade Theater\nObserved Thu Sep 17, 11:27 AM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
+      "performance_id": "84159",
+      "priority": 5,
+      "push": "pending",
+      "sources": [
+        "feed"
+      ],
+      "title": "Possible ticket release—check now"
     }
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-17T15:21:46+00:00",
+      "observed_at": "2026-09-17T15:27:39+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-17T15:21:46+00:00",
+      "observed_at": "2026-09-17T15:27:39+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-17T15:21:46+00:00",
+      "observed_at": "2026-09-17T15:27:39+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-17T15:21:46+00:00",
+      "observed_at": "2026-09-17T15:27:39+00:00",
       "rush": false
     }
   },
@@ -3818,6 +3834,13 @@
       "page": true,
       "run_id": "35239715734",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-17T15:27:39+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35240358315",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -3874,7 +3897,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84159": {
-      "available": false,
+      "available": true,
       "film": "All of a Sudden",
       "id": "84159",
       "no_standby": false,
@@ -3882,7 +3905,7 @@
       "rush_text": "",
       "slug": "all-of-a-sudden",
       "start": "2026-10-09T12:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84110/84159",
       "venue": "Walter Reade Theater"
     },
@@ -4480,7 +4503,7 @@
       "rush_text": "",
       "slug": "my-wife-cries",
       "start": "2026-09-28T21:30:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84132/84206",
       "venue": "Walter Reade Theater"
     },
@@ -6032,7 +6055,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84363": {
-      "available": true,
+      "available": false,
       "film": "Just Like Weather",
       "id": "84363",
       "no_standby": false,
@@ -6040,7 +6063,7 @@
       "rush_text": "",
       "slug": "just-like-weather",
       "start": "2026-09-30T19:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84337/84363",
       "venue": "Francesca Beale Theater"
     },
