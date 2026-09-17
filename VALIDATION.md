@@ -1,4 +1,14 @@
-# Deployment checks — September 15, 2026
+# Deployment checks
+
+## September 17: expanded watch list
+
+Added Hamaguchi's Amos Vogel Lecture (`84484`), Lee Chang-dong's talk (`84480`), and the two *Possible Love* director Q&A screenings (`84409`, `84410`). The official feed's screening-specific Q&A records identify Lee Chang-dong at both selected film screenings. The monitor now checks eight target events using one festival-feed request and four program-page requests per cycle.
+
+- [Cloud poll](https://github.com/karthiktadepalli1/nyff-watch/actions/runs/35242717574) succeeded with all eight target IDs and all four pages. At deployment all eight were standby, with no observed rush designation.
+- [All 50 tests passed in GitHub](https://github.com/karthiktadepalli1/nyff-watch/actions/runs/35242718861). Added coverage includes event identity and purchase links, lecture rush records, independent page failures, initial alerts for newly watched catalogue entries, retiring elapsed program pages, and limiting *Possible Love* alerts to the two selected Q&A screenings.
+- Existing phone/email delivery settings, the five-minute timer, festival-wide history, and combined health alert routing remain in use.
+
+## September 15: initial deployment
 
 ## Health-email investigation
 

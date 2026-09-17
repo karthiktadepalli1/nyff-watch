@@ -39,7 +39,7 @@ The [timer workflow](https://github.com/karthiktadepalli1/nyff-watch/actions/wor
 
 The original minute-2,7,12,… schedule remains as a backup. If it resumes, it can restore an interrupted timer. Automatic triggers less than four minutes apart are deduplicated. Each actual check reads the entire festival feed once and checks all eight target events, plus their four program pages. Each program page retires after its final watched event begins.
 
-To start or restore the timer, open the timer workflow and choose **Run workflow** once. Its **Waiting** status is normal. The timer verifies that five minutes elapsed before dispatching; bypassing or removing the environment wait halts the chain. It also halts if the repository becomes private. After purchasing, use the monitor's **stop** control rather than canceling a waiting job.
+To start or restore the timer, open the timer workflow and choose **Run workflow** once. Its **Waiting** status is normal. The timer verifies that five minutes elapsed before dispatching; bypassing or removing the environment wait halts the chain. It also halts if the repository becomes private. When finished seeking tickets, use the monitor's **stop** control.
 
 ## Account setup
 
