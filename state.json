@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Fri, 18 Sep 2026 15:23:58 GMT",
+        "date": "Fri, 18 Sep 2026 15:29:14 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-18T15:23:58+00:00",
-      "last_success": "2026-09-18T15:23:58+00:00"
+      "last_attempt": "2026-09-18T15:29:15+00:00",
+      "last_success": "2026-09-18T15:29:15+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 15:23:58 GMT",
+          "date": "Fri, 18 Sep 2026 15:29:14 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 15:23:58 GMT",
+          "date": "Fri, 18 Sep 2026 15:29:14 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 15:23:58 GMT",
+          "date": "Fri, 18 Sep 2026 15:29:15 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 15:23:58 GMT",
+          "date": "Fri, 18 Sep 2026 15:29:14 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-18T15:23:58+00:00",
-      "last_success": "2026-09-18T15:23:58+00:00"
+      "last_attempt": "2026-09-18T15:29:15+00:00",
+      "last_success": "2026-09-18T15:29:15+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-18"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-18T15:23:58+00:00",
-  "last_poll": "2026-09-18T15:23:58+00:00",
+  "last_automatic_poll": "2026-09-18T15:29:15+00:00",
+  "last_poll": "2026-09-18T15:29:15+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -164,35 +164,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-18T15:23:58+00:00",
+      "observed_at": "2026-09-18T15:29:15+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-18T15:23:58+00:00",
+      "observed_at": "2026-09-18T15:29:15+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-18T15:23:58+00:00",
+      "observed_at": "2026-09-18T15:29:15+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-18T15:23:58+00:00",
+      "observed_at": "2026-09-18T15:29:15+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-18T15:23:58+00:00",
+      "observed_at": "2026-09-18T15:29:15+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-18T15:23:58+00:00",
+      "observed_at": "2026-09-18T15:29:15+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-18T15:23:58+00:00",
+      "observed_at": "2026-09-18T15:29:15+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-18T15:23:58+00:00",
+      "observed_at": "2026-09-18T15:29:15+00:00",
       "rush": false
     }
   },
@@ -585,13 +585,6 @@
   ],
   "report_day": "2026-09-18",
   "runs": [
-    {
-      "at": "2026-09-16T09:48:54+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35081512979",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-16T09:54:05+00:00",
       "feed": true,
@@ -4784,6 +4777,13 @@
       "page": true,
       "run_id": "35362156982",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-18T15:29:15+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35362685180",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -6772,7 +6772,7 @@
       "rush_text": "",
       "slug": "the-drift",
       "start": "2026-09-26T13:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84332/84345",
       "venue": "Francesca Beale Theater"
     },
@@ -7388,7 +7388,7 @@
       "venue": "Alice Tully Hall"
     },
     "84400": {
-      "available": false,
+      "available": true,
       "film": "A Man of His Time",
       "id": "84400",
       "no_standby": false,
@@ -7396,7 +7396,7 @@
       "rush_text": "",
       "slug": "a-man-of-his-time",
       "start": "2026-10-06T20:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84127/84400",
       "venue": "Alice Tully Hall"
     },
