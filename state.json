@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Fri, 18 Sep 2026 18:06:00 GMT",
+        "date": "Fri, 18 Sep 2026 18:11:13 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-18T18:06:01+00:00",
-      "last_success": "2026-09-18T18:06:01+00:00"
+      "last_attempt": "2026-09-18T18:11:13+00:00",
+      "last_success": "2026-09-18T18:11:13+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 18:06:01 GMT",
+          "date": "Fri, 18 Sep 2026 18:11:13 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 18:06:01 GMT",
+          "date": "Fri, 18 Sep 2026 18:11:13 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 18:06:00 GMT",
+          "date": "Fri, 18 Sep 2026 18:11:13 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 18:06:00 GMT",
+          "date": "Fri, 18 Sep 2026 18:11:13 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-18T18:06:01+00:00",
-      "last_success": "2026-09-18T18:06:01+00:00"
+      "last_attempt": "2026-09-18T18:11:13+00:00",
+      "last_success": "2026-09-18T18:11:13+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-18"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-18T18:06:01+00:00",
-  "last_poll": "2026-09-18T18:06:01+00:00",
+  "last_automatic_poll": "2026-09-18T18:11:13+00:00",
+  "last_poll": "2026-09-18T18:11:13+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -182,35 +182,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-18T18:06:01+00:00",
+      "observed_at": "2026-09-18T18:11:13+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-18T18:06:01+00:00",
+      "observed_at": "2026-09-18T18:11:13+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-18T18:06:01+00:00",
+      "observed_at": "2026-09-18T18:11:13+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-18T18:06:01+00:00",
+      "observed_at": "2026-09-18T18:11:13+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-18T18:06:01+00:00",
+      "observed_at": "2026-09-18T18:11:13+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-18T18:06:01+00:00",
+      "observed_at": "2026-09-18T18:11:13+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-18T18:06:01+00:00",
+      "observed_at": "2026-09-18T18:11:13+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-18T18:06:01+00:00",
+      "observed_at": "2026-09-18T18:11:13+00:00",
       "rush": false
     }
   },
@@ -659,13 +659,6 @@
   ],
   "report_day": "2026-09-18",
   "runs": [
-    {
-      "at": "2026-09-16T12:30:32+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35096220882",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-16T12:35:44+00:00",
       "feed": true,
@@ -4858,6 +4851,13 @@
       "page": true,
       "run_id": "35378167387",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-18T18:11:13+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35378675713",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -5421,7 +5421,7 @@
       "venue": "Walter Reade Theater"
     },
     "84198": {
-      "available": false,
+      "available": true,
       "film": "A Man of His Time",
       "id": "84198",
       "no_standby": false,
@@ -5429,7 +5429,7 @@
       "rush_text": "",
       "slug": "a-man-of-his-time",
       "start": "2026-10-10T11:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84127/84198",
       "venue": "Francesca Beale Theater"
     },
@@ -5759,7 +5759,7 @@
       "venue": "Walter Reade Theater"
     },
     "84225": {
-      "available": false,
+      "available": true,
       "film": "The Debut",
       "id": "84225",
       "no_standby": false,
@@ -5767,7 +5767,7 @@
       "rush_text": "",
       "slug": "the-debut",
       "start": "2026-10-10T10:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84142/84225",
       "venue": "Walter Reade Theater"
     },
@@ -5915,7 +5915,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84237": {
-      "available": false,
+      "available": true,
       "film": "The Only Living Pickpocket in New York",
       "id": "84237",
       "no_standby": false,
@@ -5923,7 +5923,7 @@
       "rush_text": "",
       "slug": "the-only-living-pickpocket",
       "start": "2026-10-10T13:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84150/84237",
       "venue": "Walter Reade Theater"
     },
@@ -6903,7 +6903,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84350": {
-      "available": false,
+      "available": true,
       "film": "Gone to Earth",
       "id": "84350",
       "no_standby": false,
@@ -6911,7 +6911,7 @@
       "rush_text": "",
       "slug": "gone-to-earth",
       "start": "2026-10-10T13:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84333/84350",
       "venue": "Howard Gilman Theater"
     },
