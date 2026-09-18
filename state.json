@@ -2,19 +2,19 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "0",
+        "age": "87",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Fri, 18 Sep 2026 18:16:30 GMT",
+        "date": "Fri, 18 Sep 2026 18:21:50 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "MISS"
+        "x-vercel-cache": "HIT"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-18T18:16:31+00:00",
-      "last_success": "2026-09-18T18:16:31+00:00"
+      "last_attempt": "2026-09-18T18:21:54+00:00",
+      "last_success": "2026-09-18T18:21:54+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 18:16:31 GMT",
+          "date": "Fri, 18 Sep 2026 18:21:54 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 18:16:30 GMT",
+          "date": "Fri, 18 Sep 2026 18:21:52 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 18:16:31 GMT",
+          "date": "Fri, 18 Sep 2026 18:21:54 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 18:16:30 GMT",
+          "date": "Fri, 18 Sep 2026 18:21:53 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-18T18:16:31+00:00",
-      "last_success": "2026-09-18T18:16:31+00:00"
+      "last_attempt": "2026-09-18T18:21:54+00:00",
+      "last_success": "2026-09-18T18:21:54+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-18"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-18T18:16:31+00:00",
-  "last_poll": "2026-09-18T18:16:31+00:00",
+  "last_automatic_poll": "2026-09-18T18:21:54+00:00",
+  "last_poll": "2026-09-18T18:21:54+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -182,35 +182,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-18T18:16:31+00:00",
+      "observed_at": "2026-09-18T18:21:54+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-18T18:16:31+00:00",
+      "observed_at": "2026-09-18T18:21:54+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-18T18:16:31+00:00",
+      "observed_at": "2026-09-18T18:21:54+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-18T18:16:31+00:00",
+      "observed_at": "2026-09-18T18:21:54+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-18T18:16:31+00:00",
+      "observed_at": "2026-09-18T18:21:54+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-18T18:16:31+00:00",
+      "observed_at": "2026-09-18T18:21:54+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-18T18:16:31+00:00",
+      "observed_at": "2026-09-18T18:21:54+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-18T18:16:31+00:00",
+      "observed_at": "2026-09-18T18:21:54+00:00",
       "rush": false
     }
   },
@@ -659,13 +659,6 @@
   ],
   "report_day": "2026-09-18",
   "runs": [
-    {
-      "at": "2026-09-16T12:40:55+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35097230070",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-16T12:46:07+00:00",
       "feed": true,
@@ -4858,6 +4851,13 @@
       "page": true,
       "run_id": "35379206098",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-18T18:21:54+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35379723283",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -5226,7 +5226,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84183": {
-      "available": false,
+      "available": true,
       "film": "Everytime",
       "id": "84183",
       "no_standby": false,
@@ -5234,7 +5234,7 @@
       "rush_text": "",
       "slug": "everytime",
       "start": "2026-10-11T15:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84121/84183",
       "venue": "Walter Reade Theater"
     },
@@ -5395,7 +5395,7 @@
       "venue": "Walter Reade Theater"
     },
     "84196": {
-      "available": false,
+      "available": true,
       "film": "A Long Winter",
       "id": "84196",
       "no_standby": false,
@@ -5403,7 +5403,7 @@
       "rush_text": "",
       "slug": "a-long-winter",
       "start": "2026-10-10T15:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84126/84196",
       "venue": "Walter Reade Theater"
     },
@@ -5447,7 +5447,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84200": {
-      "available": false,
+      "available": true,
       "film": "The Man I Love",
       "id": "84200",
       "no_standby": false,
@@ -5455,7 +5455,7 @@
       "rush_text": "",
       "slug": "the-man-i-love",
       "start": "2026-10-12T19:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84128/84200",
       "venue": "Walter Reade Theater"
     },
@@ -5590,7 +5590,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84212": {
-      "available": false,
+      "available": true,
       "film": "Possible Love",
       "id": "84212",
       "no_standby": false,
@@ -5598,7 +5598,7 @@
       "rush_text": "",
       "slug": "possible-love",
       "start": "2026-10-12T10:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84136/84212",
       "venue": "Walter Reade Theater"
     },
@@ -5668,7 +5668,7 @@
       "venue": "Walter Reade Theater"
     },
     "84218": {
-      "available": false,
+      "available": true,
       "film": "Tender Loving Care",
       "id": "84218",
       "no_standby": false,
@@ -5676,7 +5676,7 @@
       "rush_text": "",
       "slug": "tender-loving-care",
       "start": "2026-10-12T13:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84138/84218",
       "venue": "Walter Reade Theater"
     },
@@ -5720,7 +5720,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84222": {
-      "available": false,
+      "available": true,
       "film": "Bucking Fastard",
       "id": "84222",
       "no_standby": false,
@@ -5728,12 +5728,12 @@
       "rush_text": "",
       "slug": "bucking-fastard",
       "start": "2026-10-10T18:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84140/84222",
       "venue": "Walter Reade Theater"
     },
     "84223": {
-      "available": false,
+      "available": true,
       "film": "Bucking Fastard",
       "id": "84223",
       "no_standby": false,
@@ -5741,12 +5741,12 @@
       "rush_text": "",
       "slug": "bucking-fastard",
       "start": "2026-10-12T21:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84140/84223",
       "venue": "Walter Reade Theater"
     },
     "84224": {
-      "available": false,
+      "available": true,
       "film": "Club Kid",
       "id": "84224",
       "no_standby": false,
@@ -5754,12 +5754,12 @@
       "rush_text": "",
       "slug": "club-kid",
       "start": "2026-10-12T16:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84141/84224",
       "venue": "Walter Reade Theater"
     },
     "84225": {
-      "available": true,
+      "available": false,
       "film": "The Debut",
       "id": "84225",
       "no_standby": false,
@@ -5767,7 +5767,7 @@
       "rush_text": "",
       "slug": "the-debut",
       "start": "2026-10-10T10:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84142/84225",
       "venue": "Walter Reade Theater"
     },
@@ -5967,7 +5967,7 @@
       "venue": "Walter Reade Theater"
     },
     "84241": {
-      "available": false,
+      "available": true,
       "film": "A Statement",
       "id": "84241",
       "no_standby": false,
@@ -5975,7 +5975,7 @@
       "rush_text": "",
       "slug": "a-statement",
       "start": "2026-10-11T13:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84151/84241",
       "venue": "Walter Reade Theater"
     },
@@ -7462,7 +7462,7 @@
       "venue": "Alice Tully Hall"
     },
     "84400": {
-      "available": false,
+      "available": true,
       "film": "A Man of His Time",
       "id": "84400",
       "no_standby": false,
@@ -7470,7 +7470,7 @@
       "rush_text": "",
       "slug": "a-man-of-his-time",
       "start": "2026-10-06T20:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84127/84400",
       "venue": "Alice Tully Hall"
     },
@@ -7917,7 +7917,7 @@
       "venue": "Walter Reade Theater"
     },
     "84463": {
-      "available": false,
+      "available": true,
       "film": "Behemoth!",
       "id": "84463",
       "no_standby": false,
@@ -7925,7 +7925,7 @@
       "rush_text": "",
       "slug": "behemoth",
       "start": "2026-10-11T10:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84111/84463",
       "venue": "Walter Reade Theater"
     },
