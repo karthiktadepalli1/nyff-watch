@@ -3,7 +3,7 @@
 Times are America/New_York. These are observed changes, not exact release times.
 Polling gaps and source caches can hide brief openings. Simultaneous changes may be a single batch.
 
-Observed reopenings: **144** across **86 batches**.
+Observed reopenings: **157** across **99 batches**.
 
 ## Openings by Eastern-time hour
 
@@ -17,18 +17,18 @@ Observed reopenings: **144** across **86 batches**.
 | 09:00–09:59 | 1 |
 | 10:00–10:59 | 3 |
 | 11:00–11:59 | 10 |
-| 12:00–12:59 | 9 |
-| 13:00–13:59 | 3 |
-| 14:00–14:59 | 5 |
-| 15:00–15:59 | 3 |
+| 12:00–12:59 | 13 |
+| 13:00–13:59 | 5 |
+| 14:00–14:59 | 7 |
+| 15:00–15:59 | 5 |
 | 16:00–16:59 | 13 |
 | 17:00–17:59 | 29 |
-| 18:00–18:59 | 19 |
+| 18:00–18:59 | 20 |
 | 19:00–19:59 | 15 |
 | 20:00–20:59 | 9 |
-| 21:00–21:59 | 7 |
+| 21:00–21:59 | 8 |
 | 22:00–22:59 | 4 |
-| 23:00–23:59 | 5 |
+| 23:00–23:59 | 6 |
 
 ## Days before screening
 
@@ -36,30 +36,31 @@ Observed reopenings: **144** across **86 batches**.
 |---|---:|
 | 9 | 1 |
 | 10 | 13 |
-| 11 | 16 |
-| 12 | 20 |
-| 13 | 14 |
+| 11 | 21 |
+| 12 | 21 |
+| 13 | 18 |
 | 14 | 10 |
 | 15 | 6 |
 | 17 | 11 |
 | 18 | 13 |
 | 19 | 6 |
 | 20 | 4 |
-| 21 | 5 |
+| 21 | 6 |
 | 22 | 7 |
 | 24 | 7 |
+| 25 | 2 |
 | 26 | 8 |
 | 27 | 2 |
 | 29 | 1 |
 
 ## Observed open durations
 
-Complete observed opening/closure pairs: 137.
-Minimum / median / maximum: 4.8 / 15.7 / 699.4 minutes.
+Complete observed opening/closure pairs: 150.
+Minimum / median / maximum: 4.8 / 16.2 / 699.4 minutes.
 
 ## Recent operation
 
-Retained checks: 481. Longest observed gap: 93.8 minutes.
+Retained checks: 600. Longest observed gap: 93.8 minutes.
 Feed failures: 0; page failures: 0.
 
 ## Target screenings
