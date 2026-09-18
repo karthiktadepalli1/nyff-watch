@@ -171,7 +171,8 @@
       "message": "All of a Sudden\nFri Oct 09, 12:30 PM ET · Walter Reade Theater\nObserved Fri Sep 18, 12:10 PM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
       "performance_id": "84159",
       "priority": 5,
-      "push": "pending",
+      "push": "sent",
+      "push_sent_at": "2026-09-18T16:10:56+00:00",
       "sources": [
         "feed"
       ],
