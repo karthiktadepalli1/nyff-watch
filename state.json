@@ -2,19 +2,19 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "185",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Fri, 18 Sep 2026 13:50:08 GMT",
+        "date": "Fri, 18 Sep 2026 13:55:24 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "HIT"
+        "x-vercel-cache": "MISS"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-18T13:50:09+00:00",
-      "last_success": "2026-09-18T13:50:09+00:00"
+      "last_attempt": "2026-09-18T13:55:27+00:00",
+      "last_success": "2026-09-18T13:55:27+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 13:50:09 GMT",
+          "date": "Fri, 18 Sep 2026 13:55:27 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 13:50:08 GMT",
+          "date": "Fri, 18 Sep 2026 13:55:24 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 13:50:08 GMT",
+          "date": "Fri, 18 Sep 2026 13:55:24 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 18 Sep 2026 13:50:08 GMT",
+          "date": "Fri, 18 Sep 2026 13:55:26 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-18T13:50:09+00:00",
-      "last_success": "2026-09-18T13:50:09+00:00"
+      "last_attempt": "2026-09-18T13:55:27+00:00",
+      "last_success": "2026-09-18T13:55:27+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-18"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-18T13:50:09+00:00",
-  "last_poll": "2026-09-18T13:50:09+00:00",
+  "last_automatic_poll": "2026-09-18T13:55:27+00:00",
+  "last_poll": "2026-09-18T13:55:27+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -146,35 +146,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-18T13:50:09+00:00",
+      "observed_at": "2026-09-18T13:55:27+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-18T13:50:09+00:00",
+      "observed_at": "2026-09-18T13:55:27+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-18T13:50:09+00:00",
+      "observed_at": "2026-09-18T13:55:27+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-18T13:50:09+00:00",
+      "observed_at": "2026-09-18T13:55:27+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-18T13:50:09+00:00",
+      "observed_at": "2026-09-18T13:55:27+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-18T13:50:09+00:00",
+      "observed_at": "2026-09-18T13:55:27+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-18T13:50:09+00:00",
+      "observed_at": "2026-09-18T13:55:27+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-18T13:50:09+00:00",
+      "observed_at": "2026-09-18T13:55:27+00:00",
       "rush": false
     }
   },
@@ -567,13 +567,6 @@
   ],
   "report_day": "2026-09-18",
   "runs": [
-    {
-      "at": "2026-09-16T08:15:06+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35072743083",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-16T08:20:21+00:00",
       "feed": true,
@@ -4765,6 +4758,13 @@
       "feed": true,
       "page": true,
       "run_id": "35352533401",
+      "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-18T13:55:27+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35353054371",
       "trigger": "automatic"
     }
   ],
@@ -9757,7 +9757,7 @@
       "rush_text": "",
       "slug": "bucking-fastard-bronx",
       "start": "2026-10-06T18:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84761/84762",
       "venue": "AMC Bay Plaza Cinema"
     },
