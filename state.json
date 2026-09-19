@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Sat, 19 Sep 2026 20:50:36 GMT",
+        "date": "Sat, 19 Sep 2026 20:55:47 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-19T20:50:36+00:00",
-      "last_success": "2026-09-19T20:50:36+00:00"
+      "last_attempt": "2026-09-19T20:55:47+00:00",
+      "last_success": "2026-09-19T20:55:47+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 19 Sep 2026 20:50:36 GMT",
+          "date": "Sat, 19 Sep 2026 20:55:47 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 19 Sep 2026 20:50:36 GMT",
+          "date": "Sat, 19 Sep 2026 20:55:46 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 19 Sep 2026 20:50:36 GMT",
+          "date": "Sat, 19 Sep 2026 20:55:47 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 19 Sep 2026 20:50:36 GMT",
+          "date": "Sat, 19 Sep 2026 20:55:46 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-19T20:50:36+00:00",
-      "last_success": "2026-09-19T20:50:36+00:00"
+      "last_attempt": "2026-09-19T20:55:47+00:00",
+      "last_success": "2026-09-19T20:55:47+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-19"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-19T20:50:36+00:00",
-  "last_poll": "2026-09-19T20:50:36+00:00",
+  "last_automatic_poll": "2026-09-19T20:55:47+00:00",
+  "last_poll": "2026-09-19T20:55:47+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -200,35 +200,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-19T20:50:36+00:00",
+      "observed_at": "2026-09-19T20:55:47+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-19T20:50:36+00:00",
+      "observed_at": "2026-09-19T20:55:47+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-19T20:50:36+00:00",
+      "observed_at": "2026-09-19T20:55:47+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-19T20:50:36+00:00",
+      "observed_at": "2026-09-19T20:55:47+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-19T20:50:36+00:00",
+      "observed_at": "2026-09-19T20:55:47+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-19T20:50:36+00:00",
+      "observed_at": "2026-09-19T20:55:47+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-19T20:50:36+00:00",
+      "observed_at": "2026-09-19T20:55:47+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-19T20:50:36+00:00",
+      "observed_at": "2026-09-19T20:55:47+00:00",
       "rush": false
     }
   },
@@ -677,13 +677,6 @@
   ],
   "report_day": "2026-09-19",
   "runs": [
-    {
-      "at": "2026-09-17T16:40:38+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35248039048",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-17T16:45:49+00:00",
       "feed": true,
@@ -4876,6 +4869,13 @@
       "page": true,
       "run_id": "35468619359",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-19T20:55:47+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35468873927",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -5725,7 +5725,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84221": {
-      "available": true,
+      "available": false,
       "film": "The Unknown",
       "id": "84221",
       "no_standby": false,
@@ -5733,7 +5733,7 @@
       "rush_text": "",
       "slug": "the-unknown",
       "start": "2026-10-12T21:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84139/84221",
       "venue": "Howard Gilman Theater"
     },
