@@ -272,7 +272,8 @@
     {
       "click": "https://purchase.filmlinc.org/84136/84410",
       "created": "2026-09-21T17:16:53+00:00",
-      "email": "pending",
+      "email": "sent",
+      "email_sent_at": "2026-09-21T17:16:53+00:00",
       "expires": "2026-09-21T23:16:53+00:00",
       "id": "45df77fdd214a8892e4dd6de",
       "kind": "ticket",
