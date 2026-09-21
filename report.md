@@ -3,14 +3,14 @@
 Times are America/New_York. These are observed changes, not exact release times.
 Polling gaps and source caches can hide brief openings. Simultaneous changes may be a single batch.
 
-Observed reopenings: **252** across **144 batches**.
+Observed reopenings: **255** across **147 batches**.
 
 ## Openings by Eastern-time hour
 
 | Hour | Openings |
 |---|---:|
 | 00:00–00:59 | 3 |
-| 01:00–01:59 | 4 |
+| 01:00–01:59 | 5 |
 | 03:00–03:59 | 1 |
 | 07:00–07:59 | 2 |
 | 08:00–08:59 | 3 |
@@ -21,24 +21,25 @@ Observed reopenings: **252** across **144 batches**.
 | 13:00–13:59 | 5 |
 | 14:00–14:59 | 44 |
 | 15:00–15:59 | 16 |
-| 16:00–16:59 | 19 |
+| 16:00–16:59 | 20 |
 | 17:00–17:59 | 37 |
 | 18:00–18:59 | 28 |
 | 19:00–19:59 | 17 |
 | 20:00–20:59 | 11 |
 | 21:00–21:59 | 8 |
 | 22:00–22:59 | 5 |
-| 23:00–23:59 | 6 |
+| 23:00–23:59 | 7 |
 
 ## Days before screening
 
 | Days | Openings |
 |---|---:|
+| 6 | 1 |
 | 7 | 1 |
 | 8 | 3 |
 | 9 | 1 |
 | 10 | 15 |
-| 11 | 23 |
+| 11 | 25 |
 | 12 | 22 |
 | 13 | 27 |
 | 14 | 18 |
@@ -59,8 +60,8 @@ Observed reopenings: **252** across **144 batches**.
 
 ## Observed open durations
 
-Complete observed opening/closure pairs: 243.
-Minimum / median / maximum: 4.8 / 26.3 / 4398.6 minutes.
+Complete observed opening/closure pairs: 246.
+Minimum / median / maximum: 4.8 / 26.4 / 4398.6 minutes.
 
 ## Recent operation
 
