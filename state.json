@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Mon, 21 Sep 2026 18:52:53 GMT",
+        "date": "Mon, 21 Sep 2026 18:58:04 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T18:52:53+00:00",
-      "last_success": "2026-09-21T18:52:53+00:00"
+      "last_attempt": "2026-09-21T18:58:04+00:00",
+      "last_success": "2026-09-21T18:58:04+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 18:52:53 GMT",
+          "date": "Mon, 21 Sep 2026 18:58:04 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 18:52:53 GMT",
+          "date": "Mon, 21 Sep 2026 18:58:04 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 18:52:53 GMT",
+          "date": "Mon, 21 Sep 2026 18:58:04 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 18:52:53 GMT",
+          "date": "Mon, 21 Sep 2026 18:58:04 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T18:52:53+00:00",
-      "last_success": "2026-09-21T18:52:53+00:00"
+      "last_attempt": "2026-09-21T18:58:04+00:00",
+      "last_success": "2026-09-21T18:58:04+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-21"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-21T18:52:53+00:00",
-  "last_poll": "2026-09-21T18:52:53+00:00",
+  "last_automatic_poll": "2026-09-21T18:58:04+00:00",
+  "last_poll": "2026-09-21T18:58:04+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -290,35 +290,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-21T18:52:53+00:00",
+      "observed_at": "2026-09-21T18:58:04+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-21T18:52:53+00:00",
+      "observed_at": "2026-09-21T18:58:04+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-21T18:52:53+00:00",
+      "observed_at": "2026-09-21T18:58:04+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-21T18:52:53+00:00",
+      "observed_at": "2026-09-21T18:58:04+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-21T18:52:53+00:00",
+      "observed_at": "2026-09-21T18:58:04+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-21T18:52:53+00:00",
+      "observed_at": "2026-09-21T18:58:04+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-21T18:52:53+00:00",
+      "observed_at": "2026-09-21T18:58:04+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-21T18:52:53+00:00",
+      "observed_at": "2026-09-21T18:58:04+00:00",
       "rush": false
     }
   },
@@ -773,13 +773,6 @@
   ],
   "report_day": "2026-09-21",
   "runs": [
-    {
-      "at": "2026-09-19T14:41:37+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35449508294",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-19T14:46:47+00:00",
       "feed": true,
@@ -4972,6 +4965,13 @@
       "page": true,
       "run_id": "35641239052",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-21T18:58:04+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35641793267",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -5548,7 +5548,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84199": {
-      "available": true,
+      "available": false,
       "film": "The Man I Love",
       "id": "84199",
       "no_standby": false,
@@ -5556,7 +5556,7 @@
       "rush_text": "",
       "slug": "the-man-i-love",
       "start": "2026-10-09T15:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84128/84199",
       "venue": "Francesca Beale Theater"
     },
@@ -7550,7 +7550,7 @@
       "venue": "Alice Tully Hall"
     },
     "84398": {
-      "available": true,
+      "available": false,
       "film": "A Long Winter",
       "id": "84398",
       "no_standby": false,
@@ -7558,7 +7558,7 @@
       "rush_text": "",
       "slug": "a-long-winter",
       "start": "2026-09-27T21:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84126/84398",
       "venue": "Alice Tully Hall"
     },
@@ -7732,7 +7732,7 @@
       "venue": "Alice Tully Hall"
     },
     "84412": {
-      "available": true,
+      "available": false,
       "film": "Rose",
       "id": "84412",
       "no_standby": false,
@@ -7740,7 +7740,7 @@
       "rush_text": "",
       "slug": "rose",
       "start": "2026-09-26T13:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84137/84412",
       "venue": "Alice Tully Hall"
     },
@@ -7784,7 +7784,7 @@
       "venue": "Alice Tully Hall"
     },
     "84416": {
-      "available": true,
+      "available": false,
       "film": "Bucking Fastard",
       "id": "84416",
       "no_standby": false,
@@ -7792,7 +7792,7 @@
       "rush_text": "",
       "slug": "bucking-fastard",
       "start": "2026-10-08T20:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84140/84416",
       "venue": "Alice Tully Hall"
     },
@@ -10002,7 +10002,7 @@
       "rush_text": "",
       "slug": "everytime",
       "start": "2026-10-08T12:30:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84121/84766",
       "venue": "Howard Gilman Theater"
     },
