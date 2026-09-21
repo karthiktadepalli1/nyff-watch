@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Mon, 21 Sep 2026 16:35:03 GMT",
+        "date": "Mon, 21 Sep 2026 16:40:21 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T16:35:04+00:00",
-      "last_success": "2026-09-21T16:35:04+00:00"
+      "last_attempt": "2026-09-21T16:40:22+00:00",
+      "last_success": "2026-09-21T16:40:22+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 16:35:04 GMT",
+          "date": "Mon, 21 Sep 2026 16:40:21 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 16:35:03 GMT",
+          "date": "Mon, 21 Sep 2026 16:40:21 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 16:35:03 GMT",
+          "date": "Mon, 21 Sep 2026 16:40:21 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 16:35:03 GMT",
+          "date": "Mon, 21 Sep 2026 16:40:21 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T16:35:04+00:00",
-      "last_success": "2026-09-21T16:35:04+00:00"
+      "last_attempt": "2026-09-21T16:40:22+00:00",
+      "last_success": "2026-09-21T16:40:22+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-21"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-21T16:35:04+00:00",
-  "last_poll": "2026-09-21T16:35:04+00:00",
+  "last_automatic_poll": "2026-09-21T16:40:22+00:00",
+  "last_poll": "2026-09-21T16:40:22+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -254,35 +254,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-21T16:35:04+00:00",
+      "observed_at": "2026-09-21T16:40:22+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-21T16:35:04+00:00",
+      "observed_at": "2026-09-21T16:40:22+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-21T16:35:04+00:00",
+      "observed_at": "2026-09-21T16:40:22+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-21T16:35:04+00:00",
+      "observed_at": "2026-09-21T16:40:22+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-21T16:35:04+00:00",
+      "observed_at": "2026-09-21T16:40:22+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-21T16:35:04+00:00",
+      "observed_at": "2026-09-21T16:40:22+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-21T16:35:04+00:00",
+      "observed_at": "2026-09-21T16:40:22+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-21T16:35:04+00:00",
+      "observed_at": "2026-09-21T16:40:22+00:00",
       "rush": false
     }
   },
@@ -737,13 +737,6 @@
   ],
   "report_day": "2026-09-21",
   "runs": [
-    {
-      "at": "2026-09-19T12:26:11+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35442840682",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-19T12:31:25+00:00",
       "feed": true,
@@ -4936,6 +4929,13 @@
       "page": true,
       "run_id": "35626511563",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-21T16:40:22+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35627077529",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -5447,7 +5447,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84194": {
-      "available": false,
+      "available": true,
       "film": "The Loneliest Man in Town",
       "id": "84194",
       "no_standby": false,
@@ -5455,7 +5455,7 @@
       "rush_text": "",
       "slug": "the-loneliest-man-in-town",
       "start": "2026-10-11T12:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84125/84194",
       "venue": "Howard Gilman Theater"
     },
@@ -5512,7 +5512,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84199": {
-      "available": false,
+      "available": true,
       "film": "The Man I Love",
       "id": "84199",
       "no_standby": false,
@@ -5520,7 +5520,7 @@
       "rush_text": "",
       "slug": "the-man-i-love",
       "start": "2026-10-09T15:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84128/84199",
       "venue": "Francesca Beale Theater"
     },
@@ -6370,7 +6370,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84289": {
-      "available": false,
+      "available": true,
       "film": "Foreign Travel",
       "id": "84289",
       "no_standby": false,
@@ -6378,7 +6378,7 @@
       "rush_text": "",
       "slug": "foreign-travel",
       "start": "2026-09-30T21:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84257/84289",
       "venue": "Francesca Beale Theater"
     },
@@ -7054,7 +7054,7 @@
       "rush_text": "",
       "slug": "in-which-annie-gives-it-those",
       "start": "2026-09-29T15:15:00.000-04:00",
-      "status": "limited",
+      "status": "available",
       "url": "https://purchase.filmlinc.org/84335/84355",
       "venue": "Francesca Beale Theater"
     },
