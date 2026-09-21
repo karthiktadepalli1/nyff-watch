@@ -2,19 +2,19 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "77",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Mon, 21 Sep 2026 15:51:39 GMT",
+        "date": "Mon, 21 Sep 2026 15:56:51 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "HIT"
+        "x-vercel-cache": "MISS"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T15:51:40+00:00",
-      "last_success": "2026-09-21T15:51:40+00:00"
+      "last_attempt": "2026-09-21T15:56:51+00:00",
+      "last_success": "2026-09-21T15:56:51+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 15:51:40 GMT",
+          "date": "Mon, 21 Sep 2026 15:56:51 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 15:51:40 GMT",
+          "date": "Mon, 21 Sep 2026 15:56:50 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 15:51:40 GMT",
+          "date": "Mon, 21 Sep 2026 15:56:51 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 15:51:40 GMT",
+          "date": "Mon, 21 Sep 2026 15:56:51 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T15:51:40+00:00",
-      "last_success": "2026-09-21T15:51:40+00:00"
+      "last_attempt": "2026-09-21T15:56:51+00:00",
+      "last_success": "2026-09-21T15:56:51+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-21"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-21T15:51:40+00:00",
-  "last_poll": "2026-09-21T15:51:40+00:00",
+  "last_automatic_poll": "2026-09-21T15:56:51+00:00",
+  "last_poll": "2026-09-21T15:56:51+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -214,39 +214,55 @@
         "feed"
       ],
       "title": "Possible ticket release—check now"
+    },
+    {
+      "click": "https://purchase.filmlinc.org/84110/84281",
+      "created": "2026-09-21T15:56:51+00:00",
+      "email": "pending",
+      "expires": "2026-09-21T21:56:51+00:00",
+      "id": "866786b42aafbf8ab25e59ba",
+      "kind": "ticket",
+      "message": "All of a Sudden\nFri Oct 02, 2:00 PM ET · Alice Tully Hall\nObserved Mon Sep 21, 11:56 AM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
+      "performance_id": "84281",
+      "priority": 5,
+      "push": "pending",
+      "sources": [
+        "feed"
+      ],
+      "title": "Possible ticket release—check now"
     }
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-21T15:51:40+00:00",
+      "observed_at": "2026-09-21T15:56:51+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-21T15:51:40+00:00",
+      "observed_at": "2026-09-21T15:56:51+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-21T15:51:40+00:00",
+      "observed_at": "2026-09-21T15:56:51+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-21T15:51:40+00:00",
+      "observed_at": "2026-09-21T15:56:51+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-21T15:51:40+00:00",
+      "observed_at": "2026-09-21T15:56:51+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-21T15:51:40+00:00",
+      "observed_at": "2026-09-21T15:56:51+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-21T15:51:40+00:00",
+      "observed_at": "2026-09-21T15:56:51+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-21T15:51:40+00:00",
+      "observed_at": "2026-09-21T15:56:51+00:00",
       "rush": false
     }
   },
@@ -695,13 +711,6 @@
   ],
   "report_day": "2026-09-21",
   "runs": [
-    {
-      "at": "2026-09-19T11:44:41+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35440933294",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-19T11:49:50+00:00",
       "feed": true,
@@ -4894,6 +4903,13 @@
       "page": true,
       "run_id": "35621769964",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-21T15:56:51+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35622348261",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -6224,7 +6240,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84281": {
-      "available": false,
+      "available": true,
       "film": "All of a Sudden",
       "id": "84281",
       "no_standby": false,
@@ -6232,7 +6248,7 @@
       "rush_text": "",
       "slug": "all-of-a-sudden",
       "start": "2026-10-02T14:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84110/84281",
       "venue": "Alice Tully Hall"
     },
@@ -7420,7 +7436,7 @@
       "venue": "Alice Tully Hall"
     },
     "84393": {
-      "available": true,
+      "available": false,
       "film": "Clarissa",
       "id": "84393",
       "no_standby": false,
@@ -7428,7 +7444,7 @@
       "rush_text": "",
       "slug": "clarissa",
       "start": "2026-10-04T17:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84113/84393",
       "venue": "Alice Tully Hall"
     },
@@ -7511,7 +7527,7 @@
       "venue": "Alice Tully Hall"
     },
     "84401": {
-      "available": true,
+      "available": false,
       "film": "The Man I Love",
       "id": "84401",
       "no_standby": false,
@@ -7519,12 +7535,12 @@
       "rush_text": "",
       "slug": "the-man-i-love",
       "start": "2026-10-08T18:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84128/84401",
       "venue": "Alice Tully Hall"
     },
     "84402": {
-      "available": true,
+      "available": false,
       "film": "Minotaur",
       "id": "84402",
       "no_standby": false,
@@ -7532,12 +7548,12 @@
       "rush_text": "",
       "slug": "minotaur",
       "start": "2026-10-03T15:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84129/84402",
       "venue": "Alice Tully Hall"
     },
     "84403": {
-      "available": true,
+      "available": false,
       "film": "Minotaur",
       "id": "84403",
       "no_standby": false,
@@ -7545,7 +7561,7 @@
       "rush_text": "",
       "slug": "minotaur",
       "start": "2026-10-05T11:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84129/84403",
       "venue": "Alice Tully Hall"
     },
@@ -7576,7 +7592,7 @@
       "venue": "Alice Tully Hall"
     },
     "84406": {
-      "available": true,
+      "available": false,
       "film": "Once Upon a Time in Harlem",
       "id": "84406",
       "no_standby": false,
@@ -7584,7 +7600,7 @@
       "rush_text": "",
       "slug": "once-upon-a-time-in-harlem",
       "start": "2026-09-29T20:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84134/84406",
       "venue": "Alice Tully Hall"
     },
@@ -7628,7 +7644,7 @@
       "venue": "Alice Tully Hall"
     },
     "84410": {
-      "available": true,
+      "available": false,
       "film": "Possible Love",
       "id": "84410",
       "no_standby": false,
@@ -7636,12 +7652,12 @@
       "rush_text": "",
       "slug": "possible-love",
       "start": "2026-09-28T11:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84136/84410",
       "venue": "Alice Tully Hall"
     },
     "84411": {
-      "available": false,
+      "available": true,
       "film": "Possible Love",
       "id": "84411",
       "no_standby": false,
@@ -7649,12 +7665,12 @@
       "rush_text": "",
       "slug": "possible-love",
       "start": "2026-10-01T13:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84136/84411",
       "venue": "Alice Tully Hall"
     },
     "84412": {
-      "available": false,
+      "available": true,
       "film": "Rose",
       "id": "84412",
       "no_standby": false,
@@ -7662,12 +7678,12 @@
       "rush_text": "",
       "slug": "rose",
       "start": "2026-09-26T13:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84137/84412",
       "venue": "Alice Tully Hall"
     },
     "84413": {
-      "available": true,
+      "available": false,
       "film": "Tender Loving Care",
       "id": "84413",
       "no_standby": false,
@@ -7675,7 +7691,7 @@
       "rush_text": "",
       "slug": "tender-loving-care",
       "start": "2026-09-28T18:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84138/84413",
       "venue": "Alice Tully Hall"
     },
@@ -7693,7 +7709,7 @@
       "venue": "Alice Tully Hall"
     },
     "84415": {
-      "available": false,
+      "available": true,
       "film": "Bucking Fastard",
       "id": "84415",
       "no_standby": false,
@@ -7701,7 +7717,7 @@
       "rush_text": "",
       "slug": "bucking-fastard",
       "start": "2026-09-30T15:30:00.000-04:00",
-      "status": "standby",
+      "status": "available",
       "url": "https://purchase.filmlinc.org/84140/84415",
       "venue": "Alice Tully Hall"
     },
@@ -7714,12 +7730,12 @@
       "rush_text": "",
       "slug": "bucking-fastard",
       "start": "2026-10-08T20:30:00.000-04:00",
-      "status": "limited",
+      "status": "available",
       "url": "https://purchase.filmlinc.org/84140/84416",
       "venue": "Alice Tully Hall"
     },
     "84417": {
-      "available": true,
+      "available": false,
       "film": "Club Kid",
       "id": "84417",
       "no_standby": false,
@@ -7727,7 +7743,7 @@
       "rush_text": "",
       "slug": "club-kid",
       "start": "2026-10-03T21:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84141/84417",
       "venue": "Alice Tully Hall"
     },
@@ -7758,7 +7774,7 @@
       "venue": "Alice Tully Hall"
     },
     "84420": {
-      "available": true,
+      "available": false,
       "film": "Fjord",
       "id": "84420",
       "no_standby": false,
@@ -7766,7 +7782,7 @@
       "rush_text": "",
       "slug": "fjord",
       "start": "2026-10-04T20:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84144/84420",
       "venue": "Alice Tully Hall"
     },
@@ -7784,7 +7800,7 @@
       "venue": "Alice Tully Hall"
     },
     "84422": {
-      "available": false,
+      "available": true,
       "film": "Godzilla Minus Zero",
       "id": "84422",
       "no_standby": false,
@@ -7792,7 +7808,7 @@
       "rush_text": "",
       "slug": "godzilla-minus-zero",
       "start": "2026-09-27T14:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84145/84422",
       "venue": "Alice Tully Hall"
     },
@@ -8213,7 +8229,7 @@
       "venue": "Alice Tully Hall"
     },
     "84498": {
-      "available": false,
+      "available": true,
       "film": "The Debut",
       "id": "84498",
       "no_standby": false,
@@ -8221,7 +8237,7 @@
       "rush_text": "",
       "slug": "the-debut",
       "start": "2026-10-08T15:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84142/84498",
       "venue": "Alice Tully Hall"
     },
@@ -8533,7 +8549,7 @@
       "rush_text": "",
       "slug": "behemoth",
       "start": "2026-10-09T18:30:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://movingimage.org/event/behemoth/",
       "venue": "MOMI"
     },
@@ -8676,7 +8692,7 @@
       "rush_text": "",
       "slug": "once-upon-a-time-in-harlem",
       "start": "2026-10-04T13:30:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://movingimage.org/event/once-upon-a-time-in-harlem/",
       "venue": "MOMI"
     },
@@ -8702,7 +8718,7 @@
       "rush_text": "",
       "slug": "rose",
       "start": "2026-10-04T15:45:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://movingimage.org/event/rose/",
       "venue": "MOMI"
     },
@@ -8715,7 +8731,7 @@
       "rush_text": "",
       "slug": "tender-loving-care",
       "start": "2026-10-08T18:00:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://movingimage.org/event/tender-loving-care/",
       "venue": "MOMI"
     },
@@ -8767,7 +8783,7 @@
       "rush_text": "",
       "slug": "the-only-living-pickpocket",
       "start": "2026-10-09T21:15:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://movingimage.org/event/the-only-living-pickpocket-in-new-york/",
       "venue": "MOMI"
     },
