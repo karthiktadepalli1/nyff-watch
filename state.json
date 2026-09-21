@@ -2,19 +2,19 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "166",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Mon, 21 Sep 2026 15:04:49 GMT",
+        "date": "Mon, 21 Sep 2026 15:10:03 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "HIT"
+        "x-vercel-cache": "MISS"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T15:04:51+00:00",
-      "last_success": "2026-09-21T15:04:51+00:00"
+      "last_attempt": "2026-09-21T15:10:03+00:00",
+      "last_success": "2026-09-21T15:10:03+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 15:04:50 GMT",
+          "date": "Mon, 21 Sep 2026 15:10:01 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 15:04:51 GMT",
+          "date": "Mon, 21 Sep 2026 15:10:01 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 15:04:50 GMT",
+          "date": "Mon, 21 Sep 2026 15:09:59 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 15:04:50 GMT",
+          "date": "Mon, 21 Sep 2026 15:10:01 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T15:04:51+00:00",
-      "last_success": "2026-09-21T15:04:51+00:00"
+      "last_attempt": "2026-09-21T15:10:03+00:00",
+      "last_success": "2026-09-21T15:10:03+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-21"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-21T15:04:51+00:00",
-  "last_poll": "2026-09-21T15:04:51+00:00",
+  "last_automatic_poll": "2026-09-21T15:10:03+00:00",
+  "last_poll": "2026-09-21T15:10:03+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -218,35 +218,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-21T15:04:51+00:00",
+      "observed_at": "2026-09-21T15:10:03+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-21T15:04:51+00:00",
+      "observed_at": "2026-09-21T15:10:03+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-21T15:04:51+00:00",
+      "observed_at": "2026-09-21T15:10:03+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-21T15:04:51+00:00",
+      "observed_at": "2026-09-21T15:10:03+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-21T15:04:51+00:00",
+      "observed_at": "2026-09-21T15:10:03+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-21T15:04:51+00:00",
+      "observed_at": "2026-09-21T15:10:03+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-21T15:04:51+00:00",
+      "observed_at": "2026-09-21T15:10:03+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-21T15:04:51+00:00",
+      "observed_at": "2026-09-21T15:10:03+00:00",
       "rush": false
     }
   },
@@ -695,13 +695,6 @@
   ],
   "report_day": "2026-09-21",
   "runs": [
-    {
-      "at": "2026-09-19T10:52:48+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35438582937",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-19T10:57:59+00:00",
       "feed": true,
@@ -4894,6 +4887,13 @@
       "page": true,
       "run_id": "35616456788",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-21T15:10:03+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35617055838",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -7420,7 +7420,7 @@
       "venue": "Alice Tully Hall"
     },
     "84393": {
-      "available": false,
+      "available": true,
       "film": "Clarissa",
       "id": "84393",
       "no_standby": false,
@@ -7428,7 +7428,7 @@
       "rush_text": "",
       "slug": "clarissa",
       "start": "2026-10-04T17:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84113/84393",
       "venue": "Alice Tully Hall"
     },
@@ -7524,7 +7524,7 @@
       "venue": "Alice Tully Hall"
     },
     "84402": {
-      "available": false,
+      "available": true,
       "film": "Minotaur",
       "id": "84402",
       "no_standby": false,
@@ -7532,7 +7532,7 @@
       "rush_text": "",
       "slug": "minotaur",
       "start": "2026-10-03T15:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84129/84402",
       "venue": "Alice Tully Hall"
     },
@@ -7576,7 +7576,7 @@
       "venue": "Alice Tully Hall"
     },
     "84406": {
-      "available": false,
+      "available": true,
       "film": "Once Upon a Time in Harlem",
       "id": "84406",
       "no_standby": false,
@@ -7584,7 +7584,7 @@
       "rush_text": "",
       "slug": "once-upon-a-time-in-harlem",
       "start": "2026-09-29T20:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84134/84406",
       "venue": "Alice Tully Hall"
     },
@@ -7636,7 +7636,7 @@
       "rush_text": "",
       "slug": "possible-love",
       "start": "2026-09-28T11:30:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84136/84410",
       "venue": "Alice Tully Hall"
     },
@@ -7667,7 +7667,7 @@
       "venue": "Alice Tully Hall"
     },
     "84413": {
-      "available": false,
+      "available": true,
       "film": "Tender Loving Care",
       "id": "84413",
       "no_standby": false,
@@ -7675,12 +7675,12 @@
       "rush_text": "",
       "slug": "tender-loving-care",
       "start": "2026-09-28T18:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84138/84413",
       "venue": "Alice Tully Hall"
     },
     "84414": {
-      "available": false,
+      "available": true,
       "film": "The Unknown",
       "id": "84414",
       "no_standby": false,
@@ -7688,7 +7688,7 @@
       "rush_text": "",
       "slug": "the-unknown",
       "start": "2026-09-28T20:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84139/84414",
       "venue": "Alice Tully Hall"
     },
@@ -7719,7 +7719,7 @@
       "venue": "Alice Tully Hall"
     },
     "84417": {
-      "available": false,
+      "available": true,
       "film": "Club Kid",
       "id": "84417",
       "no_standby": false,
@@ -7727,7 +7727,7 @@
       "rush_text": "",
       "slug": "club-kid",
       "start": "2026-10-03T21:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84141/84417",
       "venue": "Alice Tully Hall"
     },
@@ -7758,7 +7758,7 @@
       "venue": "Alice Tully Hall"
     },
     "84420": {
-      "available": false,
+      "available": true,
       "film": "Fjord",
       "id": "84420",
       "no_standby": false,
@@ -7766,7 +7766,7 @@
       "rush_text": "",
       "slug": "fjord",
       "start": "2026-10-04T20:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84144/84420",
       "venue": "Alice Tully Hall"
     },
@@ -7784,7 +7784,7 @@
       "venue": "Alice Tully Hall"
     },
     "84422": {
-      "available": true,
+      "available": false,
       "film": "Godzilla Minus Zero",
       "id": "84422",
       "no_standby": false,
@@ -7792,7 +7792,7 @@
       "rush_text": "",
       "slug": "godzilla-minus-zero",
       "start": "2026-09-27T14:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84145/84422",
       "venue": "Alice Tully Hall"
     },
@@ -7823,7 +7823,7 @@
       "venue": "Alice Tully Hall"
     },
     "84425": {
-      "available": false,
+      "available": true,
       "film": "Making Marie Antoinette",
       "id": "84425",
       "no_standby": false,
@@ -7831,7 +7831,7 @@
       "rush_text": "",
       "slug": "making-marie-antoinette",
       "start": "2026-09-29T18:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84148/84425",
       "venue": "Alice Tully Hall"
     },
@@ -7888,7 +7888,7 @@
       "venue": "Alice Tully Hall"
     },
     "84458": {
-      "available": false,
+      "available": true,
       "film": "Behemoth!",
       "id": "84458",
       "no_standby": false,
@@ -7896,7 +7896,7 @@
       "rush_text": "",
       "slug": "behemoth",
       "start": "2026-10-03T12:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84111/84458",
       "venue": "Alice Tully Hall"
     },
