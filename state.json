@@ -2,10 +2,10 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "125",
+        "age": "67",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Mon, 21 Sep 2026 17:32:30 GMT",
+        "date": "Mon, 21 Sep 2026 17:38:49 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "HIT"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T17:32:32+00:00",
-      "last_success": "2026-09-21T17:32:32+00:00"
+      "last_attempt": "2026-09-21T17:38:51+00:00",
+      "last_success": "2026-09-21T17:38:51+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 17:32:32 GMT",
+          "date": "Mon, 21 Sep 2026 17:38:50 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 17:32:32 GMT",
+          "date": "Mon, 21 Sep 2026 17:38:51 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 17:32:31 GMT",
+          "date": "Mon, 21 Sep 2026 17:38:50 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 17:32:30 GMT",
+          "date": "Mon, 21 Sep 2026 17:38:50 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T17:32:32+00:00",
-      "last_success": "2026-09-21T17:32:32+00:00"
+      "last_attempt": "2026-09-21T17:38:51+00:00",
+      "last_success": "2026-09-21T17:38:51+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-21"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-21T17:32:32+00:00",
-  "last_poll": "2026-09-21T17:32:32+00:00",
+  "last_automatic_poll": "2026-09-21T17:38:51+00:00",
+  "last_poll": "2026-09-21T17:38:51+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -290,35 +290,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-21T17:32:32+00:00",
+      "observed_at": "2026-09-21T17:38:51+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-21T17:32:32+00:00",
+      "observed_at": "2026-09-21T17:38:51+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-21T17:32:32+00:00",
+      "observed_at": "2026-09-21T17:38:51+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-21T17:32:32+00:00",
+      "observed_at": "2026-09-21T17:38:51+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-21T17:32:32+00:00",
+      "observed_at": "2026-09-21T17:38:51+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-21T17:32:32+00:00",
+      "observed_at": "2026-09-21T17:38:51+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-21T17:32:32+00:00",
+      "observed_at": "2026-09-21T17:38:51+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-21T17:32:32+00:00",
+      "observed_at": "2026-09-21T17:38:51+00:00",
       "rush": false
     }
   },
@@ -773,13 +773,6 @@
   ],
   "report_day": "2026-09-21",
   "runs": [
-    {
-      "at": "2026-09-19T13:23:01+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35445589726",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-19T13:28:23+00:00",
       "feed": true,
@@ -4972,6 +4965,13 @@
       "page": true,
       "run_id": "35632647939",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-21T17:38:51+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35633321451",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -7537,7 +7537,7 @@
       "venue": "Alice Tully Hall"
     },
     "84397": {
-      "available": false,
+      "available": true,
       "film": "Fatherland",
       "id": "84397",
       "no_standby": false,
@@ -7545,7 +7545,7 @@
       "rush_text": "",
       "slug": "fatherland",
       "start": "2026-10-05T14:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84122/84397",
       "venue": "Alice Tully Hall"
     },
@@ -7758,7 +7758,7 @@
       "venue": "Alice Tully Hall"
     },
     "84414": {
-      "available": false,
+      "available": true,
       "film": "The Unknown",
       "id": "84414",
       "no_standby": false,
@@ -7766,7 +7766,7 @@
       "rush_text": "",
       "slug": "the-unknown",
       "start": "2026-09-28T20:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84139/84414",
       "venue": "Alice Tully Hall"
     },
@@ -7966,7 +7966,7 @@
       "venue": "Alice Tully Hall"
     },
     "84458": {
-      "available": false,
+      "available": true,
       "film": "Behemoth!",
       "id": "84458",
       "no_standby": false,
@@ -7974,7 +7974,7 @@
       "rush_text": "",
       "slug": "behemoth",
       "start": "2026-10-03T12:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84111/84458",
       "venue": "Alice Tully Hall"
     },
@@ -8512,7 +8512,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84536": {
-      "available": true,
+      "available": false,
       "film": "Cameron Winter at Carnegie Hall",
       "id": "84536",
       "no_standby": false,
@@ -8520,7 +8520,7 @@
       "rush_text": "",
       "slug": "cameron-winter-at-carnegie",
       "start": "2026-10-01T21:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84535/84536",
       "venue": "Alice Tully Hall"
     },
@@ -9981,7 +9981,7 @@
       "venue": "Walter Reade Theater"
     },
     "84765": {
-      "available": true,
+      "available": false,
       "film": "Artificial",
       "id": "84765",
       "no_standby": false,
@@ -9989,7 +9989,7 @@
       "rush_text": "",
       "slug": "artificial",
       "start": "2026-10-11T18:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84564/84765",
       "venue": "Walter Reade Theater"
     },
