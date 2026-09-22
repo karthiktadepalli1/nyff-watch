@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Mon, 21 Sep 2026 23:55:52 GMT",
+        "date": "Tue, 22 Sep 2026 00:01:08 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T23:55:52+00:00",
-      "last_success": "2026-09-21T23:55:52+00:00"
+      "last_attempt": "2026-09-22T00:01:09+00:00",
+      "last_success": "2026-09-22T00:01:09+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 23:55:51 GMT",
+          "date": "Tue, 22 Sep 2026 00:01:08 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 23:55:50 GMT",
+          "date": "Tue, 22 Sep 2026 00:01:09 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 23:55:50 GMT",
+          "date": "Tue, 22 Sep 2026 00:01:08 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Mon, 21 Sep 2026 23:55:50 GMT",
+          "date": "Tue, 22 Sep 2026 00:01:09 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-21T23:55:52+00:00",
-      "last_success": "2026-09-21T23:55:52+00:00"
+      "last_attempt": "2026-09-22T00:01:09+00:00",
+      "last_success": "2026-09-22T00:01:09+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-21"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-21T23:55:52+00:00",
-  "last_poll": "2026-09-21T23:55:52+00:00",
+  "last_automatic_poll": "2026-09-22T00:01:09+00:00",
+  "last_poll": "2026-09-22T00:01:09+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -290,35 +290,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-21T23:55:52+00:00",
+      "observed_at": "2026-09-22T00:01:09+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-21T23:55:52+00:00",
+      "observed_at": "2026-09-22T00:01:09+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-21T23:55:52+00:00",
+      "observed_at": "2026-09-22T00:01:09+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-21T23:55:52+00:00",
+      "observed_at": "2026-09-22T00:01:09+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-21T23:55:52+00:00",
+      "observed_at": "2026-09-22T00:01:09+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-21T23:55:52+00:00",
+      "observed_at": "2026-09-22T00:01:09+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-21T23:55:52+00:00",
+      "observed_at": "2026-09-22T00:01:09+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-21T23:55:52+00:00",
+      "observed_at": "2026-09-22T00:01:09+00:00",
       "rush": false
     }
   },
@@ -773,13 +773,6 @@
   ],
   "report_day": "2026-09-21",
   "runs": [
-    {
-      "at": "2026-09-19T19:43:05+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35465197536",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-19T19:48:16+00:00",
       "feed": true,
@@ -4972,6 +4965,13 @@
       "page": true,
       "run_id": "35669747215",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-22T00:01:09+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35670112333",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -7901,7 +7901,7 @@
       "venue": "Alice Tully Hall"
     },
     "84425": {
-      "available": false,
+      "available": true,
       "film": "Making Marie Antoinette",
       "id": "84425",
       "no_standby": false,
@@ -7909,7 +7909,7 @@
       "rush_text": "",
       "slug": "making-marie-antoinette",
       "start": "2026-09-29T18:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84148/84425",
       "venue": "Alice Tully Hall"
     },
