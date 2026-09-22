@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 22 Sep 2026 17:12:48 GMT",
+        "date": "Tue, 22 Sep 2026 17:18:05 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-22T17:12:49+00:00",
-      "last_success": "2026-09-22T17:12:49+00:00"
+      "last_attempt": "2026-09-22T17:18:05+00:00",
+      "last_success": "2026-09-22T17:18:05+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 17:12:48 GMT",
+          "date": "Tue, 22 Sep 2026 17:18:05 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 17:12:48 GMT",
+          "date": "Tue, 22 Sep 2026 17:18:05 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 17:12:49 GMT",
+          "date": "Tue, 22 Sep 2026 17:18:05 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 17:12:48 GMT",
+          "date": "Tue, 22 Sep 2026 17:18:05 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-22T17:12:49+00:00",
-      "last_success": "2026-09-22T17:12:49+00:00"
+      "last_attempt": "2026-09-22T17:18:05+00:00",
+      "last_success": "2026-09-22T17:18:05+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-22"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-22T17:12:49+00:00",
-  "last_poll": "2026-09-22T17:12:49+00:00",
+  "last_automatic_poll": "2026-09-22T17:18:05+00:00",
+  "last_poll": "2026-09-22T17:18:05+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -286,39 +286,55 @@
         "feed"
       ],
       "title": "Possible ticket release—check now"
+    },
+    {
+      "click": "https://purchase.filmlinc.org/84110/84281",
+      "created": "2026-09-22T17:18:05+00:00",
+      "email": "pending",
+      "expires": "2026-09-22T23:18:05+00:00",
+      "id": "72837eaa2409e5c5f0ea46bc",
+      "kind": "ticket",
+      "message": "All of a Sudden\nFri Oct 02, 2:00 PM ET · Alice Tully Hall\nObserved Tue Sep 22, 1:18 PM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
+      "performance_id": "84281",
+      "priority": 5,
+      "push": "pending",
+      "sources": [
+        "feed"
+      ],
+      "title": "Possible ticket release—check now"
     }
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-22T17:12:49+00:00",
+      "observed_at": "2026-09-22T17:18:05+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-22T17:12:49+00:00",
+      "observed_at": "2026-09-22T17:18:05+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-22T17:12:49+00:00",
+      "observed_at": "2026-09-22T17:18:05+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-22T17:12:49+00:00",
+      "observed_at": "2026-09-22T17:18:05+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-22T17:12:49+00:00",
+      "observed_at": "2026-09-22T17:18:05+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-22T17:12:49+00:00",
+      "observed_at": "2026-09-22T17:18:05+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-22T17:12:49+00:00",
+      "observed_at": "2026-09-22T17:18:05+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-22T17:12:49+00:00",
+      "observed_at": "2026-09-22T17:18:05+00:00",
       "rush": false
     }
   },
@@ -773,13 +789,6 @@
   ],
   "report_day": "2026-09-22",
   "runs": [
-    {
-      "at": "2026-09-20T12:45:11+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35511508423",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-20T12:50:20+00:00",
       "feed": true,
@@ -4972,6 +4981,13 @@
       "page": true,
       "run_id": "35759183824",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-22T17:18:05+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35759755899",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -6302,7 +6318,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84281": {
-      "available": false,
+      "available": true,
       "film": "All of a Sudden",
       "id": "84281",
       "no_standby": false,
@@ -6310,7 +6326,7 @@
       "rush_text": "",
       "slug": "all-of-a-sudden",
       "start": "2026-10-02T14:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84110/84281",
       "venue": "Alice Tully Hall"
     },
