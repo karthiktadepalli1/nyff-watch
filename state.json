@@ -79,22 +79,6 @@
   "outbox": [
     {
       "click": "https://purchase.filmlinc.org/84110/84274",
-      "created": "2026-09-15T18:41:07+00:00",
-      "email": "sent",
-      "email_sent_at": "2026-09-15T18:41:07+00:00",
-      "expires": "2026-09-15T19:41:07+00:00",
-      "id": "7778bfca20dfcb7c1401d2fa",
-      "kind": "test",
-      "message": "All of a Sudden\nThu Oct 01, 5:00 PM ET · Alice Tully Hall\nObserved Tue Sep 15, 2:41 PM ET.\nDelivery test only. This message does not indicate an actual ticket opening.",
-      "performance_id": "84274",
-      "priority": 3,
-      "push": "sent",
-      "push_sent_at": "2026-09-15T18:41:07+00:00",
-      "sources": [],
-      "title": "TEST — NYFF ticket monitor"
-    },
-    {
-      "click": "https://purchase.filmlinc.org/84110/84274",
       "created": "2026-09-15T18:43:31+00:00",
       "email": "sent",
       "email_sent_at": "2026-09-15T18:43:31+00:00",
