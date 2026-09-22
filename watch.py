@@ -41,6 +41,7 @@ TARGETS = {
     "84480": ("2026-09-28T16:45:00-04:00", "Francesca Beale Theater"),
     "84409": ("2026-09-27T17:30:00-04:00", "Alice Tully Hall"),
     "84410": ("2026-09-28T11:30:00-04:00", "Alice Tully Hall"),
+    "84652": ("2026-09-30T20:00:00-04:00", "Alice Tully Hall"),
 }
 PROGRAMS = {
     "all-of-a-sudden": {"title": "All of a Sudden", "page": PAGE_URL,
@@ -57,6 +58,10 @@ PROGRAMS = {
         "title": "Possible Love",
         "page": "https://www.filmlinc.org/nyff2026/films/possible-love/",
         "production": "84136", "ids": {"84409", "84410"}},
+    "you-can-see-everything": {
+        "title": "You Can See Everything",
+        "page": "https://www.filmlinc.org/nyff2026/films/you-can-see-everything/",
+        "production": "84650", "ids": {"84652"}},
 }
 TARGET_SLUGS = {pid: slug for slug, program in PROGRAMS.items() for pid in program["ids"]}
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}

@@ -1,6 +1,6 @@
 # NYFF: quick operating guide
 
-**Watch list:** four *All of a Sudden* screenings, Hamaguchi's Amos Vogel Lecture, Lee Chang-dong's talk, and the two *Possible Love* director Q&A screenings. Each alert is for a possible one-ticket opening.
+**Watch list:** four *All of a Sudden* screenings, Hamaguchi's Amos Vogel Lecture, Lee Chang-dong's talk, the two *Possible Love* director Q&A screenings, and *You Can See Everything* with Nathan Fielder and Lance Oppenheim's Q&A. Each alert is for a possible one-ticket opening.
 
 ## When an alert arrives
 
@@ -22,11 +22,12 @@
 | Possible Love + director and cast Q&A | Sep 27, 5:30 p.m. | Alice Tully Hall | [Checkout](https://purchase.filmlinc.org/84136/84409) |
 | Possible Love + director Q&A | Sep 28, 11:30 a.m. | Alice Tully Hall | [Checkout](https://purchase.filmlinc.org/84136/84410) |
 | Talk: Lee Chang-dong | Sep 28, 4:45 p.m. | Francesca Beale Theater | [Checkout](https://purchase.filmlinc.org/84479/84480) |
+| You Can See Everything + Fielder/Oppenheim Q&A | Sep 30, 8 p.m. | Alice Tully Hall | [Checkout](https://purchase.filmlinc.org/84650/84652) |
 | Amos Vogel Lecture: Ryûsuke Hamaguchi | Oct 3, 1:30 p.m. | Walter Reade Theater | [Checkout](https://purchase.filmlinc.org/84483/84484) |
 
 ## When finished seeking tickets
 
-Open [monitor controls](https://github.com/karthiktadepalli1/nyff-watch/actions/workflows/watch.yml), select **Run workflow**, choose **stop**, and confirm **Run workflow**. This ends monitoring for all eight events, records completion, pauses both health checks, and disables the monitor and its timer. Automatic expiry is October 9 at 12:30 p.m. Eastern; the first check at or after that time performs shutdown.
+Open [monitor controls](https://github.com/karthiktadepalli1/nyff-watch/actions/workflows/watch.yml), select **Run workflow**, choose **stop**, and confirm **Run workflow**. This ends monitoring for all nine events, records completion, pauses both health checks, and disables the monitor and its timer. Automatic expiry is October 9 at 12:30 p.m. Eastern; the first check at or after that time performs shutdown.
 
 The same menu offers **poll** (check now), **test-alert** (phone and email test), and **report** (refresh timing analysis).
 
@@ -38,6 +39,6 @@ The same menu offers **poll** (check now), **test-alert** (phone and email test)
 - [Saved observations](https://github.com/karthiktadepalli1/nyff-watch/tree/data)
 - [Healthchecks account](https://healthchecks.io/): choose **NYFF 2026**.
 
-Each timer waits five minutes, then queues a check of all eight events and the next timer. Allow additional time for GitHub runner startup and festival caches. The run summary shows **Last automatic check** and event names. Phone pushes are independent of the five-email daily allowance. The monitor continues in the cloud when your computer is asleep.
+Each timer waits five minutes, then queues a check of all nine events and the next timer. Allow additional time for GitHub runner startup and festival caches. The run summary shows **Last automatic check** and event names. Phone pushes are independent of the five-email daily allowance. The monitor continues in the cloud when your computer is asleep.
 
 [Full setup and validation notes](README.md) · [Official rush guidance](https://www.filmlinc.org/how-to-nyff-guide/)
