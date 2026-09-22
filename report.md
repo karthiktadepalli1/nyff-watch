@@ -3,52 +3,53 @@
 Times are America/New_York. These are observed changes, not exact release times.
 Polling gaps and source caches can hide brief openings. Simultaneous changes may be a single batch.
 
-Observed reopenings: **255** across **147 batches**.
+Observed reopenings: **358** across **199 batches**.
 
 ## Openings by Eastern-time hour
 
 | Hour | Openings |
 |---|---:|
-| 00:00–00:59 | 3 |
+| 00:00–00:59 | 4 |
 | 01:00–01:59 | 5 |
 | 03:00–03:59 | 1 |
 | 07:00–07:59 | 2 |
-| 08:00–08:59 | 3 |
+| 08:00–08:59 | 4 |
 | 09:00–09:59 | 2 |
-| 10:00–10:59 | 7 |
-| 11:00–11:59 | 12 |
-| 12:00–12:59 | 22 |
-| 13:00–13:59 | 5 |
-| 14:00–14:59 | 44 |
-| 15:00–15:59 | 16 |
-| 16:00–16:59 | 20 |
-| 17:00–17:59 | 37 |
-| 18:00–18:59 | 28 |
-| 19:00–19:59 | 17 |
-| 20:00–20:59 | 11 |
-| 21:00–21:59 | 8 |
-| 22:00–22:59 | 5 |
+| 10:00–10:59 | 20 |
+| 11:00–11:59 | 27 |
+| 12:00–12:59 | 41 |
+| 13:00–13:59 | 16 |
+| 14:00–14:59 | 55 |
+| 15:00–15:59 | 27 |
+| 16:00–16:59 | 25 |
+| 17:00–17:59 | 41 |
+| 18:00–18:59 | 31 |
+| 19:00–19:59 | 21 |
+| 20:00–20:59 | 13 |
+| 21:00–21:59 | 9 |
+| 22:00–22:59 | 7 |
 | 23:00–23:59 | 7 |
 
 ## Days before screening
 
 | Days | Openings |
 |---|---:|
-| 6 | 1 |
-| 7 | 1 |
-| 8 | 3 |
-| 9 | 1 |
-| 10 | 15 |
-| 11 | 25 |
-| 12 | 22 |
-| 13 | 27 |
-| 14 | 18 |
-| 15 | 6 |
-| 16 | 2 |
-| 17 | 13 |
-| 18 | 17 |
+| 5 | 7 |
+| 6 | 20 |
+| 7 | 8 |
+| 8 | 8 |
+| 9 | 3 |
+| 10 | 24 |
+| 11 | 28 |
+| 12 | 27 |
+| 13 | 32 |
+| 14 | 31 |
+| 15 | 7 |
+| 16 | 6 |
+| 17 | 26 |
+| 18 | 19 |
 | 19 | 7 |
-| 20 | 5 |
+| 20 | 11 |
 | 21 | 9 |
 | 22 | 29 |
 | 23 | 14 |
@@ -57,16 +58,17 @@ Observed reopenings: **255** across **147 batches**.
 | 26 | 8 |
 | 27 | 2 |
 | 29 | 1 |
+| 32 | 2 |
 
 ## Observed open durations
 
-Complete observed opening/closure pairs: 246.
-Minimum / median / maximum: 4.8 / 26.4 / 4398.6 minutes.
+Complete observed opening/closure pairs: 347.
+Minimum / median / maximum: 4.8 / 26.0 / 7781.3 minutes.
 
 ## Recent operation
 
-Retained checks: 600. Longest observed gap: 8.2 minutes.
-Feed failures: 0; page failures: 0.
+Retained checks: 600. Longest observed gap: 10.5 minutes.
+Feed failures: 3; page failures: 2.
 
 ## Target screenings
 
