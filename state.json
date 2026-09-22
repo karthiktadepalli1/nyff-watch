@@ -297,7 +297,8 @@
       "message": "All of a Sudden\nFri Oct 02, 2:00 PM ET · Alice Tully Hall\nObserved Tue Sep 22, 1:18 PM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
       "performance_id": "84281",
       "priority": 5,
-      "push": "pending",
+      "push": "sent",
+      "push_sent_at": "2026-09-22T17:18:05+00:00",
       "sources": [
         "feed"
       ],
