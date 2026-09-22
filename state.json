@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 22 Sep 2026 19:45:28 GMT",
+        "date": "Tue, 22 Sep 2026 19:50:42 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-22T19:45:28+00:00",
-      "last_success": "2026-09-22T19:45:28+00:00"
+      "last_attempt": "2026-09-22T19:50:43+00:00",
+      "last_success": "2026-09-22T19:50:43+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 19:45:28 GMT",
+          "date": "Tue, 22 Sep 2026 19:50:42 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 19:45:28 GMT",
+          "date": "Tue, 22 Sep 2026 19:50:43 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 19:45:28 GMT",
+          "date": "Tue, 22 Sep 2026 19:50:42 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 19:45:28 GMT",
+          "date": "Tue, 22 Sep 2026 19:50:42 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-22T19:45:28+00:00",
-      "last_success": "2026-09-22T19:45:28+00:00"
+      "last_attempt": "2026-09-22T19:50:43+00:00",
+      "last_success": "2026-09-22T19:50:43+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-22"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-22T19:45:28+00:00",
-  "last_poll": "2026-09-22T19:45:28+00:00",
+  "last_automatic_poll": "2026-09-22T19:50:43+00:00",
+  "last_poll": "2026-09-22T19:50:43+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -260,35 +260,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-22T19:45:28+00:00",
+      "observed_at": "2026-09-22T19:50:43+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-22T19:45:28+00:00",
+      "observed_at": "2026-09-22T19:50:43+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-22T19:45:28+00:00",
+      "observed_at": "2026-09-22T19:50:43+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-22T19:45:28+00:00",
+      "observed_at": "2026-09-22T19:50:43+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-22T19:45:28+00:00",
+      "observed_at": "2026-09-22T19:50:43+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-22T19:45:28+00:00",
+      "observed_at": "2026-09-22T19:50:43+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-22T19:45:28+00:00",
+      "observed_at": "2026-09-22T19:50:43+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-22T19:45:28+00:00",
+      "observed_at": "2026-09-22T19:50:43+00:00",
       "rush": false
     }
   },
@@ -743,13 +743,6 @@
   ],
   "report_day": "2026-09-22",
   "runs": [
-    {
-      "at": "2026-09-20T15:16:27+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35519051248",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-20T15:21:39+00:00",
       "feed": true,
@@ -4942,6 +4935,13 @@
       "page": true,
       "run_id": "35775813012",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-22T19:50:43+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35776372858",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -5141,7 +5141,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84170": {
-      "available": false,
+      "available": true,
       "film": "The Diary of a Chambermaid",
       "id": "84170",
       "no_standby": false,
@@ -5149,7 +5149,7 @@
       "rush_text": "",
       "slug": "the-diary-of-a-chambermaid",
       "start": "2026-10-08T16:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84117/84170",
       "venue": "Walter Reade Theater"
     },
