@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Tue, 22 Sep 2026 18:15:42 GMT",
+        "date": "Tue, 22 Sep 2026 18:20:55 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-22T18:15:43+00:00",
-      "last_success": "2026-09-22T18:15:43+00:00"
+      "last_attempt": "2026-09-22T18:20:55+00:00",
+      "last_success": "2026-09-22T18:20:55+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 18:15:42 GMT",
+          "date": "Tue, 22 Sep 2026 18:20:55 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 18:15:42 GMT",
+          "date": "Tue, 22 Sep 2026 18:20:55 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 18:15:42 GMT",
+          "date": "Tue, 22 Sep 2026 18:20:55 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Tue, 22 Sep 2026 18:15:42 GMT",
+          "date": "Tue, 22 Sep 2026 18:20:55 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,8 +58,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-22T18:15:43+00:00",
-      "last_success": "2026-09-22T18:15:43+00:00"
+      "last_attempt": "2026-09-22T18:20:55+00:00",
+      "last_success": "2026-09-22T18:20:55+00:00"
     }
   },
   "configuration": {
@@ -73,8 +73,8 @@
     "day": "2026-09-22"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-22T18:15:43+00:00",
-  "last_poll": "2026-09-22T18:15:43+00:00",
+  "last_automatic_poll": "2026-09-22T18:20:55+00:00",
+  "last_poll": "2026-09-22T18:20:55+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -308,35 +308,35 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-22T18:15:43+00:00",
+      "observed_at": "2026-09-22T18:20:55+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-22T18:15:43+00:00",
+      "observed_at": "2026-09-22T18:20:55+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-22T18:15:43+00:00",
+      "observed_at": "2026-09-22T18:20:55+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-22T18:15:43+00:00",
+      "observed_at": "2026-09-22T18:20:55+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-22T18:15:43+00:00",
+      "observed_at": "2026-09-22T18:20:55+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-22T18:15:43+00:00",
+      "observed_at": "2026-09-22T18:20:55+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-22T18:15:43+00:00",
+      "observed_at": "2026-09-22T18:20:55+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-22T18:15:43+00:00",
+      "observed_at": "2026-09-22T18:20:55+00:00",
       "rush": false
     }
   },
@@ -791,13 +791,6 @@
   ],
   "report_day": "2026-09-22",
   "runs": [
-    {
-      "at": "2026-09-20T13:47:30+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35514521702",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-20T13:52:39+00:00",
       "feed": true,
@@ -4990,6 +4983,13 @@
       "page": true,
       "run_id": "35765974441",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-22T18:20:55+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35766538252",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -5813,7 +5813,7 @@
       "venue": "Walter Reade Theater"
     },
     "84219": {
-      "available": true,
+      "available": false,
       "film": "The Unknown",
       "id": "84219",
       "no_standby": false,
@@ -5821,7 +5821,7 @@
       "rush_text": "",
       "slug": "the-unknown",
       "start": "2026-09-29T12:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84139/84219",
       "venue": "Walter Reade Theater"
     },
@@ -7828,7 +7828,7 @@
       "venue": "Alice Tully Hall"
     },
     "84418": {
-      "available": true,
+      "available": false,
       "film": "Club Kid",
       "id": "84418",
       "no_standby": false,
@@ -7836,7 +7836,7 @@
       "rush_text": "",
       "slug": "club-kid",
       "start": "2026-10-04T14:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84141/84418",
       "venue": "Alice Tully Hall"
     },
@@ -8205,7 +8205,7 @@
       "venue": "Walter Reade Theater"
     },
     "84486": {
-      "available": true,
+      "available": false,
       "film": "Talk: Pedro Almodóvar & Sofia Coppola",
       "id": "84486",
       "no_standby": false,
@@ -8213,7 +8213,7 @@
       "rush_text": "",
       "slug": "talk-almodovar-coppola",
       "start": "2026-10-05T15:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84485/84486",
       "venue": "Walter Reade Theater"
     },
