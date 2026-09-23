@@ -2,19 +2,19 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "0",
+        "age": "115",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 23 Sep 2026 20:59:35 GMT",
+        "date": "Wed, 23 Sep 2026 21:04:58 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "MISS"
+        "x-vercel-cache": "HIT"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-23T20:59:35+00:00",
-      "last_success": "2026-09-23T20:59:35+00:00"
+      "last_attempt": "2026-09-23T21:04:59+00:00",
+      "last_success": "2026-09-23T21:04:59+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 20:59:35 GMT",
+          "date": "Wed, 23 Sep 2026 21:04:59 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 20:59:34 GMT",
+          "date": "Wed, 23 Sep 2026 21:04:59 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 20:59:35 GMT",
+          "date": "Wed, 23 Sep 2026 21:04:59 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 20:59:35 GMT",
+          "date": "Wed, 23 Sep 2026 21:04:59 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 20:59:35 GMT",
+          "date": "Wed, 23 Sep 2026 21:04:59 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-23T20:59:35+00:00",
-      "last_success": "2026-09-23T20:59:35+00:00"
+      "last_attempt": "2026-09-23T21:04:59+00:00",
+      "last_success": "2026-09-23T21:04:59+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-23"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-23T20:59:35+00:00",
-  "last_poll": "2026-09-23T20:59:35+00:00",
+  "last_automatic_poll": "2026-09-23T21:04:59+00:00",
+  "last_poll": "2026-09-23T21:04:59+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -429,39 +429,39 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-23T20:59:35+00:00",
+      "observed_at": "2026-09-23T21:04:59+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-23T20:59:35+00:00",
+      "observed_at": "2026-09-23T21:04:59+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-23T20:59:35+00:00",
+      "observed_at": "2026-09-23T21:04:59+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-23T20:59:35+00:00",
+      "observed_at": "2026-09-23T21:04:59+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-23T20:59:35+00:00",
+      "observed_at": "2026-09-23T21:04:59+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-23T20:59:35+00:00",
+      "observed_at": "2026-09-23T21:04:59+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-23T20:59:35+00:00",
+      "observed_at": "2026-09-23T21:04:59+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-23T20:59:35+00:00",
+      "observed_at": "2026-09-23T21:04:59+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-23T20:59:35+00:00",
+      "observed_at": "2026-09-23T21:04:59+00:00",
       "rush": false
     }
   },
@@ -916,13 +916,6 @@
   ],
   "report_day": "2026-09-23",
   "runs": [
-    {
-      "at": "2026-09-21T16:35:04+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35626511563",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-21T16:40:22+00:00",
       "feed": true,
@@ -5115,6 +5108,13 @@
       "page": true,
       "run_id": "35919573883",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-23T21:04:59+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35920162824",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -6848,7 +6848,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84313": {
-      "available": true,
+      "available": false,
       "film": "Tomorrow a Long Time Ago",
       "id": "84313",
       "no_standby": false,
@@ -6856,7 +6856,7 @@
       "rush_text": "",
       "slug": "tomorrow-a-long-time-ago",
       "start": "2026-10-02T18:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84265/84313",
       "venue": "Francesca Beale Theater"
     },
