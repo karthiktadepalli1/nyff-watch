@@ -2,19 +2,19 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "292",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 23 Sep 2026 01:35:15 GMT",
+        "date": "Wed, 23 Sep 2026 01:40:25 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "HIT"
+        "x-vercel-cache": "MISS"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-23T01:35:17+00:00",
-      "last_success": "2026-09-23T01:35:17+00:00"
+      "last_attempt": "2026-09-23T01:40:26+00:00",
+      "last_success": "2026-09-23T01:40:26+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 01:35:16 GMT",
+          "date": "Wed, 23 Sep 2026 01:40:25 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 01:35:16 GMT",
+          "date": "Wed, 23 Sep 2026 01:40:25 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 01:35:16 GMT",
+          "date": "Wed, 23 Sep 2026 01:40:25 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 01:35:16 GMT",
+          "date": "Wed, 23 Sep 2026 01:40:25 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 01:35:16 GMT",
+          "date": "Wed, 23 Sep 2026 01:40:26 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-23T01:35:17+00:00",
-      "last_success": "2026-09-23T01:35:17+00:00"
+      "last_attempt": "2026-09-23T01:40:26+00:00",
+      "last_success": "2026-09-23T01:40:26+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-23"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-23T01:35:17+00:00",
-  "last_poll": "2026-09-23T01:35:17+00:00",
+  "last_automatic_poll": "2026-09-23T01:40:26+00:00",
+  "last_poll": "2026-09-23T01:40:26+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -305,39 +305,39 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-23T01:35:17+00:00",
+      "observed_at": "2026-09-23T01:40:26+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-23T01:35:17+00:00",
+      "observed_at": "2026-09-23T01:40:26+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-23T01:35:17+00:00",
+      "observed_at": "2026-09-23T01:40:26+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-23T01:35:17+00:00",
+      "observed_at": "2026-09-23T01:40:26+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-23T01:35:17+00:00",
+      "observed_at": "2026-09-23T01:40:26+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-23T01:35:17+00:00",
+      "observed_at": "2026-09-23T01:40:26+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-23T01:35:17+00:00",
+      "observed_at": "2026-09-23T01:40:26+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-23T01:35:17+00:00",
+      "observed_at": "2026-09-23T01:40:26+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-23T01:35:17+00:00",
+      "observed_at": "2026-09-23T01:40:26+00:00",
       "rush": false
     }
   },
@@ -792,13 +792,6 @@
   ],
   "report_day": "2026-09-22",
   "runs": [
-    {
-      "at": "2026-09-20T21:06:17+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35537638160",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-20T21:11:27+00:00",
       "feed": true,
@@ -4991,6 +4984,13 @@
       "page": true,
       "run_id": "35806889763",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-23T01:40:26+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35807250459",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -7530,7 +7530,7 @@
       "venue": "Alice Tully Hall"
     },
     "84394": {
-      "available": true,
+      "available": false,
       "film": "The Dreamed Adventure",
       "id": "84394",
       "no_standby": false,
@@ -7538,7 +7538,7 @@
       "rush_text": "",
       "slug": "the-dreamed-adventure",
       "start": "2026-10-05T20:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84119/84394",
       "venue": "Alice Tully Hall"
     },
