@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 23 Sep 2026 16:00:44 GMT",
+        "date": "Wed, 23 Sep 2026 16:05:47 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-23T16:00:45+00:00",
-      "last_success": "2026-09-23T16:00:45+00:00"
+      "last_attempt": "2026-09-23T16:05:47+00:00",
+      "last_success": "2026-09-23T16:05:47+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 16:00:44 GMT",
+          "date": "Wed, 23 Sep 2026 16:05:47 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 16:00:45 GMT",
+          "date": "Wed, 23 Sep 2026 16:05:47 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 16:00:44 GMT",
+          "date": "Wed, 23 Sep 2026 16:05:47 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 16:00:44 GMT",
+          "date": "Wed, 23 Sep 2026 16:05:46 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 16:00:44 GMT",
+          "date": "Wed, 23 Sep 2026 16:05:47 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-23T16:00:45+00:00",
-      "last_success": "2026-09-23T16:00:45+00:00"
+      "last_attempt": "2026-09-23T16:05:47+00:00",
+      "last_success": "2026-09-23T16:05:47+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-23"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-23T16:00:45+00:00",
-  "last_poll": "2026-09-23T16:00:45+00:00",
+  "last_automatic_poll": "2026-09-23T16:05:47+00:00",
+  "last_poll": "2026-09-23T16:05:47+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -373,43 +373,59 @@
         "feed"
       ],
       "title": "Possible ticket release—check now"
+    },
+    {
+      "click": "https://purchase.filmlinc.org/84136/84410",
+      "created": "2026-09-23T16:05:47+00:00",
+      "email": "pending",
+      "expires": "2026-09-23T22:05:47+00:00",
+      "id": "51cb94bea44da329b7b8dcd8",
+      "kind": "ticket",
+      "message": "Possible Love\nMon Sep 28, 11:30 AM ET · Alice Tully Hall\nObserved Wed Sep 23, 12:05 PM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
+      "performance_id": "84410",
+      "priority": 5,
+      "push": "pending",
+      "sources": [
+        "feed"
+      ],
+      "title": "Possible ticket release—check now"
     }
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-23T16:00:45+00:00",
+      "observed_at": "2026-09-23T16:05:47+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-23T16:00:45+00:00",
+      "observed_at": "2026-09-23T16:05:47+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-23T16:00:45+00:00",
+      "observed_at": "2026-09-23T16:05:47+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-23T16:00:45+00:00",
+      "observed_at": "2026-09-23T16:05:47+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-23T16:00:45+00:00",
+      "observed_at": "2026-09-23T16:05:47+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-23T16:00:45+00:00",
+      "observed_at": "2026-09-23T16:05:47+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-23T16:00:45+00:00",
+      "observed_at": "2026-09-23T16:05:47+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-23T16:00:45+00:00",
+      "observed_at": "2026-09-23T16:05:47+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-23T16:00:45+00:00",
+      "observed_at": "2026-09-23T16:05:47+00:00",
       "rush": false
     }
   },
@@ -864,13 +880,6 @@
   ],
   "report_day": "2026-09-23",
   "runs": [
-    {
-      "at": "2026-09-21T11:31:07+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35594456753",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-21T11:36:17+00:00",
       "feed": true,
@@ -5063,6 +5072,13 @@
       "page": true,
       "run_id": "35885679835",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-23T16:05:47+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35886317859",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -7797,7 +7813,7 @@
       "venue": "Alice Tully Hall"
     },
     "84410": {
-      "available": false,
+      "available": true,
       "film": "Possible Love",
       "id": "84410",
       "no_standby": false,
@@ -7805,7 +7821,7 @@
       "rush_text": "",
       "slug": "possible-love",
       "start": "2026-09-28T11:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84136/84410",
       "venue": "Alice Tully Hall"
     },
