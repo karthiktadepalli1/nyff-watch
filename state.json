@@ -384,7 +384,8 @@
       "message": "Possible Love\nMon Sep 28, 11:30 AM ET · Alice Tully Hall\nObserved Wed Sep 23, 12:05 PM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
       "performance_id": "84410",
       "priority": 5,
-      "push": "pending",
+      "push": "sent",
+      "push_sent_at": "2026-09-23T16:05:47+00:00",
       "sources": [
         "feed"
       ],
