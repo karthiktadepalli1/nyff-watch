@@ -2,19 +2,19 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "0",
+        "age": "141",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Wed, 23 Sep 2026 18:27:32 GMT",
+        "date": "Wed, 23 Sep 2026 18:32:43 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "MISS"
+        "x-vercel-cache": "HIT"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-23T18:27:32+00:00",
-      "last_success": "2026-09-23T18:27:32+00:00"
+      "last_attempt": "2026-09-23T18:32:46+00:00",
+      "last_success": "2026-09-23T18:32:46+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 18:27:29 GMT",
+          "date": "Wed, 23 Sep 2026 18:32:44 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 18:27:30 GMT",
+          "date": "Wed, 23 Sep 2026 18:32:44 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 18:27:30 GMT",
+          "date": "Wed, 23 Sep 2026 18:32:46 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 18:27:29 GMT",
+          "date": "Wed, 23 Sep 2026 18:32:44 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Wed, 23 Sep 2026 18:27:29 GMT",
+          "date": "Wed, 23 Sep 2026 18:32:44 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-23T18:27:32+00:00",
-      "last_success": "2026-09-23T18:27:32+00:00"
+      "last_attempt": "2026-09-23T18:32:46+00:00",
+      "last_success": "2026-09-23T18:32:46+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-23"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-23T18:27:32+00:00",
-  "last_poll": "2026-09-23T18:27:32+00:00",
+  "last_automatic_poll": "2026-09-23T18:32:46+00:00",
+  "last_poll": "2026-09-23T18:32:46+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -429,39 +429,39 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-23T18:27:32+00:00",
+      "observed_at": "2026-09-23T18:32:46+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-23T18:27:32+00:00",
+      "observed_at": "2026-09-23T18:32:46+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-23T18:27:32+00:00",
+      "observed_at": "2026-09-23T18:32:46+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-23T18:27:32+00:00",
+      "observed_at": "2026-09-23T18:32:46+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-23T18:27:32+00:00",
+      "observed_at": "2026-09-23T18:32:46+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-23T18:27:32+00:00",
+      "observed_at": "2026-09-23T18:32:46+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-23T18:27:32+00:00",
+      "observed_at": "2026-09-23T18:32:46+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-23T18:27:32+00:00",
+      "observed_at": "2026-09-23T18:32:46+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-23T18:27:32+00:00",
+      "observed_at": "2026-09-23T18:32:46+00:00",
       "rush": false
     }
   },
@@ -916,13 +916,6 @@
   ],
   "report_day": "2026-09-23",
   "runs": [
-    {
-      "at": "2026-09-21T13:56:55+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35608849459",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-21T14:02:06+00:00",
       "feed": true,
@@ -5115,6 +5108,13 @@
       "page": true,
       "run_id": "35902576748",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-23T18:32:46+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "35903190632",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -7498,7 +7498,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84377": {
-      "available": true,
+      "available": false,
       "film": "Report to Mother",
       "id": "84377",
       "no_standby": false,
@@ -7506,7 +7506,7 @@
       "rush_text": "",
       "slug": "report-to-mother",
       "start": "2026-09-26T14:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84341/84377",
       "venue": "Howard Gilman Theater"
     },
@@ -8330,7 +8330,7 @@
       "venue": "Walter Reade Theater"
     },
     "84486": {
-      "available": true,
+      "available": false,
       "film": "Talk: Pedro Almodóvar & Sofia Coppola",
       "id": "84486",
       "no_standby": false,
@@ -8338,7 +8338,7 @@
       "rush_text": "",
       "slug": "talk-almodovar-coppola",
       "start": "2026-10-05T15:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84485/84486",
       "venue": "Walter Reade Theater"
     },
