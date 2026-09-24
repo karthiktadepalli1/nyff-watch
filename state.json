@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Thu, 24 Sep 2026 16:13:36 GMT",
+        "date": "Thu, 24 Sep 2026 16:18:47 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-24T16:13:37+00:00",
-      "last_success": "2026-09-24T16:13:37+00:00"
+      "last_attempt": "2026-09-24T16:18:48+00:00",
+      "last_success": "2026-09-24T16:18:48+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Thu, 24 Sep 2026 16:13:36 GMT",
+          "date": "Thu, 24 Sep 2026 16:18:48 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Thu, 24 Sep 2026 16:13:36 GMT",
+          "date": "Thu, 24 Sep 2026 16:18:47 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Thu, 24 Sep 2026 16:13:36 GMT",
+          "date": "Thu, 24 Sep 2026 16:18:47 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Thu, 24 Sep 2026 16:13:36 GMT",
+          "date": "Thu, 24 Sep 2026 16:18:47 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Thu, 24 Sep 2026 16:13:36 GMT",
+          "date": "Thu, 24 Sep 2026 16:18:47 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-24T16:13:37+00:00",
-      "last_success": "2026-09-24T16:13:37+00:00"
+      "last_attempt": "2026-09-24T16:18:48+00:00",
+      "last_success": "2026-09-24T16:18:48+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-24"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-24T16:13:37+00:00",
-  "last_poll": "2026-09-24T16:13:37+00:00",
+  "last_automatic_poll": "2026-09-24T16:18:48+00:00",
+  "last_poll": "2026-09-24T16:18:48+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -411,39 +411,39 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-24T16:13:37+00:00",
+      "observed_at": "2026-09-24T16:18:48+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-24T16:13:37+00:00",
+      "observed_at": "2026-09-24T16:18:48+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-24T16:13:37+00:00",
+      "observed_at": "2026-09-24T16:18:48+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-24T16:13:37+00:00",
+      "observed_at": "2026-09-24T16:18:48+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-24T16:13:37+00:00",
+      "observed_at": "2026-09-24T16:18:48+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-24T16:13:37+00:00",
+      "observed_at": "2026-09-24T16:18:48+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-24T16:13:37+00:00",
+      "observed_at": "2026-09-24T16:18:48+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-24T16:13:37+00:00",
+      "observed_at": "2026-09-24T16:18:48+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-24T16:13:37+00:00",
+      "observed_at": "2026-09-24T16:18:48+00:00",
       "rush": false
     }
   },
@@ -898,13 +898,6 @@
   ],
   "report_day": "2026-09-24",
   "runs": [
-    {
-      "at": "2026-09-22T11:46:53+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35723353713",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-22T11:52:09+00:00",
       "feed": true,
@@ -5097,6 +5090,13 @@
       "page": true,
       "run_id": "36025847046",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-24T16:18:48+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "36026459383",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -5400,7 +5400,7 @@
       "venue": "Walter Reade Theater"
     },
     "84178": {
-      "available": false,
+      "available": true,
       "film": "Everything Else Is Noise",
       "id": "84178",
       "no_standby": false,
@@ -5408,7 +5408,7 @@
       "rush_text": "",
       "slug": "everything-else-is-noise",
       "start": "2026-09-27T21:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84120/84178",
       "venue": "Francesca Beale Theater"
     },
@@ -5738,7 +5738,7 @@
       "venue": "Walter Reade Theater"
     },
     "84205": {
-      "available": false,
+      "available": true,
       "film": "My Undesirable Friends: Part II – Exile",
       "id": "84205",
       "no_standby": false,
@@ -5746,7 +5746,7 @@
       "rush_text": "",
       "slug": "my-undesirable-friends-part-ii",
       "start": "2026-09-27T11:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84131/84205",
       "venue": "Francesca Beale Theater"
     },
@@ -5842,7 +5842,7 @@
       "venue": "Walter Reade Theater"
     },
     "84213": {
-      "available": false,
+      "available": true,
       "film": "Rose",
       "id": "84213",
       "no_standby": false,
@@ -5850,7 +5850,7 @@
       "rush_text": "",
       "slug": "rose",
       "start": "2026-09-27T21:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84137/84213",
       "venue": "Walter Reade Theater"
     },
@@ -6253,7 +6253,7 @@
       "rush_text": "",
       "slug": "sixteen-moments-of-my-life",
       "start": "2026-10-11T18:15:00.000-04:00",
-      "status": "available",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84152/84244",
       "venue": "Howard Gilman Theater"
     },
@@ -6583,7 +6583,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84293": {
-      "available": false,
+      "available": true,
       "film": "Heil Jupiter!",
       "id": "84293",
       "no_standby": false,
@@ -6591,7 +6591,7 @@
       "rush_text": "",
       "slug": "heil-jupiter",
       "start": "2026-09-27T14:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84259/84293",
       "venue": "Walter Reade Theater"
     },
@@ -6986,7 +6986,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84325": {
-      "available": false,
+      "available": true,
       "film": "Currents Program 4: The Real World",
       "id": "84325",
       "no_standby": false,
@@ -6994,7 +6994,7 @@
       "rush_text": "",
       "slug": "program-4-the-real-world",
       "start": "2026-09-27T19:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84271/84325",
       "venue": "Francesca Beale Theater"
     },
@@ -7662,7 +7662,7 @@
       "venue": "Alice Tully Hall"
     },
     "84397": {
-      "available": true,
+      "available": false,
       "film": "Fatherland",
       "id": "84397",
       "no_standby": false,
@@ -7670,7 +7670,7 @@
       "rush_text": "",
       "slug": "fatherland",
       "start": "2026-10-05T14:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84122/84397",
       "venue": "Alice Tully Hall"
     },
@@ -7805,7 +7805,7 @@
       "venue": "Alice Tully Hall"
     },
     "84408": {
-      "available": false,
+      "available": true,
       "film": "Paper Tiger",
       "id": "84408",
       "no_standby": false,
@@ -7813,7 +7813,7 @@
       "rush_text": "",
       "slug": "paper-tiger",
       "start": "2026-09-25T21:00:00.000-04:00",
-      "status": "standby",
+      "status": "available",
       "url": "https://purchase.filmlinc.org/84135/84408",
       "venue": "Alice Tully Hall"
     },
@@ -8390,7 +8390,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84496": {
-      "available": false,
+      "available": true,
       "film": "NAZA",
       "id": "84496",
       "no_standby": false,
@@ -8398,7 +8398,7 @@
       "rush_text": "",
       "slug": "naza",
       "start": "2026-09-27T12:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84495/84496",
       "venue": "Walter Reade Theater"
     },
