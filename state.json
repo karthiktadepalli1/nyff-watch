@@ -2,10 +2,10 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "39",
+        "age": "189",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Fri, 25 Sep 2026 17:31:02 GMT",
+        "date": "Fri, 25 Sep 2026 17:36:12 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "HIT"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-25T17:31:03+00:00",
-      "last_success": "2026-09-25T17:31:03+00:00"
+      "last_attempt": "2026-09-25T17:36:13+00:00",
+      "last_success": "2026-09-25T17:36:13+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 17:31:03 GMT",
+          "date": "Fri, 25 Sep 2026 17:36:13 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 17:31:02 GMT",
+          "date": "Fri, 25 Sep 2026 17:36:12 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 17:31:02 GMT",
+          "date": "Fri, 25 Sep 2026 17:36:13 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 17:31:02 GMT",
+          "date": "Fri, 25 Sep 2026 17:36:13 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 17:31:03 GMT",
+          "date": "Fri, 25 Sep 2026 17:36:13 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-25T17:31:03+00:00",
-      "last_success": "2026-09-25T17:31:03+00:00"
+      "last_attempt": "2026-09-25T17:36:13+00:00",
+      "last_success": "2026-09-25T17:36:13+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-25"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-25T17:31:03+00:00",
-  "last_poll": "2026-09-25T17:31:03+00:00",
+  "last_automatic_poll": "2026-09-25T17:36:13+00:00",
+  "last_poll": "2026-09-25T17:36:13+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -461,43 +461,59 @@
         "feed"
       ],
       "title": "Possible ticket release—check now"
+    },
+    {
+      "click": "https://purchase.filmlinc.org/84479/84480",
+      "created": "2026-09-25T17:36:13+00:00",
+      "email": "pending",
+      "expires": "2026-09-25T23:36:13+00:00",
+      "id": "9b6b607d8c842e864f9e35c0",
+      "kind": "ticket",
+      "message": "Talk: Lee Chang-dong\nMon Sep 28, 4:45 PM ET · Francesca Beale Theater\nObserved Fri Sep 25, 1:36 PM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
+      "performance_id": "84480",
+      "priority": 5,
+      "push": "pending",
+      "sources": [
+        "feed"
+      ],
+      "title": "Possible ticket release—check now"
     }
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-25T17:31:03+00:00",
+      "observed_at": "2026-09-25T17:36:13+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-25T17:31:03+00:00",
+      "observed_at": "2026-09-25T17:36:13+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-25T17:31:03+00:00",
+      "observed_at": "2026-09-25T17:36:13+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-25T17:31:03+00:00",
+      "observed_at": "2026-09-25T17:36:13+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-25T17:31:03+00:00",
+      "observed_at": "2026-09-25T17:36:13+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-25T17:31:03+00:00",
+      "observed_at": "2026-09-25T17:36:13+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-25T17:31:03+00:00",
+      "observed_at": "2026-09-25T17:36:13+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-25T17:31:03+00:00",
+      "observed_at": "2026-09-25T17:36:13+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-25T17:31:03+00:00",
+      "observed_at": "2026-09-25T17:36:13+00:00",
       "rush": false
     }
   },
@@ -981,13 +997,6 @@
   ],
   "report_day": "2026-09-25",
   "runs": [
-    {
-      "at": "2026-09-23T13:13:27+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35865567775",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-23T13:18:40+00:00",
       "feed": true,
@@ -5180,6 +5189,13 @@
       "page": true,
       "run_id": "36167595349",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-25T17:36:13+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "36168146988",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -6523,7 +6539,7 @@
       "venue": "Alice Tully Hall"
     },
     "84282": {
-      "available": false,
+      "available": true,
       "film": "Life of Jorge Luis Borges",
       "id": "84282",
       "no_standby": false,
@@ -6531,7 +6547,7 @@
       "rush_text": "",
       "slug": "life-of-jorge-luis-borges",
       "start": "2026-09-28T12:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84254/84282",
       "venue": "Howard Gilman Theater"
     },
@@ -7056,7 +7072,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84324": {
-      "available": false,
+      "available": true,
       "film": "Currents Program 3: Surface Noise",
       "id": "84324",
       "no_standby": false,
@@ -7064,7 +7080,7 @@
       "rush_text": "",
       "slug": "program-3-surface-noise",
       "start": "2026-09-28T19:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84270/84324",
       "venue": "Howard Gilman Theater"
     },
@@ -7103,7 +7119,7 @@
       "rush_text": "",
       "slug": "program-5-the-material-ghost",
       "start": "2026-09-28T21:30:00.000-04:00",
-      "status": "limited",
+      "status": "available",
       "url": "https://purchase.filmlinc.org/84272/84327",
       "venue": "Francesca Beale Theater"
     },
@@ -7277,7 +7293,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84354": {
-      "available": false,
+      "available": true,
       "film": "In Which Annie Gives It Those Ones",
       "id": "84354",
       "no_standby": false,
@@ -7285,7 +7301,7 @@
       "rush_text": "",
       "slug": "in-which-annie-gives-it-those",
       "start": "2026-09-28T18:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84335/84354",
       "venue": "Francesca Beale Theater"
     },
@@ -7641,7 +7657,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84383": {
-      "available": false,
+      "available": true,
       "film": "Yesterday Girl",
       "id": "84383",
       "no_standby": false,
@@ -7649,7 +7665,7 @@
       "rush_text": "",
       "slug": "yesterday-girl",
       "start": "2026-09-28T21:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84343/84383",
       "venue": "Howard Gilman Theater"
     },
@@ -8356,7 +8372,7 @@
       "venue": "Walter Reade Theater"
     },
     "84480": {
-      "available": false,
+      "available": true,
       "film": "Talk: Lee Chang-dong",
       "id": "84480",
       "no_standby": false,
@@ -8364,7 +8380,7 @@
       "rush_text": "",
       "slug": "talk-lee-chang-dong",
       "start": "2026-09-28T16:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84479/84480",
       "venue": "Francesca Beale Theater"
     },
