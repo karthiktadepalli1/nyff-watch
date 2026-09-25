@@ -88,24 +88,6 @@
   "outbox": [
     {
       "click": "https://purchase.filmlinc.org/84110/84159",
-      "created": "2026-09-18T14:57:59+00:00",
-      "email": "sent",
-      "email_sent_at": "2026-09-18T14:57:59+00:00",
-      "expires": "2026-09-18T20:57:59+00:00",
-      "id": "b7d3094db2e1877ebd7f4801",
-      "kind": "ticket",
-      "message": "All of a Sudden\nFri Oct 09, 12:30 PM ET · Walter Reade Theater\nObserved Fri Sep 18, 10:57 AM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
-      "performance_id": "84159",
-      "priority": 5,
-      "push": "sent",
-      "push_sent_at": "2026-09-18T14:57:59+00:00",
-      "sources": [
-        "feed"
-      ],
-      "title": "Possible ticket release—check now"
-    },
-    {
-      "click": "https://purchase.filmlinc.org/84110/84159",
       "created": "2026-09-18T16:10:56+00:00",
       "email": "sent",
       "email_sent_at": "2026-09-18T16:10:56+00:00",
