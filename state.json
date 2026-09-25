@@ -2,19 +2,19 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "189",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Fri, 25 Sep 2026 17:36:12 GMT",
+        "date": "Fri, 25 Sep 2026 17:41:23 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "HIT"
+        "x-vercel-cache": "MISS"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-25T17:36:13+00:00",
-      "last_success": "2026-09-25T17:36:13+00:00"
+      "last_attempt": "2026-09-25T17:41:23+00:00",
+      "last_success": "2026-09-25T17:41:23+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 17:36:13 GMT",
+          "date": "Fri, 25 Sep 2026 17:41:23 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 17:36:12 GMT",
+          "date": "Fri, 25 Sep 2026 17:41:23 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 17:36:13 GMT",
+          "date": "Fri, 25 Sep 2026 17:41:23 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 17:36:13 GMT",
+          "date": "Fri, 25 Sep 2026 17:41:23 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 17:36:13 GMT",
+          "date": "Fri, 25 Sep 2026 17:41:23 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-25T17:36:13+00:00",
-      "last_success": "2026-09-25T17:36:13+00:00"
+      "last_attempt": "2026-09-25T17:41:23+00:00",
+      "last_success": "2026-09-25T17:41:23+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-25"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-25T17:36:13+00:00",
-  "last_poll": "2026-09-25T17:36:13+00:00",
+  "last_automatic_poll": "2026-09-25T17:41:23+00:00",
+  "last_poll": "2026-09-25T17:41:23+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -483,39 +483,39 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-25T17:36:13+00:00",
+      "observed_at": "2026-09-25T17:41:23+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-25T17:36:13+00:00",
+      "observed_at": "2026-09-25T17:41:23+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-25T17:36:13+00:00",
+      "observed_at": "2026-09-25T17:41:23+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-25T17:36:13+00:00",
+      "observed_at": "2026-09-25T17:41:23+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-25T17:36:13+00:00",
+      "observed_at": "2026-09-25T17:41:23+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-25T17:36:13+00:00",
+      "observed_at": "2026-09-25T17:41:23+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-25T17:36:13+00:00",
+      "observed_at": "2026-09-25T17:41:23+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-25T17:36:13+00:00",
+      "observed_at": "2026-09-25T17:41:23+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-25T17:36:13+00:00",
+      "observed_at": "2026-09-25T17:41:23+00:00",
       "rush": false
     }
   },
@@ -999,13 +999,6 @@
   ],
   "report_day": "2026-09-25",
   "runs": [
-    {
-      "at": "2026-09-23T13:18:40+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35866154528",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-23T13:23:50+00:00",
       "feed": true,
@@ -5198,6 +5191,13 @@
       "page": true,
       "run_id": "36168146988",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-25T17:41:23+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "36168674016",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -5605,7 +5605,7 @@
       "venue": "Walter Reade Theater"
     },
     "84186": {
-      "available": true,
+      "available": false,
       "film": "La Gradiva",
       "id": "84186",
       "no_standby": false,
@@ -5613,7 +5613,7 @@
       "rush_text": "",
       "slug": "la-gradiva",
       "start": "2026-09-28T14:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84123/84186",
       "venue": "Walter Reade Theater"
     },
@@ -6385,7 +6385,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84247": {
-      "available": false,
+      "available": true,
       "film": "Spotlight Shorts",
       "id": "84247",
       "no_standby": false,
@@ -6393,7 +6393,7 @@
       "rush_text": "",
       "slug": "2026-spotlight-shorts",
       "start": "2026-10-04T18:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84153/84247",
       "venue": "Walter Reade Theater"
     },
@@ -6697,7 +6697,7 @@
       "venue": "Walter Reade Theater"
     },
     "84294": {
-      "available": true,
+      "available": false,
       "film": "Heil Jupiter!",
       "id": "84294",
       "no_standby": false,
@@ -6705,7 +6705,7 @@
       "rush_text": "",
       "slug": "heil-jupiter",
       "start": "2026-09-28T18:00:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84259/84294",
       "venue": "Walter Reade Theater"
     },
@@ -7932,7 +7932,7 @@
       "venue": "Alice Tully Hall"
     },
     "84410": {
-      "available": true,
+      "available": false,
       "film": "Possible Love",
       "id": "84410",
       "no_standby": false,
@@ -7940,7 +7940,7 @@
       "rush_text": "",
       "slug": "possible-love",
       "start": "2026-09-28T11:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84136/84410",
       "venue": "Alice Tully Hall"
     },
@@ -8374,7 +8374,7 @@
       "venue": "Walter Reade Theater"
     },
     "84480": {
-      "available": true,
+      "available": false,
       "film": "Talk: Lee Chang-dong",
       "id": "84480",
       "no_standby": false,
@@ -8382,7 +8382,7 @@
       "rush_text": "",
       "slug": "talk-lee-chang-dong",
       "start": "2026-09-28T16:45:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84479/84480",
       "venue": "Francesca Beale Theater"
     },
