@@ -78,7 +78,7 @@
     "phone_push": true
   },
   "email_budget": {
-    "attempts": 2,
+    "attempts": 3,
     "day": "2026-09-25"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
