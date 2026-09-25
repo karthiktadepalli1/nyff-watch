@@ -472,7 +472,8 @@
       "message": "Talk: Lee Chang-dong\nMon Sep 28, 4:45 PM ET · Francesca Beale Theater\nObserved Fri Sep 25, 1:36 PM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
       "performance_id": "84480",
       "priority": 5,
-      "push": "pending",
+      "push": "sent",
+      "push_sent_at": "2026-09-25T17:36:13+00:00",
       "sources": [
         "feed"
       ],
