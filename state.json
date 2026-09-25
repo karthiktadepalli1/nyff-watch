@@ -2,19 +2,19 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "141",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Fri, 25 Sep 2026 18:12:43 GMT",
+        "date": "Fri, 25 Sep 2026 18:17:58 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "HIT"
+        "x-vercel-cache": "MISS"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-25T18:12:44+00:00",
-      "last_success": "2026-09-25T18:12:44+00:00"
+      "last_attempt": "2026-09-25T18:17:59+00:00",
+      "last_success": "2026-09-25T18:17:59+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 18:12:43 GMT",
+          "date": "Fri, 25 Sep 2026 18:17:58 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 18:12:44 GMT",
+          "date": "Fri, 25 Sep 2026 18:17:58 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 18:12:44 GMT",
+          "date": "Fri, 25 Sep 2026 18:17:58 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 18:12:43 GMT",
+          "date": "Fri, 25 Sep 2026 18:17:58 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 18:12:43 GMT",
+          "date": "Fri, 25 Sep 2026 18:17:58 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-25T18:12:44+00:00",
-      "last_success": "2026-09-25T18:12:44+00:00"
+      "last_attempt": "2026-09-25T18:17:59+00:00",
+      "last_success": "2026-09-25T18:17:59+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-25"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-25T18:12:44+00:00",
-  "last_poll": "2026-09-25T18:12:44+00:00",
+  "last_automatic_poll": "2026-09-25T18:17:59+00:00",
+  "last_poll": "2026-09-25T18:17:59+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -501,39 +501,39 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-25T18:12:44+00:00",
+      "observed_at": "2026-09-25T18:17:59+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-25T18:12:44+00:00",
+      "observed_at": "2026-09-25T18:17:59+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-25T18:12:44+00:00",
+      "observed_at": "2026-09-25T18:17:59+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-25T18:12:44+00:00",
+      "observed_at": "2026-09-25T18:17:59+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-25T18:12:44+00:00",
+      "observed_at": "2026-09-25T18:17:59+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-25T18:12:44+00:00",
+      "observed_at": "2026-09-25T18:17:59+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-25T18:12:44+00:00",
+      "observed_at": "2026-09-25T18:17:59+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-25T18:12:44+00:00",
+      "observed_at": "2026-09-25T18:17:59+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-25T18:12:44+00:00",
+      "observed_at": "2026-09-25T18:17:59+00:00",
       "rush": false
     }
   },
@@ -1017,13 +1017,6 @@
   ],
   "report_day": "2026-09-25",
   "runs": [
-    {
-      "at": "2026-09-23T13:55:09+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35870413644",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-23T14:00:21+00:00",
       "feed": true,
@@ -5216,6 +5209,13 @@
       "page": true,
       "run_id": "36171952897",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-25T18:17:59+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "36172507483",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -7729,7 +7729,7 @@
       "venue": "Alice Tully Hall"
     },
     "84392": {
-      "available": true,
+      "available": false,
       "film": "Bitter Christmas",
       "id": "84392",
       "no_standby": false,
@@ -7737,7 +7737,7 @@
       "rush_text": "",
       "slug": "bitter-christmas",
       "start": "2026-10-07T15:15:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84112/84392",
       "venue": "Alice Tully Hall"
     },
@@ -8522,7 +8522,7 @@
       "venue": "Walter Reade Theater"
     },
     "84497": {
-      "available": true,
+      "available": false,
       "film": "NAZA",
       "id": "84497",
       "no_standby": false,
@@ -8530,7 +8530,7 @@
       "rush_text": "",
       "slug": "naza",
       "start": "2026-09-26T15:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84495/84497",
       "venue": "Alice Tully Hall"
     },
