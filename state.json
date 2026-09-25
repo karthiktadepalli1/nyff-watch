@@ -88,24 +88,6 @@
   "outbox": [
     {
       "click": "https://purchase.filmlinc.org/84136/84410",
-      "created": "2026-09-18T21:41:04+00:00",
-      "email": "sent",
-      "email_sent_at": "2026-09-18T21:41:04+00:00",
-      "expires": "2026-09-19T03:41:04+00:00",
-      "id": "5c6e836af14955f22ecea25d",
-      "kind": "ticket",
-      "message": "Possible Love\nMon Sep 28, 11:30 AM ET · Alice Tully Hall\nObserved Fri Sep 18, 5:41 PM ET.\nThe official feed shows tickets available or limited. Open the purchase link to check for one seat.",
-      "performance_id": "84410",
-      "priority": 5,
-      "push": "sent",
-      "push_sent_at": "2026-09-18T21:41:04+00:00",
-      "sources": [
-        "feed"
-      ],
-      "title": "Possible ticket release—check now"
-    },
-    {
-      "click": "https://purchase.filmlinc.org/84136/84410",
       "created": "2026-09-21T14:54:24+00:00",
       "email": "sent",
       "email_sent_at": "2026-09-21T14:54:24+00:00",
@@ -569,7 +551,7 @@
     {
       "click": "https://purchase.filmlinc.org/84136/84410",
       "created": "2026-09-25T21:26:08+00:00",
-      "email": "pending",
+      "email": "expired",
       "expires": "2026-09-26T03:26:08+00:00",
       "id": "73bd12a534a8041574d7e086",
       "kind": "ticket",
