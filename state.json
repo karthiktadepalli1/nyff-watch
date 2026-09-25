@@ -2,19 +2,19 @@
   "components": {
     "feed": {
       "cache": {
-        "age": "135",
+        "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Fri, 25 Sep 2026 06:18:57 GMT",
+        "date": "Fri, 25 Sep 2026 06:24:11 GMT",
         "etag": null,
         "last-modified": null,
-        "x-vercel-cache": "HIT"
+        "x-vercel-cache": "MISS"
       },
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-25T06:18:59+00:00",
-      "last_success": "2026-09-25T06:18:59+00:00"
+      "last_attempt": "2026-09-25T06:24:13+00:00",
+      "last_success": "2026-09-25T06:24:13+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 06:18:59 GMT",
+          "date": "Fri, 25 Sep 2026 06:24:12 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 06:18:58 GMT",
+          "date": "Fri, 25 Sep 2026 06:24:12 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 06:18:58 GMT",
+          "date": "Fri, 25 Sep 2026 06:24:11 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 06:18:57 GMT",
+          "date": "Fri, 25 Sep 2026 06:24:11 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Fri, 25 Sep 2026 06:18:58 GMT",
+          "date": "Fri, 25 Sep 2026 06:24:11 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-25T06:18:59+00:00",
-      "last_success": "2026-09-25T06:18:59+00:00"
+      "last_attempt": "2026-09-25T06:24:13+00:00",
+      "last_success": "2026-09-25T06:24:13+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-25"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-25T06:18:59+00:00",
-  "last_poll": "2026-09-25T06:18:59+00:00",
+  "last_automatic_poll": "2026-09-25T06:24:13+00:00",
+  "last_poll": "2026-09-25T06:24:13+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -447,39 +447,39 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-25T06:18:59+00:00",
+      "observed_at": "2026-09-25T06:24:13+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-25T06:18:59+00:00",
+      "observed_at": "2026-09-25T06:24:13+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-25T06:18:59+00:00",
+      "observed_at": "2026-09-25T06:24:13+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-25T06:18:59+00:00",
+      "observed_at": "2026-09-25T06:24:13+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-25T06:18:59+00:00",
+      "observed_at": "2026-09-25T06:24:13+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-25T06:18:59+00:00",
+      "observed_at": "2026-09-25T06:24:13+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-25T06:18:59+00:00",
+      "observed_at": "2026-09-25T06:24:13+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-25T06:18:59+00:00",
+      "observed_at": "2026-09-25T06:24:13+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-25T06:18:59+00:00",
+      "observed_at": "2026-09-25T06:24:13+00:00",
       "rush": false
     }
   },
@@ -935,13 +935,6 @@
   ],
   "report_day": "2026-09-25",
   "runs": [
-    {
-      "at": "2026-09-23T02:06:30+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35809021335",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-23T02:11:41+00:00",
       "feed": true,
@@ -5134,6 +5127,13 @@
       "page": true,
       "run_id": "36102303445",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-25T06:24:13+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "36102681726",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -7803,7 +7803,7 @@
       "venue": "Alice Tully Hall"
     },
     "84405": {
-      "available": false,
+      "available": true,
       "film": "Misty Green",
       "id": "84405",
       "no_standby": false,
@@ -7811,7 +7811,7 @@
       "rush_text": "",
       "slug": "misty-green",
       "start": "2026-09-27T11:30:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84130/84405",
       "venue": "Alice Tully Hall"
     },
