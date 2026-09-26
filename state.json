@@ -78,8 +78,8 @@
     "phone_push": true
   },
   "email_budget": {
-    "attempts": 5,
-    "day": "2026-09-25"
+    "attempts": 0,
+    "day": "2026-09-26"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
   "last_automatic_poll": "2026-09-26T00:02:11+00:00",
