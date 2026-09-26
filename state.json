@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Sat, 26 Sep 2026 18:02:09 GMT",
+        "date": "Sat, 26 Sep 2026 18:07:20 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-26T18:02:09+00:00",
-      "last_success": "2026-09-26T18:02:09+00:00"
+      "last_attempt": "2026-09-26T18:07:21+00:00",
+      "last_success": "2026-09-26T18:07:21+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 26 Sep 2026 18:02:09 GMT",
+          "date": "Sat, 26 Sep 2026 18:07:20 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 26 Sep 2026 18:02:09 GMT",
+          "date": "Sat, 26 Sep 2026 18:07:20 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 26 Sep 2026 18:02:09 GMT",
+          "date": "Sat, 26 Sep 2026 18:07:21 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 26 Sep 2026 18:02:09 GMT",
+          "date": "Sat, 26 Sep 2026 18:07:20 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 26 Sep 2026 18:02:09 GMT",
+          "date": "Sat, 26 Sep 2026 18:07:20 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-26T18:02:09+00:00",
-      "last_success": "2026-09-26T18:02:09+00:00"
+      "last_attempt": "2026-09-26T18:07:21+00:00",
+      "last_success": "2026-09-26T18:07:21+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-26"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-26T18:02:09+00:00",
-  "last_poll": "2026-09-26T18:02:09+00:00",
+  "last_automatic_poll": "2026-09-26T18:07:21+00:00",
+  "last_poll": "2026-09-26T18:07:21+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -602,39 +602,39 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-26T18:02:09+00:00",
+      "observed_at": "2026-09-26T18:07:21+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-26T18:02:09+00:00",
+      "observed_at": "2026-09-26T18:07:21+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-26T18:02:09+00:00",
+      "observed_at": "2026-09-26T18:07:21+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-26T18:02:09+00:00",
+      "observed_at": "2026-09-26T18:07:21+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-26T18:02:09+00:00",
+      "observed_at": "2026-09-26T18:07:21+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-26T18:02:09+00:00",
+      "observed_at": "2026-09-26T18:07:21+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-26T18:02:09+00:00",
+      "observed_at": "2026-09-26T18:07:21+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-26T18:02:09+00:00",
+      "observed_at": "2026-09-26T18:07:21+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-26T18:02:09+00:00",
+      "observed_at": "2026-09-26T18:07:21+00:00",
       "rush": false
     }
   },
@@ -1106,13 +1106,6 @@
   ],
   "report_day": "2026-09-26",
   "runs": [
-    {
-      "at": "2026-09-24T13:46:14+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "36007932863",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-24T13:51:27+00:00",
       "feed": true,
@@ -5305,6 +5298,13 @@
       "page": true,
       "run_id": "36261111573",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-26T18:07:21+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "36261414333",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -5946,7 +5946,7 @@
       "venue": "Walter Reade Theater"
     },
     "84205": {
-      "available": false,
+      "available": true,
       "film": "My Undesirable Friends: Part II – Exile",
       "id": "84205",
       "no_standby": false,
@@ -5954,7 +5954,7 @@
       "rush_text": "",
       "slug": "my-undesirable-friends-part-ii",
       "start": "2026-09-27T11:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84131/84205",
       "venue": "Francesca Beale Theater"
     },
@@ -5972,7 +5972,7 @@
       "venue": "Walter Reade Theater"
     },
     "84207": {
-      "available": false,
+      "available": true,
       "film": "My Wife Cries",
       "id": "84207",
       "no_standby": false,
@@ -5980,7 +5980,7 @@
       "rush_text": "",
       "slug": "my-wife-cries",
       "start": "2026-09-29T18:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84132/84207",
       "venue": "Francesca Beale Theater"
     },
@@ -6128,7 +6128,7 @@
       "venue": "Walter Reade Theater"
     },
     "84219": {
-      "available": false,
+      "available": true,
       "film": "The Unknown",
       "id": "84219",
       "no_standby": false,
@@ -6136,7 +6136,7 @@
       "rush_text": "",
       "slug": "the-unknown",
       "start": "2026-09-29T12:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84139/84219",
       "venue": "Walter Reade Theater"
     },
@@ -7246,7 +7246,7 @@
       "venue": "Howard Gilman Theater"
     },
     "84329": {
-      "available": false,
+      "available": true,
       "film": "Currents Program 6: Out of the Present",
       "id": "84329",
       "no_standby": false,
@@ -7254,7 +7254,7 @@
       "rush_text": "",
       "slug": "program-6-out-of-the-present",
       "start": "2026-09-29T20:45:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84273/84329",
       "venue": "Francesca Beale Theater"
     },
@@ -7415,7 +7415,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84355": {
-      "available": false,
+      "available": true,
       "film": "In Which Annie Gives It Those Ones",
       "id": "84355",
       "no_standby": false,
@@ -7423,7 +7423,7 @@
       "rush_text": "",
       "slug": "in-which-annie-gives-it-those",
       "start": "2026-09-29T15:15:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84335/84355",
       "venue": "Francesca Beale Theater"
     },
@@ -8494,7 +8494,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84482": {
-      "available": false,
+      "available": true,
       "film": "Talk: Mike Leigh",
       "id": "84482",
       "no_standby": false,
@@ -8502,7 +8502,7 @@
       "rush_text": "",
       "slug": "talk-mike-leigh",
       "start": "2026-09-29T16:00:00.000-04:00",
-      "status": "standby",
+      "status": "limited",
       "url": "https://purchase.filmlinc.org/84481/84482",
       "venue": "Walter Reade Theater"
     },
