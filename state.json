@@ -5,7 +5,7 @@
         "age": "0",
         "cache-control": "public",
         "cf-cache-status": "DYNAMIC",
-        "date": "Sat, 26 Sep 2026 03:51:26 GMT",
+        "date": "Sat, 26 Sep 2026 03:56:39 GMT",
         "etag": null,
         "last-modified": null,
         "x-vercel-cache": "MISS"
@@ -13,8 +13,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-26T03:51:26+00:00",
-      "last_success": "2026-09-26T03:51:26+00:00"
+      "last_attempt": "2026-09-26T03:56:39+00:00",
+      "last_success": "2026-09-26T03:56:39+00:00"
     },
     "page": {
       "cache": {
@@ -22,7 +22,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 26 Sep 2026 03:51:26 GMT",
+          "date": "Sat, 26 Sep 2026 03:56:39 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -31,7 +31,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 26 Sep 2026 03:51:26 GMT",
+          "date": "Sat, 26 Sep 2026 03:56:39 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -40,7 +40,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 26 Sep 2026 03:51:26 GMT",
+          "date": "Sat, 26 Sep 2026 03:56:39 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -49,7 +49,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 26 Sep 2026 03:51:26 GMT",
+          "date": "Sat, 26 Sep 2026 03:56:39 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -58,7 +58,7 @@
           "age": "0",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "cf-cache-status": "DYNAMIC",
-          "date": "Sat, 26 Sep 2026 03:51:26 GMT",
+          "date": "Sat, 26 Sep 2026 03:56:39 GMT",
           "etag": null,
           "last-modified": null,
           "x-vercel-cache": "MISS"
@@ -67,8 +67,8 @@
       "error": null,
       "failures": 0,
       "health_signal": "up",
-      "last_attempt": "2026-09-26T03:51:26+00:00",
-      "last_success": "2026-09-26T03:51:26+00:00"
+      "last_attempt": "2026-09-26T03:56:39+00:00",
+      "last_success": "2026-09-26T03:56:39+00:00"
     }
   },
   "configuration": {
@@ -82,8 +82,8 @@
     "day": "2026-09-26"
   },
   "first_day_review_at": "2026-09-16T18:15:06+00:00",
-  "last_automatic_poll": "2026-09-26T03:51:26+00:00",
-  "last_poll": "2026-09-26T03:51:26+00:00",
+  "last_automatic_poll": "2026-09-26T03:56:39+00:00",
+  "last_poll": "2026-09-26T03:56:39+00:00",
   "notification_failures": 0,
   "outbox": [
     {
@@ -602,39 +602,39 @@
   ],
   "page_rush": {
     "84158": {
-      "observed_at": "2026-09-26T03:51:26+00:00",
+      "observed_at": "2026-09-26T03:56:39+00:00",
       "rush": false
     },
     "84159": {
-      "observed_at": "2026-09-26T03:51:26+00:00",
+      "observed_at": "2026-09-26T03:56:39+00:00",
       "rush": false
     },
     "84274": {
-      "observed_at": "2026-09-26T03:51:26+00:00",
+      "observed_at": "2026-09-26T03:56:39+00:00",
       "rush": false
     },
     "84281": {
-      "observed_at": "2026-09-26T03:51:26+00:00",
+      "observed_at": "2026-09-26T03:56:39+00:00",
       "rush": false
     },
     "84409": {
-      "observed_at": "2026-09-26T03:51:26+00:00",
+      "observed_at": "2026-09-26T03:56:39+00:00",
       "rush": false
     },
     "84410": {
-      "observed_at": "2026-09-26T03:51:26+00:00",
+      "observed_at": "2026-09-26T03:56:39+00:00",
       "rush": false
     },
     "84480": {
-      "observed_at": "2026-09-26T03:51:26+00:00",
+      "observed_at": "2026-09-26T03:56:39+00:00",
       "rush": false
     },
     "84484": {
-      "observed_at": "2026-09-26T03:51:26+00:00",
+      "observed_at": "2026-09-26T03:56:39+00:00",
       "rush": false
     },
     "84652": {
-      "observed_at": "2026-09-26T03:51:26+00:00",
+      "observed_at": "2026-09-26T03:56:39+00:00",
       "rush": false
     }
   },
@@ -1111,13 +1111,6 @@
   ],
   "report_day": "2026-09-25",
   "runs": [
-    {
-      "at": "2026-09-23T23:35:47+00:00",
-      "feed": true,
-      "page": true,
-      "run_id": "35934365797",
-      "trigger": "automatic"
-    },
     {
       "at": "2026-09-23T23:40:58+00:00",
       "feed": true,
@@ -5310,6 +5303,13 @@
       "page": true,
       "run_id": "36216080324",
       "trigger": "automatic"
+    },
+    {
+      "at": "2026-09-26T03:56:39+00:00",
+      "feed": true,
+      "page": true,
+      "run_id": "36216337584",
+      "trigger": "automatic"
     }
   ],
   "screenings": {
@@ -7407,7 +7407,7 @@
       "venue": "Francesca Beale Theater"
     },
     "84354": {
-      "available": true,
+      "available": false,
       "film": "In Which Annie Gives It Those Ones",
       "id": "84354",
       "no_standby": false,
@@ -7415,7 +7415,7 @@
       "rush_text": "",
       "slug": "in-which-annie-gives-it-those",
       "start": "2026-09-28T18:30:00.000-04:00",
-      "status": "limited",
+      "status": "standby",
       "url": "https://purchase.filmlinc.org/84335/84354",
       "venue": "Francesca Beale Theater"
     },
